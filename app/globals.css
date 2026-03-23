@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* ── Travlo Brand Design System ─────────────────────────────────────────── */
+/* Note: Fonts are loaded via next/font in layout.tsx (offline-safe)        */
+
+:root {
+  /* Core palette */
+  --color-bg-deep:   #0b0f1a;
+  --color-bg-card:   rgba(255,255,255,0.04);
+  --color-border:    rgba(255,255,255,0.10);
+
+  /* Brand accent — warm amber/gold */
+  --color-brand:     #f59e0b;
+  --color-brand-dim: rgba(245,158,11,0.20);
+
+  /* Text hierarchy */
+  --color-text-primary:   #f1f5f9;
+  --color-text-secondary: rgba(241,245,249,0.60);
+  --color-text-muted:     rgba(241,245,249,0.30);
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Noto Sans Arabic', system-ui, sans-serif;
+  --font-arabic: 'Noto Sans Arabic', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-bg-deep);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(245,158,11,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(99,102,241,0.08) 0%, transparent 50%);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* RTL font override — use Noto Sans Arabic for Arabic content */
+[dir="rtl"] {
+  font-family: 'Noto Sans Arabic', var(--font-sans);
+}
+
+/* ── Custom scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
+
+/* ── Utility: thin scrollbar ─────────────────────────────────────────────── */
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.15) transparent; }
+
+/* ── Glassmorphism card ──────────────────────────────────────────────────── */
+.glass {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+

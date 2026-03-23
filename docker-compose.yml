@@ -1,0 +1,93 @@
+version: "3.9"
+
+# ── Internal-only network — no egress to internet ────────────────────────────
+networks:
+  travlo_net:
+    driver: bridge
+    internal: true       # Blocks any outgoing internet traffic from containers
+
+# Expose only Nginx to the host machine
+# All other services communicate via service names on travlo_net
+
+volumes:
+  ollama_data:           # Persists downloaded model weights
+  mongo_data:            # Persists MongoDB data
+
+services:
+
+  # ── Nginx reverse proxy ────────────────────────────────────────────────────
+  nginx:
+    image: nginx:1.25-alpine
+    container_name: travlo_nginx
+    networks:
+      - travlo_net
+    ports:
+      - "80:80"          # Only exposed port to the host
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - nextjs
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+  # ── Next.js application ────────────────────────────────────────────────────
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: travlo_nextjs
+    networks:
+      - travlo_net
+    expose:
+      - "3000"           # Internal only — Nginx proxies here
+    env_file:
+      - .env
+    depends_on:
+      ollama:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+  # ── Ollama local LLM ───────────────────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: travlo_ollama
+    networks:
+      - travlo_net
+    expose:
+      - "11434"          # Internal only
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:11434/api/tags || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s  # Give Ollama time to start before health checks begin
+
+  # ── MongoDB ────────────────────────────────────────────────────────────────
+  mongodb:
+    image: mongo:7-jammy
+    container_name: travlo_mongodb
+    networks:
+      - travlo_net
+    expose:
+      - "27017"          # Internal only
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')", "--quiet"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
