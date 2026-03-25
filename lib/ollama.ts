@@ -6,9 +6,9 @@
  */
 
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
-const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen2.5:3b";
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3:30b-a3b";
 
-// ── Types ─────────────────────────────────────────────────────────────────────
+// ── Types ──────────────────────────────────────────ئ───────────────────────────
 
 export interface Recommendation {
   name: string;
@@ -19,6 +19,16 @@ export interface Recommendation {
 
 export interface ChatMessage {
   role: "system" | "user" | "assistant";
+  content: string;
+}
+
+/**
+ * A single turn in the conversation, used to build the history
+ * that gets sent to Ollama on every request.
+ */
+export interface ConversationTurn {
+  role: "user" | "assistant";
+  /** The user's message text, or a stringified summary of the AI reply */
   content: string;
 }
 
@@ -42,8 +52,8 @@ Rules you MUST follow:
 2. Never invent or hallucinate locations, restaurants, or attractions.
 3. Respond in the SAME language the user writes in (Arabic → Arabic, English → English).
 4. Always return a valid JSON object — no markdown code fences, no extra text.
-5. Limit descriptions to 2 sentences maximum.
-6. Return between 3 and 5 recommendations per request.
+5. If the user asks for general recommendations, return 3 to 5 recommendations with short descriptions (1-2 sentences).
+6. If the user asks for more information about a specific place, return exactly 1 recommendation for that place, and provide a detailed, informative description.
 
 Response format (STRICT JSON only):
 {
@@ -51,7 +61,7 @@ Response format (STRICT JSON only):
     {
       "name": "Place name",
       "category": "food|culture|nature|adventure|shopping",
-      "description": "Short description in 1-2 sentences.",
+      "description": "Description of the place.",
       "emoji": "🍽️"
     }
   ]
@@ -64,15 +74,24 @@ Response format (STRICT JSON only):
  * JSON recommendation response.
  */
 export async function getRecommendations(
-  userMessage: string
+  userMessage: string,
+  conversationHistory: ConversationTurn[] = []
 ): Promise<OllamaResponse> {
+  // Build the full message array:
+  // system → previous turns (up to last 10 to cap context size) → current user message
+  const historyTurns = conversationHistory.slice(-10);
+
   const messages: ChatMessage[] = [
     { role: "system", content: SYSTEM_PROMPT },
+    ...historyTurns.map((t) => ({
+      role: t.role as "user" | "assistant",
+      content: t.content,
+    })),
     { role: "user", content: userMessage },
   ];
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 180_000); // 3 min — llama3 8B needs time
+  const timeout = setTimeout(() => controller.abort(), 300000); // 3 min — llama3 8B needs time
 
   try {
     const response = await fetch(`${OLLAMA_BASE_URL}/api/chat`, {
@@ -86,7 +105,7 @@ export async function getRecommendations(
         options: {
           temperature: 0.3,
           top_p: 0.85,
-          num_predict: 512, // Keep responses short for speed on local hardware
+          num_predict: 1024, // Allow longer descriptions for specific requests
         },
       }),
       signal: controller.signal,

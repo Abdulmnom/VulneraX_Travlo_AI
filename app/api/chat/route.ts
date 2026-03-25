@@ -2,11 +2,14 @@
  * POST /api/chat
  *
  * Main AI recommendation endpoint.
- * Flow: rate limit → sanitize → call Ollama → return structured JSON
+ * Flow: rate limit → sanitize → build conversation history → call Ollama → return JSON
+ *
+ * Now accepts `history` in the request body so the LLM has full context
+ * of the current session and can answer follow-up questions correctly.
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { getRecommendations } from "@/lib/ollama";
+import { getRecommendations, type ConversationTurn } from "@/lib/ollama";
 import { checkRateLimit } from "@/lib/rateLimiter";
 import { sanitizeInput } from "@/lib/sanitize";
 
@@ -33,22 +36,38 @@ export async function POST(req: NextRequest) {
   }
 
   // ── 3. Parse request body ────────────────────────────────────────────────
-  let body: { message?: string };
+  let body: { message?: string; history?: ConversationTurn[] };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
-  // ── 4. Sanitize and validate input ───────────────────────────────────────
+  // ── 4. Sanitize and validate the current message ─────────────────────────
   const sanitized = sanitizeInput(body?.message ?? "");
   if (!sanitized.valid) {
     return NextResponse.json({ error: sanitized.error }, { status: 400 });
   }
 
-  // ── 5. Call Ollama LLM ───────────────────────────────────────────────────
+  // ── 5. Validate and cap conversation history ─────────────────────────────
+  const rawHistory = Array.isArray(body.history) ? body.history : [];
+  // Each history entry must have a valid role + non-empty string content
+  const history: ConversationTurn[] = rawHistory
+    .filter(
+      (t) =>
+        (t.role === "user" || t.role === "assistant") &&
+        typeof t.content === "string" &&
+        t.content.trim().length > 0
+    )
+    .slice(-10) // cap to 10 turns (5 exchanges) to prevent context abuse
+    .map((t) => ({
+      role: t.role,
+      content: t.content.trim().slice(0, 800), // cap each message length
+    }));
+
+  // ── 6. Call Ollama LLM with full context ─────────────────────────────────
   try {
-    const result = await getRecommendations(sanitized.sanitized);
+    const result = await getRecommendations(sanitized.sanitized, history);
 
     if (result.recommendations.length === 0) {
       return NextResponse.json(
