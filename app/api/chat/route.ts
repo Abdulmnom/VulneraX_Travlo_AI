@@ -10,6 +10,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { getRecommendations, checkOllamaHealth, type ConversationTurn } from "@/lib/ollama";
+import { getRecommendationsFromDeepSeek } from "@/lib/deepseek";
 import { getRecommendationsFromClaude } from "@/lib/claude";
 import { checkRateLimit } from "@/lib/rateLimiter";
 import { sanitizeInput } from "@/lib/sanitize";
@@ -66,20 +67,45 @@ export async function POST(req: NextRequest) {
       content: t.content.trim().slice(0, 800), // cap each message length
     }));
 
-  // ── 6. Call Ollama, fall back to Claude if unavailable ───────────────────
+  // ── 6. Call Ollama → DeepSeek → Claude (three-tier fallback) ────────────
   try {
+    // Tier 1: Ollama (local LLM)
     const ollamaOk = await checkOllamaHealth();
-    let result = ollamaOk
-      ? await getRecommendations(sanitized.sanitized, history)
-      : null;
-
-    if (!ollamaOk || !result || result.recommendations.length === 0) {
-      if (!ollamaOk) {
-        console.warn("[/api/chat] Ollama unavailable — falling back to Claude");
+    if (ollamaOk) {
+      try {
+        const result = await getRecommendations(sanitized.sanitized, history);
+        if (result.recommendations.length > 0) {
+          return NextResponse.json(
+            { recommendations: result.recommendations },
+            { status: 200, headers: { "X-RateLimit-Remaining": String(rateLimit.remaining) } }
+          );
+        }
+      } catch (err) {
+        console.warn("[/api/chat] Ollama failed:", err);
       }
-      result = await getRecommendationsFromClaude(sanitized.sanitized, history);
+    } else {
+      console.warn("[/api/chat] Ollama unavailable — trying DeepSeek");
     }
 
+    // Tier 2: DeepSeek API
+    if (process.env.DEEPSEEK_API_KEY) {
+      try {
+        const result = await getRecommendationsFromDeepSeek(sanitized.sanitized, history);
+        if (result.recommendations.length > 0) {
+          return NextResponse.json(
+            { recommendations: result.recommendations },
+            { status: 200, headers: { "X-RateLimit-Remaining": String(rateLimit.remaining) } }
+          );
+        }
+      } catch (err) {
+        console.warn("[/api/chat] DeepSeek failed:", err);
+      }
+    } else {
+      console.warn("[/api/chat] No DEEPSEEK_API_KEY — skipping DeepSeek, trying Claude");
+    }
+
+    // Tier 3: Claude API
+    const result = await getRecommendationsFromClaude(sanitized.sanitized, history);
     if (!result || result.recommendations.length === 0) {
       return NextResponse.json(
         { error: "Could not generate recommendations. Please try again." },
@@ -89,15 +115,12 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(
       { recommendations: result.recommendations },
-      {
-        status: 200,
-        headers: { "X-RateLimit-Remaining": String(rateLimit.remaining) },
-      }
+      { status: 200, headers: { "X-RateLimit-Remaining": String(rateLimit.remaining) } }
     );
   } catch (err) {
-    console.error("[/api/chat] Both Ollama and Claude failed:", err);
+    console.error("[/api/chat] All three providers failed:", err);
     return NextResponse.json(
-      { error: "AI service is temporarily unavailable. Please try again  or there is a problem in OLLAMA_BASE_URL." },
+      { error: "AI service is temporarily unavailable. Please try again." },
       { status: 503 }
     );
   }
