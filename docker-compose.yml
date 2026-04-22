@@ -1,13 +1,14 @@
 version: "3.9"
 
-# ── Internal-only network — no egress to internet ────────────────────────────
+# ── Networks ──────────────────────────────────────────────────────────────────
+# travlo_public : nextjs + nginx can reach the internet (needed for Anthropic API)
+# travlo_internal: ollama + mongodb are isolated with no internet egress
 networks:
-  travlo_net:
+  travlo_public:
     driver: bridge
-    internal: true       # Blocks any outgoing internet traffic from containers
-
-# Expose only Nginx to the host machine
-# All other services communicate via service names on travlo_net
+  travlo_internal:
+    driver: bridge
+    internal: true
 
 volumes:
   ollama_data:           # Persists downloaded model weights
@@ -20,7 +21,7 @@ services:
     image: nginx:1.25-alpine
     container_name: travlo_nginx
     networks:
-      - travlo_net
+      - travlo_public
     ports:
       - "80:80"          # Only exposed port to the host
     volumes:
@@ -38,11 +39,14 @@ services:
       dockerfile: Dockerfile
     container_name: travlo_nextjs
     networks:
-      - travlo_net
+      - travlo_public    # Internet access for Anthropic API fallback
+      - travlo_internal  # Access to ollama + mongodb
     expose:
       - "3000"           # Internal only — Nginx proxies here
     env_file:
       - .env
+    environment:
+      - HOSTNAME=0.0.0.0  # Next.js standalone must listen on all interfaces
     depends_on:
       ollama:
         condition: service_healthy
@@ -57,9 +61,9 @@ services:
     image: ollama/ollama:latest
     container_name: travlo_ollama
     networks:
-      - travlo_net
+      - travlo_internal  # Internal only — no internet egress
     expose:
-      - "11434"          # Internal only
+      - "11434"
     volumes:
       - ollama_data:/root/.ollama
     restart: unless-stopped
@@ -77,9 +81,9 @@ services:
     image: mongo:7-jammy
     container_name: travlo_mongodb
     networks:
-      - travlo_net
+      - travlo_internal  # Internal only — no internet egress
     expose:
-      - "27017"          # Internal only
+      - "27017"
     volumes:
       - mongo_data:/data/db
     restart: unless-stopped
