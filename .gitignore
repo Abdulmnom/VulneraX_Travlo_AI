@@ -39,3 +39,35 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# SECURITY: SSL Certificates (NEVER commit private keys)
+# ═══════════════════════════════════════════════════════════════════════════════
+/nginx/ssl/*.crt
+/nginx/ssl/*.key
+/nginx/ssl/*.pem
+/nginx/ssl/*.pfx
+/nginx/ssl/*.p12
+/nginx/ssl/*.der
+
+# mkcert root CA (private)
+*.rootCA.pem
+rootCA.pem
+
+# Docker volumes (contain sensitive data)
+/mongo_data/
+/ollama_data/
+/nginx_logs/
+
+# Security audit reports
+security-report*.json
+security-report*.html
+.audit/
+
+# Local environment overrides
+.env.local
+.env.development.local
+.env.production.local
+
+# Claude Code worktrees (auto-generated, never commit)
+.claude/worktrees/
