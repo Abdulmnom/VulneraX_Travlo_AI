@@ -9,7 +9,8 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { getRecommendations, type ConversationTurn } from "@/lib/ollama";
+import { getRecommendations, checkOllamaHealth, type ConversationTurn } from "@/lib/ollama";
+import { getRecommendationsFromClaude } from "@/lib/claude";
 import { checkRateLimit } from "@/lib/rateLimiter";
 import { sanitizeInput } from "@/lib/sanitize";
 
@@ -35,7 +36,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // ── 3. Parse request body ────────────────────────────────────────────────
+  // ── 4. Parse request body ────────────────────────────────────────────────
   let body: { message?: string; history?: ConversationTurn[] };
   try {
     body = await req.json();
@@ -43,7 +44,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
-  // ── 4. Sanitize and validate the current message ─────────────────────────
+  // ── 5. Sanitize and validate the current message ─────────────────────────
   const sanitized = sanitizeInput(body?.message ?? "");
   if (!sanitized.valid) {
     return NextResponse.json({ error: sanitized.error }, { status: 400 });
@@ -65,11 +66,21 @@ export async function POST(req: NextRequest) {
       content: t.content.trim().slice(0, 800), // cap each message length
     }));
 
-  // ── 6. Call Ollama LLM with full context ─────────────────────────────────
+  // ── 6. Call Ollama, fall back to Claude if unavailable ───────────────────
   try {
-    const result = await getRecommendations(sanitized.sanitized, history);
+    const ollamaOk = await checkOllamaHealth();
+    let result = ollamaOk
+      ? await getRecommendations(sanitized.sanitized, history)
+      : null;
 
-    if (result.recommendations.length === 0) {
+    if (!ollamaOk || !result || result.recommendations.length === 0) {
+      if (!ollamaOk) {
+        console.warn("[/api/chat] Ollama unavailable — falling back to Claude");
+      }
+      result = await getRecommendationsFromClaude(sanitized.sanitized, history);
+    }
+
+    if (!result || result.recommendations.length === 0) {
       return NextResponse.json(
         { error: "Could not generate recommendations. Please try again." },
         { status: 502 }
@@ -80,15 +91,13 @@ export async function POST(req: NextRequest) {
       { recommendations: result.recommendations },
       {
         status: 200,
-        headers: {
-          "X-RateLimit-Remaining": String(rateLimit.remaining),
-        },
+        headers: { "X-RateLimit-Remaining": String(rateLimit.remaining) },
       }
     );
   } catch (err) {
-    console.error("[/api/chat] Ollama request failed:", err);
+    console.error("[/api/chat] Both Ollama and Claude failed:", err);
     return NextResponse.json(
-      { error: "AI service is temporarily unavailable. Please try again." },
+      { error: "AI service is temporarily unavailable. Please try again  or there is a problem in OLLAMA_BASE_URL." },
       { status: 503 }
     );
   }

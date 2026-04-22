@@ -1,22 +1,78 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Prerequisites
+
+- Docker and Docker Compose
+- Node.js 18+ (for local development)
+
 ## Getting Started
 
-First, run the development server:
+### 1. Start the services with Docker
+
+```bash
+docker-compose up -d
+```
+
+This starts:
+- Next.js application (proxied via Nginx on port 80)
+- Ollama LLM service (internal)
+- MongoDB (internal)
+
+### 2. Pull the required Ollama model
+
+The application requires an Ollama model to generate recommendations. Pull it with:
+
+**Linux/Mac:**
+```bash
+./scripts/pull-model.sh
+```
+
+**Windows:**
+```powershell
+.\scripts\pull-model.ps1
+```
+
+Or manually:
+```bash
+docker exec -it travlo_ollama ollama pull qwen3:30b-a3b
+```
+
+> **Note:** You can use a different model by setting the `OLLAMA_MODEL` environment variable in your `.env` file.
+
+### 3. Access the application
+
+Open [http://localhost](http://localhost) in your browser.
+
+## Development
+
+Run the development server locally (requires Ollama to be running):
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuration
+
+| Environment Variable | Default | Description |
+|---------------------|---------|-------------|
+| `OLLAMA_BASE_URL` | `http://localhost:11434` | URL of the Ollama API |
+| `OLLAMA_MODEL` | `qwen3:30b-a3b` | Model to use for recommendations |
+
+## Troubleshooting
+
+### "Ollama model not found" error
+
+The model hasn't been pulled yet. Run the pull script (see step 2 above).
+
+### Check available models
+
+```bash
+docker exec travlo_ollama ollama list
+```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

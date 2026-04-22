@@ -6,7 +6,7 @@
  */
 
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
-const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3:30b-a3b";
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3:14b";
 
 // ── Types ──────────────────────────────────────────ئ───────────────────────────
 
@@ -112,6 +112,14 @@ export async function getRecommendations(
     });
 
     if (!response.ok) {
+      // Handle 404 - Model not found specifically
+      if (response.status === 404) {
+        throw new Error(
+          `Ollama model "${OLLAMA_MODEL}" not found. ` +
+          `Please pull the model first by running: ` +
+          `docker exec -it travlo_ollama ollama pull ${OLLAMA_MODEL}`
+        );
+      }
       throw new Error(`Ollama error: ${response.status} ${response.statusText}`);
     }
 
