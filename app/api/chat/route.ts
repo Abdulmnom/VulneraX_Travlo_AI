@@ -17,9 +17,11 @@ import { sanitizeInput } from "@/lib/sanitize";
 
 export async function POST(req: NextRequest) {
   // ── 1. Extract client IP for rate limiting ───────────────────────────────
+  // Prefer x-real-ip set by Nginx from the verified connection, not
+  // attacker-controllable x-forwarded-for.
   const ip =
-    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
     req.headers.get("x-real-ip") ??
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
     "unknown";
 
   // ── 2. Rate limit check ──────────────────────────────────────────────────
@@ -53,7 +55,6 @@ export async function POST(req: NextRequest) {
 
   // ── 5. Validate and cap conversation history ─────────────────────────────
   const rawHistory = Array.isArray(body.history) ? body.history : [];
-  // Each history entry must have a valid role + non-empty string content
   const history: ConversationTurn[] = rawHistory
     .filter(
       (t) =>
@@ -61,11 +62,12 @@ export async function POST(req: NextRequest) {
         typeof t.content === "string" &&
         t.content.trim().length > 0
     )
-    .slice(-10) // cap to 10 turns (5 exchanges) to prevent context abuse
-    .map((t) => ({
-      role: t.role,
-      content: t.content.trim().slice(0, 800), // cap each message length
-    }));
+    .slice(-10)
+    .flatMap((t): ConversationTurn[] => {
+      // Apply same injection guard to history entries as to the current message
+      const result = sanitizeInput(t.content.trim().slice(0, 800));
+      return result.valid ? [{ role: t.role, content: result.sanitized }] : [];
+    });
 
   // ── 6. Call Ollama → DeepSeek → Claude (three-tier fallback) ────────────
   try {
@@ -84,7 +86,7 @@ export async function POST(req: NextRequest) {
         console.warn("[/api/chat] Ollama failed:", err);
       }
     } else {
-      console.warn("[/api/chat] Ollama unavailable — trying DeepSeek");
+      console.warn("[/api/chat] Primary LLM unavailable — attempting fallback");
     }
 
     // Tier 2: DeepSeek API
@@ -101,7 +103,7 @@ export async function POST(req: NextRequest) {
         console.warn("[/api/chat] DeepSeek failed:", err);
       }
     } else {
-      console.warn("[/api/chat] No DEEPSEEK_API_KEY — skipping DeepSeek, trying Claude");
+      console.warn("[/api/chat] Secondary LLM unavailable — attempting final fallback");
     }
 
     // Tier 3: Claude API

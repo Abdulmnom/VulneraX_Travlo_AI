@@ -6,12 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup:local": "node scripts/generate-certs.js",
+    "proxy": "node scripts/proxy-server.js",
+    "dev:secure": "concurrently \"npm run proxy\" \"npm run dev\"",
+    "simulate:attacks": "powershell -ExecutionPolicy Bypass -File .\\scripts\\simulate-attacks.ps1 -Target https://vulnerax.local:3443",
+    "test:security": "npm run simulate:attacks"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
+    "http-proxy": "^1.18.1",
     "lucide-react": "^0.511.0",
     "mongodb": "^6.0.0",
     "next": "16.2.1",
@@ -22,12 +28,15 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/http-proxy": "^1.17.15",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "concurrently": "^8.2.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "node-forge": "^1.3.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

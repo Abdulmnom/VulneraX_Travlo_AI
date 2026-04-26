@@ -11,8 +11,9 @@
 
 const MAX_INPUT_LENGTH = 500;
 
-// Known prompt injection patterns — case-insensitive
+// Known prompt injection patterns — case-insensitive (English + Arabic)
 const INJECTION_PATTERNS = [
+  // English patterns
   /ignore\s+(previous|above|all)\s+(instructions?|prompt|rules?)/i,
   /forget\s+(everything|instructions?|rules?)/i,
   /you\s+are\s+now\s+(a|an|the)/i,
@@ -24,6 +25,13 @@ const INJECTION_PATTERNS = [
   /system\s*:\s*you/i,
   /\[INST\]/i,       // Llama instruction format injection
   /<\|im_start\|>/i, // ChatML injection
+  // Arabic injection patterns
+  /تجاهل\s+(التعليمات|الأوامر|القواعد)/,
+  /انسَ?\s+(كل\s+شيء|التعليمات)/,
+  /تصرف\s+كـ?/,
+  /اكشف\s+(المعلومات|السر|البيانات|مفتاح)/,
+  /أنت\s+الآن/,
+  /دور\s+جديد/,
 ];
 
 export interface SanitizeResult {
@@ -40,8 +48,8 @@ export function sanitizeInput(raw: string): SanitizeResult {
     return { valid: false, sanitized: "", error: "Input must be a string" };
   }
 
-  // Trim whitespace
-  let input = raw.trim();
+  // Normalize Unicode to defeat homoglyph/lookalike injection (e.g. Greek Ε instead of E)
+  let input = raw.normalize("NFKC").trim();
 
   // Enforce max length
   if (input.length > MAX_INPUT_LENGTH) {

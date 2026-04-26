@@ -12,8 +12,8 @@ import { enhanceVoiceTranscript } from "@/lib/voiceEnhancer";
 export async function POST(req: NextRequest) {
   // ── 1. Rate limit (shared IP bucket with /api/chat) ──────────────────────
   const ip =
-    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
     req.headers.get("x-real-ip") ??
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
     "unknown";
 
   const rateLimit = checkRateLimit(ip);

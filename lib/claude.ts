@@ -22,12 +22,15 @@ export async function getRecommendationsFromClaude(
     { role: "user", content: userMessage },
   ];
 
-  const response = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 1024,
-    system: SYSTEM_PROMPT,
-    messages,
-  });
+  const response = await client.messages.create(
+    {
+      model: "claude-haiku-4-5-20251001",
+      max_tokens: 1024,
+      system: SYSTEM_PROMPT,
+      messages,
+    },
+    { signal: AbortSignal.timeout(60_000) }
+  );
 
   const rawText = response.content[0].type === "text" ? response.content[0].text : "";
 
