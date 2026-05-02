@@ -12,7 +12,8 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 export async function getRecommendationsFromClaude(
   userMessage: string,
-  conversationHistory: ConversationTurn[] = []
+  conversationHistory: ConversationTurn[] = [],
+  systemPrompt: string = SYSTEM_PROMPT
 ): Promise<OllamaResponse> {
   const messages: Anthropic.MessageParam[] = [
     ...conversationHistory.slice(-10).map((t) => ({
@@ -26,7 +27,7 @@ export async function getRecommendationsFromClaude(
     {
       model: "claude-haiku-4-5-20251001",
       max_tokens: 1024,
-      system: SYSTEM_PROMPT,
+      system: systemPrompt,
       messages,
     },
     { signal: AbortSignal.timeout(60_000) }

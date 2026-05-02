@@ -5,10 +5,11 @@ const DEEPSEEK_MODEL = "deepseek-chat";
 
 export async function getRecommendationsFromDeepSeek(
   userMessage: string,
-  conversationHistory: ConversationTurn[] = []
+  conversationHistory: ConversationTurn[] = [],
+  systemPrompt: string = SYSTEM_PROMPT
 ): Promise<OllamaResponse> {
   const messages = [
-    { role: "system", content: SYSTEM_PROMPT },
+    { role: "system", content: systemPrompt },
     ...conversationHistory.slice(-10).map((t) => ({
       role: t.role as "user" | "assistant",
       content: t.content,

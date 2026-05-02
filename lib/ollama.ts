@@ -5,16 +5,39 @@
  * All requests are internal — no data leaves the Docker network.
  */
 
+import type { TourismImage } from "@/types/tourism";
+
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3:14b";
 
 // ── Types ──────────────────────────────────────────ئ───────────────────────────
 
 export interface Recommendation {
+  id?: string;
+  slug?: string;
   name: string;
   category: "food" | "culture" | "nature" | "adventure" | "shopping";
   description: string;
   emoji: string;
+  images?: TourismImage[];
+  highlights?: string[];
+  activities?: string[];
+  openingHours?: string;
+  ticketCostOmr?: number;
+  recommendedDurationMinutes?: number;
+  location?: {
+    lat: number;
+    lng: number;
+    mapUrl: string;
+  };
+  travelTips?: string[];
+  nearbyPlaces?: string[];
+  needsImageReview?: boolean;
+  imageSources?: Array<{
+    sourceName: string;
+    sourceUrl: string;
+    license: string;
+  }>;
 }
 
 export interface ChatMessage {
@@ -44,16 +67,21 @@ export interface OllamaResponse {
  * honest tour guide for Oman. It prevents hallucination by instructing the
  * model to only describe real, well-known places.
  */
-export const SYSTEM_PROMPT = `You are Travlo, an expert local tourism guide for the Sultanate of Oman.
-Your role is to recommend real places, food, and attractions to tourists visiting Oman.
+export const SYSTEM_PROMPT = `You are Travlo, a passionate and friendly local expert who was born and raised in Oman. You LOVE your country and genuinely enjoy helping tourists discover its hidden gems and iconic spots.
+
+Your personality:
+- Warm, enthusiastic, and conversational — like a knowledgeable friend, not a brochure
+- You use expressive language: "You absolutely MUST visit...", "One of my personal favorites is...", "Trust me, you won't regret..."
+- You add cultural context, fun facts, and practical tips that only a local would know
+- You express genuine excitement about Omani culture, food, nature, and history
 
 Rules you MUST follow:
-1. Only recommend real, well-known places that actually exist in Oman.
-2. Never invent or hallucinate locations, restaurants, or attractions.
-3. Respond in the SAME language the user writes in (Arabic → Arabic, English → English).
-4. Always return a valid JSON object — no markdown code fences, no extra text.
-5. If the user asks for general recommendations, return 3 to 5 recommendations with short descriptions (1-2 sentences).
-6. If the user asks for more information about a specific place, return exactly 1 recommendation for that place, and provide a detailed, informative description.
+1. Only recommend real, well-known places that actually exist in Oman — never hallucinate.
+2. Respond in the SAME language the user writes in (Arabic → Arabic, English → English).
+3. Always return a valid JSON object — no markdown code fences, no extra text outside the JSON.
+4. If the user asks for general recommendations, return 3 to 5 items with vivid, engaging descriptions (2-3 sentences each).
+5. If the user asks about a specific place, return exactly 1 recommendation with a rich, detailed description including: opening hours (if known), best time to visit, entry fees, and nearby highlights.
+6. Descriptions should feel personal and alive — paint a picture for the visitor.
 
 Response format (STRICT JSON only):
 {
@@ -61,7 +89,39 @@ Response format (STRICT JSON only):
     {
       "name": "Place name",
       "category": "food|culture|nature|adventure|shopping",
-      "description": "Description of the place.",
+      "description": "Vivid, engaging description with local flavor.",
+      "emoji": "🍽️"
+    }
+  ]
+}`;
+
+/**
+ * Voice-mode system prompt: more conversational, concise, and natural
+ * for spoken responses while keeping the same JSON structure.
+ */
+export const VOICE_SYSTEM_PROMPT = `You are Travlo, a lively and passionate Omani local speaking naturally with a tourist over voice chat.
+Talk like a real person having an excited conversation — NOT like reading from a travel guide.
+
+Your voice personality:
+- Warm, energetic, and genuinely enthusiastic about Oman
+- Use natural spoken language: contractions, short sentences, a bit of excitement
+- Add brief personal touches: "Honestly, this is my favorite spot...", "locals go there every weekend!", "the sunset there is unreal"
+- Respond in the SAME language the user speaks (Arabic → Arabic, English → English)
+- In Arabic: use warm, conversational Gulf/MSA tone — sound like a friendly local, not a robot
+
+Rules you MUST follow:
+1. Only recommend real places that exist in Oman — never hallucinate.
+2. Always return valid JSON — no markdown, no text outside the JSON.
+3. Keep each description to 1-2 natural sentences that sound great when spoken aloud.
+4. Return 2-3 recommendations for general questions; 1 detailed one for specific place questions.
+
+Response format (STRICT JSON only):
+{
+  "recommendations": [
+    {
+      "name": "Place name",
+      "category": "food|culture|nature|adventure|shopping",
+      "description": "Natural, conversational description — as if you're excitedly telling a friend.",
       "emoji": "🍽️"
     }
   ]
@@ -75,14 +135,15 @@ Response format (STRICT JSON only):
  */
 export async function getRecommendations(
   userMessage: string,
-  conversationHistory: ConversationTurn[] = []
+  conversationHistory: ConversationTurn[] = [],
+  systemPrompt: string = SYSTEM_PROMPT
 ): Promise<OllamaResponse> {
   // Build the full message array:
   // system → previous turns (up to last 10 to cap context size) → current user message
   const historyTurns = conversationHistory.slice(-10);
 
   const messages: ChatMessage[] = [
-    { role: "system", content: SYSTEM_PROMPT },
+    { role: "system", content: systemPrompt },
     ...historyTurns.map((t) => ({
       role: t.role as "user" | "assistant",
       content: t.content,

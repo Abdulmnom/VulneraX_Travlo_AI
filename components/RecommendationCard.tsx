@@ -1,11 +1,11 @@
 "use client";
 
-/**
- * RecommendationCard – Displays a single place/food/attraction recommendation
- */
-
+import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { Clock, Images, Ticket } from "lucide-react";
 import type { Recommendation } from "@/lib/ollama";
+import RecommendationDetails from "./RecommendationDetails";
 
 const CATEGORY_STYLES: Record<
   Recommendation["category"],
@@ -13,31 +13,31 @@ const CATEGORY_STYLES: Record<
 > = {
   food: {
     label: "Food & Drink",
-    labelAr: "طعام وشراب",
+    labelAr: "\u0637\u0639\u0627\u0645 \u0648\u0634\u0631\u0627\u0628",
     color: "text-orange-300",
     bg: "bg-orange-500/20 border-orange-500/30",
   },
   culture: {
     label: "Culture",
-    labelAr: "ثقافة",
+    labelAr: "\u062b\u0642\u0627\u0641\u0629",
     color: "text-purple-300",
     bg: "bg-purple-500/20 border-purple-500/30",
   },
   nature: {
     label: "Nature",
-    labelAr: "طبيعة",
+    labelAr: "\u0637\u0628\u064a\u0639\u0629",
     color: "text-green-300",
     bg: "bg-green-500/20 border-green-500/30",
   },
   adventure: {
     label: "Adventure",
-    labelAr: "مغامرة",
+    labelAr: "\u0645\u063a\u0627\u0645\u0631\u0629",
     color: "text-red-300",
     bg: "bg-red-500/20 border-red-500/30",
   },
   shopping: {
     label: "Shopping",
-    labelAr: "تسوق",
+    labelAr: "\u062a\u0633\u0648\u0642",
     color: "text-blue-300",
     bg: "bg-blue-500/20 border-blue-500/30",
   },
@@ -56,46 +56,96 @@ export default function RecommendationCard({
 }: RecommendationCardProps) {
   const style = CATEGORY_STYLES[rec.category] ?? CATEGORY_STYLES.culture;
   const isAr = language === "ar";
+  const [expanded, setExpanded] = useState(false);
+  const primaryImage = rec.images?.[0];
+  const durationHours = rec.recommendedDurationMinutes
+    ? Math.round((rec.recommendedDurationMinutes / 60) * 10) / 10
+    : null;
+  const hasDetails = Boolean(rec.images?.length || rec.highlights?.length || rec.activities?.length);
 
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-200 group"
+      className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm transition-all duration-200 hover:border-white/20 hover:bg-white/10 group"
       dir={isAr ? "rtl" : "ltr"}
     >
-      {/* Subtle gradient accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-      <div className="flex items-start gap-4">
-        {/* Emoji icon */}
-        <span
-          className="text-3xl flex-shrink-0 mt-0.5 select-none"
-          aria-hidden="true"
-        >
+      {primaryImage && (
+        <div className="-mx-5 -mt-5 mb-4 relative h-40 overflow-hidden bg-white/5">
+          <Image
+            src={primaryImage.url}
+            alt={primaryImage.alt[language] || rec.name}
+            fill
+            sizes="(max-width: 768px) 100vw, 420px"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/70 to-transparent" />
+          <span className="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-black/60 px-2 py-1 text-[11px] text-white/85">
+            <Images size={12} />
+            {rec.images?.length ?? 0}
+          </span>
+        </div>
+      )}
+
+      <div className="relative flex items-start gap-4">
+        <span className="mt-0.5 flex-shrink-0 select-none text-3xl" aria-hidden="true">
           {rec.emoji}
         </span>
 
-        <div className="flex-1 min-w-0">
-          {/* Category badge */}
+        <div className="min-w-0 flex-1">
           <span
-            className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium mb-2 ${style.bg} ${style.color}`}
+            className={`mb-2 inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${style.bg} ${style.color}`}
           >
             {isAr ? style.labelAr : style.label}
           </span>
 
-          {/* Place name */}
-          <h3 className="text-white font-semibold text-base leading-snug mb-1 truncate">
+          <h3 className="mb-1 truncate text-base font-semibold leading-snug text-white">
             {rec.name}
           </h3>
 
-          {/* Description */}
-          <p className="text-white/60 text-sm leading-relaxed line-clamp-3">
+          <p className="line-clamp-3 text-sm leading-relaxed text-white/60">
             {rec.description}
           </p>
+
+          {(durationHours || typeof rec.ticketCostOmr === "number") && (
+            <div className="mt-3 flex flex-wrap gap-2 text-[11px] text-white/55">
+              {durationHours && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
+                  <Clock size={12} />
+                  {isAr ? `${durationHours} \u0633\u0627\u0639\u0629` : `${durationHours}h`}
+                </span>
+              )}
+              {typeof rec.ticketCostOmr === "number" && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
+                  <Ticket size={12} />
+                  {rec.ticketCostOmr.toFixed(2)} OMR
+                </span>
+              )}
+            </div>
+          )}
+
+          {hasDetails && (
+            <button
+              type="button"
+              onClick={() => setExpanded((value) => !value)}
+              className="mt-4 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-amber-200 transition hover:bg-white/10"
+            >
+              {expanded
+                ? isAr
+                  ? "\u0625\u062e\u0641\u0627\u0621 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644"
+                  : "Hide details"
+                : isAr
+                  ? "\u0639\u0631\u0636 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644 \u0648\u0627\u0644\u0635\u0648\u0631"
+                  : "View details & photos"}
+            </button>
+          )}
         </div>
       </div>
+
+      {expanded && <RecommendationDetails rec={rec} language={language} />}
     </motion.article>
   );
 }

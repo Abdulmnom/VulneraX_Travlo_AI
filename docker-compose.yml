@@ -13,6 +13,7 @@ networks:
 volumes:
   ollama_data:           # Persists downloaded model weights
   mongo_data:            # Persists MongoDB data
+  whisper_models:        # Persists downloaded Whisper model weights
 
 services:
 
@@ -47,6 +48,8 @@ services:
       - .env
     environment:
       - HOSTNAME=0.0.0.0  # Next.js standalone must listen on all interfaces
+    volumes:
+      - whisper_models:/root/.cache  # Persist Whisper model weights
     depends_on:
       ollama:
         condition: service_healthy

@@ -1,0 +1,6349 @@
+[
+  {
+    "id": "dest_0001",
+    "name": {
+      "en": "Ain Al Kasfa",
+      "ar": "عين الكسفة"
+    },
+    "lat": 23.976154,
+    "lng": 56.622277,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 1.03,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Ain Al Kasfa is a natural spring and wadi in the Batinah region, known for its cool, clear waters and lush palm groves. It is a popular spot for swimming and picnicking, offering a refreshing escape from the heat.",
+      "ar": "عين الكسفة هي عين طبيعية ووادي في منطقة الباطنة، تشتهر بمياهها الباردة النقية وبساتين النخيل الخضراء. وهي وجهة شهيرة للسباحة والتنزه، وتوفر ملاذاً منعشاً من الحرارة."
+    },
+    "tags": [
+      "nature",
+      "wadi",
+      "family-friendly",
+      "photography",
+      "adventure",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "groups",
+      "adventure-seekers",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Arrive early in the morning (before 9 AM) to secure parking and enjoy the site before the crowds peak.",
+      "ar": "يُفضل الوصول مبكراً في الصباح (قبل الساعة 9 صباحاً) لضمان موقف للسيارة والاستمتاع بالموقع قبل ازدحام الزوار."
+    }
+  },
+  {
+    "id": "dest_0002",
+    "name": {
+      "en": "Ain Al Thowwarah",
+      "ar": "عين الثوارة"
+    },
+    "lat": 23.704978,
+    "lng": 56.570568,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 4.52,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Ain Al Thowwarah is a natural spring and wadi in the Batinah region, known for its clear, cool waters and lush palm groves. It offers a refreshing escape for nature lovers and families seeking a peaceful swimming spot.",
+      "ar": "عين الثوارة هي عين مائية طبيعية ووادي في منطقة الباطنة، تشتهر بمياهها الصافية الباردة وبساتين النخيل الخضراء. توفر ملاذاً منعشاً لعشاق الطبيعة والعائلات الباحثين عن مكان هادئ للسباحة."
+    },
+    "tags": [
+      "nature",
+      "wadi",
+      "family-friendly",
+      "photography",
+      "adventure",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM",
+      "ar": "يومياً من 8 صباحاً حتى 6 مساءً"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes as the rocks can be slippery, and bring your own snacks and water as facilities are limited.",
+      "ar": "ارتدِ أحذية مائية قوية لأن الصخور قد تكون زلقة، واحضر معك الوجبات الخفيفة والماء لأن المرافق محدودة."
+    }
+  },
+  {
+    "id": "dest_0003",
+    "name": {
+      "en": "Al Sawadi Beach",
+      "ar": "شاطئ السوادي"
+    },
+    "lat": 24.16111,
+    "lng": 57.132576,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 2.95,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Al Sawadi Beach is a long, sandy stretch on Oman's Batinah coast known for its clear turquoise waters and views of offshore islands. It is a popular weekend getaway for families and swimmers due to its calm, shallow waters and nearby resort facilities.",
+      "ar": "شاطئ السوادي هو امتداد رملي طويل على ساحل الباطنة في عُمان، يشتهر بمياهه الفيروزية الصافية وإطلالته على الجزر القريبة. وهو وجهة مفضلة لقضاء عطلات نهاية الأسبوع للعائلات والسباحين بفضل مياهه الهادئة والضحلة ومرافق المنتجع القريبة."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "iconic",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "groups",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Arrive early in the morning (before 9 AM) to secure a good spot and avoid the midday heat and crowds, especially on weekends and public holidays.",
+      "ar": "يُفضل الوصول مبكراً في الصباح (قبل الساعة 9 صباحاً) لحجز مكان جيد وتجنب حرارة منتصف النهار والازدحام، خاصة في عطلات نهاية الأسبوع والعطلات الرسمية."
+    }
+  },
+  {
+    "id": "dest_0004",
+    "name": {
+      "en": "Al Thowara Hot Spring",
+      "ar": "عين الثوارة"
+    },
+    "lat": 23.772958,
+    "lng": 57.134924,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 7.48,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Al Thowara Hot Spring is a natural thermal spring located in the Batinah region of Oman, known for its warm, mineral-rich waters. It is a popular destination for both locals and tourists seeking relaxation and therapeutic benefits in a scenic outdoor setting.",
+      "ar": "عين الثوارة هي ينبوع حراري طبيعي يقع في منطقة الباطنة في عُمان، وتشتهر بمياهها الدافئة الغنية بالمعادن. وهي وجهة شهيرة لكل من السكان المحليين والسياح الباحثين عن الاسترخاء والفوائد العلاجية في بيئة طبيعية خلابة."
+    },
+    "tags": [
+      "nature",
+      "family-friendly",
+      "photography",
+      "local",
+      "adventure"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "groups",
+      "adventure-seekers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the highest crowds and heat; bring swimwear and a towel, and note that the water is warm year-round.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر بعد الظهر لتجنب الازدحام الشديد والحرارة؛ أحضر ملابس السباحة ومنشفة، ولاحظ أن الماء دافئ طوال العام."
+    }
+  },
+  {
+    "id": "dest_0005",
+    "name": {
+      "en": "Bait Na'aman",
+      "ar": "بيت نعمان"
+    },
+    "lat": 23.645825,
+    "lng": 57.766798,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 0,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Bait Na'aman is a historic 17th-century fortified house in the Batinah region, showcasing traditional Omani architecture with intricate woodwork and coral-stone walls. It offers visitors a glimpse into the lifestyle of a wealthy Omani merchant family and is a well-preserved cultural landmark.",
+      "ar": "بيت نعمان هو منزل تاريخي محصن من القرن السابع عشر في منطقة الباطنة، يعرض العمارة العمانية التقليدية بنقوش خشبية معقدة وجدران من الحجر المرجاني. يقدم للزوار لمحة عن نمط حياة عائلة تاجر عماني ثري، وهو معلم ثقافي محفوظ جيدًا."
+    },
+    "tags": [
+      "historic",
+      "museum",
+      "cultural",
+      "free",
+      "family-friendly",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 9AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 9 صباحًا–4 مساءً، الجمعة 9 صباحًا–11 صباحًا و2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Dress modestly covering shoulders and knees, and remove shoes before entering the carpeted rooms; arrive early in the morning to avoid the midday heat and crowds.",
+      "ar": "ارتدِ ملابس محتشمة تغطي الكتفين والركبتين، واخلع حذاءك قبل دخول الغرف المفروشة بالسجاد؛ يُفضل الوصول في الصباح الباكر لتجنب حرارة منتصف النهار والازدحام."
+    }
+  },
+  {
+    "id": "dest_0006",
+    "name": {
+      "en": "Barka Fish Market",
+      "ar": "سوق السمك بركاء"
+    },
+    "lat": 24.088553,
+    "lng": 56.79618,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "food",
+      "shopping"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 13.61,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Barka Fish Market is a lively traditional market where local fishermen auction their daily catch directly to the public. It offers an authentic glimpse into Omani coastal life and is a great spot for photography and buying fresh seafood.",
+      "ar": "سوق السمك بركاء هو سوق تقليدي نابض بالحياة حيث يبيع الصيادون المحليون صيدهم اليومي بالمزاد العلني مباشرة للجمهور. يقدم لمحة أصيلة عن الحياة الساحلية العمانية وهو مكان رائع للتصوير الفوتوغرافي وشراء المأكولات البحرية الطازجة."
+    },
+    "tags": [
+      "souq",
+      "local",
+      "photography",
+      "cultural",
+      "family-friendly",
+      "food-lovers"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "food-lovers",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 6AM–12PM & 4PM–7PM, Fri 6AM–11AM",
+      "ar": "السبت – الخميس 6 صباحاً – 12 ظهراً و 4 مساءً – 7 مساءً، الجمعة 6 صباحاً – 11 صباحاً"
+    },
+    "tips": {
+      "en": "Visit early in the morning (around 6–7 AM) to see the auction at its busiest and get the freshest fish; parking is available nearby.",
+      "ar": "قم بالزيارة في الصباح الباكر (حوالي 6–7 صباحاً) لمشاهدة المزاد في أوج نشاطه والحصول على أطيب الأسماك؛ تتوفر مواقف للسيارات قريبة."
+    }
+  },
+  {
+    "id": "dest_0007",
+    "name": {
+      "en": "Hazm Fort",
+      "ar": "حصن الحزم"
+    },
+    "lat": 24.008493,
+    "lng": 57.524542,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 2.56,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Hazm Fort is a historic Omani fortress in the Batinah region, renowned for its massive circular tower and intricate defensive architecture. It offers visitors a glimpse into Oman's rich heritage and strategic military past.",
+      "ar": "حصن الحزم هو قلعة عمانية تاريخية في منطقة الباطنة، تشتهر ببرجها الدائري الضخم وهندستها الدفاعية المعقدة. تقدم للزوار لمحة عن التراث العماني الغني وماضيها العسكري الاستراتيجي."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes and bring a hat, as the fort's interior involves climbing stairs and can get warm; parking is available nearby.",
+      "ar": "ارتدِ أحذية مريحة واحضر قبعة، حيث يتطلب داخل الحصن صعود السلالم وقد يكون الجو دافئاً؛ تتوفر مواقف سيارات قريبة."
+    }
+  },
+  {
+    "id": "dest_0008",
+    "name": {
+      "en": "Khaboura Beach",
+      "ar": "شاطئ الخابورة"
+    },
+    "lat": 24.352414,
+    "lng": 57.320665,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 11.28,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Khaboura Beach is a long, sandy stretch on Oman's Batinah coast, known for its clear turquoise waters and gentle waves. It is a popular spot for swimming, picnicking, and enjoying sunset views away from the city bustle.",
+      "ar": "شاطئ الخابورة هو امتداد رملي طويل على ساحل الباطنة في عُمان، يتميز بمياهه الفيروزية الصافية وأمواجه الهادئة. وهو وجهة شهيرة للسباحة والنزهات والاستمتاع بمناظر غروب الشمس بعيداً عن صخب المدينة."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "groups",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon to avoid the midday heat and enjoy the best light for photography.",
+      "ar": "قم بزيارة الشاطئ في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والاستمتاع بأفضل إضاءة للتصوير."
+    }
+  },
+  {
+    "id": "dest_0009",
+    "name": {
+      "en": "Nakhal Fort",
+      "ar": "حصن نخل"
+    },
+    "lat": 23.715033,
+    "lng": 57.015853,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 19.79,
+    "recommended_months": [
+      1,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Nakhal Fort is a historic 17th-century fortress set against the dramatic Hajar Mountains, featuring a unique falaj irrigation system and a museum inside. It offers stunning panoramic views and a glimpse into Oman's rich cultural heritage.",
+      "ar": "حصن نخل هو قلعة تاريخية من القرن السابع عشر تقع على خلفية جبال الحجر الدرامية، وتتميز بنظام فلج فريد ومتحف داخلي. يوفر إطلالات بانورامية خلابة ولمحة عن التراث الثقافي العماني الغني."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 8AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 9 صباحاً–4 مساءً، الجمعة 8 صباحاً–11 صباحاً و2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and heat; wear comfortable shoes for climbing the fort's stairs and bring a hat for sun protection.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام والحرارة؛ ارتدِ أحذية مريحة لصعود سلالم الحصن وأحضر قبعة للحماية من الشمس."
+    }
+  },
+  {
+    "id": "dest_0010",
+    "name": {
+      "en": "Rustaq Fort",
+      "ar": "حصن الرستاق"
+    },
+    "lat": 23.622218,
+    "lng": 57.288523,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 11.99,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Rustaq Fort is one of Oman's oldest and largest forts, featuring a massive round tower and a deep well that descends over 30 meters. Its strategic hilltop location offers panoramic views of the surrounding date plantations and Hajar Mountains.",
+      "ar": "حصن الرستاق هو أحد أقدم وأكبر الحصون في عُمان، ويتميز ببرجه المستدير الضخم وبئره العميقة التي يزيد عمقها عن 30 متراً. يوفر موقعه الاستراتيجي على قمة التل إطلالات بانورامية على مزارع النخيل المحيطة وجبال الحجر."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "photography",
+      "cultural",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 8AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 9 صباحاً–4 مساءً، الجمعة 8 صباحاً–11 صباحاً و2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes for climbing the many stairs and narrow passageways inside the fort; arrive early in the morning to avoid the midday heat and large crowds.",
+      "ar": "ارتدِ أحذية مريحة لتسلق السلالم الكثيرة والممرات الضيقة داخل الحصن؛ يُفضل الوصول في الصباح الباكر لتجنب حرارة منتصف النهار والزحام الكبير."
+    }
+  },
+  {
+    "id": "dest_0011",
+    "name": {
+      "en": "Seeb Fish Market",
+      "ar": "سوق السمك السيب"
+    },
+    "lat": 23.766943,
+    "lng": 56.991767,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "food",
+      "shopping"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 8.45,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Seeb Fish Market is a bustling traditional market where local fishermen auction their daily catch right off the boats. It offers an authentic glimpse into Omani coastal life and is a must-visit for food lovers seeking the freshest seafood.",
+      "ar": "سوق السمك السيب هو سوق تقليدي نابض بالحياة حيث يبيع الصيادون المحليون صيدهم اليومي بالمزاد العلني مباشرة من القوارب. يقدم لمحة أصيلة عن الحياة الساحلية العمانية وهو وجهة لا بد منها لعشاق الطعام الباحثين عن أشهى المأكولات البحرية الطازجة."
+    },
+    "tags": [
+      "souq",
+      "local",
+      "food-lovers",
+      "photography",
+      "cultural",
+      "family-friendly"
+    ],
+    "best_for": [
+      "food-lovers",
+      "culture-lovers",
+      "families",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 6AM–8PM, Fri 6AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 6ص–8م، الجمعة 6ص–11ص و4م–8م"
+    },
+    "tips": {
+      "en": "Arrive early in the morning (around 6–7 AM) to see the most active auction and get the freshest catch; wear comfortable shoes as the floor can be wet and slippery.",
+      "ar": "احضر في الصباح الباكر (حوالي 6–7 صباحاً) لمشاهدة المزاد الأكثر نشاطاً والحصول على أصح الأسماك؛ ارتدِ أحذية مريحة لأن الأرضية قد تكون مبللة وزَلِقة."
+    }
+  },
+  {
+    "id": "dest_0012",
+    "name": {
+      "en": "Snake Canyon",
+      "ar": "وادي الثعبان"
+    },
+    "lat": 24.274265,
+    "lng": 58.007329,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 18.61,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 1,
+    "description": {
+      "en": "Snake Canyon is a narrow limestone gorge in the Batinah region, famous for its thrilling canyoning route with natural pools and waterfalls. It offers a challenging adventure through deep chasms and rock slides, making it a top destination for experienced outdoor enthusiasts.",
+      "ar": "وادي الثعبان هو مضيق ضيق من الحجر الجيري في منطقة الباطنة، يشتهر بمساره المثير للقفز في البرك الطبيعية والشلالات. يوفر مغامرة صعبة عبر شقوق عميقة ومنزلقات صخرية، مما يجعله وجهة رئيسية لعشاق المغامرات الخارجية."
+    },
+    "tags": [
+      "wadi",
+      "adventure",
+      "nature",
+      "mountain",
+      "photography"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "solo",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours (guided tours recommended, typically 6AM–4PM)",
+      "ar": "مفتوح 24 ساعة (يوصى بالجولات المصحوبة بمرشدين، عادة من 6 صباحاً إلى 4 مساءً)"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes and bring a dry bag for valuables; the canyon involves swimming and scrambling over rocks.",
+      "ar": "ارتدِ أحذية مائية متينة وأحضر حقيبة مقاومة للماء للأغراض الثمينة؛ فالوادي يتضمن السباحة والتسلق على الصخور."
+    }
+  },
+  {
+    "id": "dest_0013",
+    "name": {
+      "en": "Sohar Beach",
+      "ar": "شاطئ صحار"
+    },
+    "lat": 23.887821,
+    "lng": 58.194153,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 120,
+    "ticket_cost_omr": 9.07,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Sohar Beach is a long, sandy public beach along the Batinah coast, popular for swimming, picnicking, and evening strolls. Its calm waters and nearby palm groves make it a favorite family destination in northern Oman.",
+      "ar": "شاطئ صحار هو شاطئ رملي طويل على ساحل الباطنة، مشهور بالسباحة والنزهات والتنزه المسائي. مياهه الهادئة وبساتين النخيل القريبة تجعله وجهة عائلية مفضلة في شمال عمان."
+    },
+    "tags": [
+      "beach",
+      "family-friendly",
+      "nature",
+      "local",
+      "photography",
+      "park"
+    ],
+    "best_for": [
+      "families",
+      "groups",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon to avoid the midday heat and enjoy the sunset; bring your own food and water as facilities are limited.",
+      "ar": "قم بزيارة الشاطئ في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والاستمتاع بغروب الشمس؛ أحضر طعامك ومياهك الخاصة لأن المرافق محدودة."
+    }
+  },
+  {
+    "id": "dest_0014",
+    "name": {
+      "en": "Sohar Corniche",
+      "ar": "كورنيش صحار"
+    },
+    "lat": 23.663081,
+    "lng": 56.685072,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 8.35,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Sohar Corniche is a scenic waterfront promenade along the Sea of Oman, offering stunning views of the coast and the historic Sohar Fort. It is a popular spot for walking, picnicking, and enjoying the sea breeze, especially during the cooler months.",
+      "ar": "كورنيش صحار هو ممشى ساحلي خلاب على طول بحر عمان، ويوفر إطلالات رائعة على الساحل وقلعة صحار التاريخية. إنه مكان شهير للمشي والنزهات والاستمتاع بنسيم البحر، خاصة خلال الأشهر الباردة."
+    },
+    "tags": [
+      "beach",
+      "park",
+      "family-friendly",
+      "photography",
+      "nature",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "groups",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or early evening to avoid the midday heat and enjoy a beautiful sunset over the sea.",
+      "ar": "قم بزيارة في وقت متأخر من بعد الظهر أو في المساء المبكر لتجنب حرارة منتصف النهار والاستمتاع بغروب الشمس الجميل فوق البحر."
+    }
+  },
+  {
+    "id": "dest_0015",
+    "name": {
+      "en": "Sohar Fort",
+      "ar": "حصن صحار"
+    },
+    "lat": 24.299231,
+    "lng": 56.619131,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 15.76,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Sohar Fort is a historic 13th-century fortress in the Batinah region, once the seat of Omani governors and a key defensive stronghold. Its restored towers, museum exhibits, and panoramic views of Sohar and the sea make it a must-visit for culture enthusiasts.",
+      "ar": "حصن صحار هو قلعة تاريخية تعود للقرن الثالث عشر في منطقة الباطنة، كانت مقراً للحكام العمانيين ومعقلاً دفاعياً مهماً. أبراجه المرممة ومقتنياته المتحفية وإطلالاته البانورامية على صحار والبحر تجعله وجهة لا تُفوت لعشاق الثقافة."
+    },
+    "tags": [
+      "fort",
+      "museum",
+      "historic",
+      "cultural",
+      "family-friendly",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and crowds; wear comfortable shoes for climbing the fort's stairs.",
+      "ar": "قم بالزيارة في الصباح الباكر أو بعد الظهر لتجنب حرارة منتصف النهار والزحام؛ ارتدِ أحذية مريحة لصعود سلالم الحصن."
+    }
+  },
+  {
+    "id": "dest_0016",
+    "name": {
+      "en": "Wadi Al Hoqain",
+      "ar": "وادي الحوقين"
+    },
+    "lat": 23.659289,
+    "lng": 56.885077,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 10.45,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Wadi Al Hoqain is a lush valley in the Batinah region of Oman, known for its terraced date plantations, natural pools, and dramatic rock formations. It offers a serene escape for nature lovers and a refreshing adventure with opportunities for swimming and hiking.",
+      "ar": "وادي الحوقين هو وادٍ خصب في منطقة الباطنة بسلطنة عُمان، يشتهر بمدرجات نخيل التمر والبرك الطبيعية والتكوينات الصخرية الخلابة. يوفر ملاذًا هادئًا لعشاق الطبيعة ومغامرة منعشة مع فرص للسباحة والمشي."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM",
+      "ar": "يوميًا من 8 صباحًا حتى 6 مساءً"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes for walking on slippery rocks and bring a change of clothes if you plan to swim.",
+      "ar": "ارتدِ أحذية مائية قوية للسير على الصخور الزلقة وأحضر ملابس إضافية إذا كنت تخطط للسباحة."
+    }
+  },
+  {
+    "id": "dest_0017",
+    "name": {
+      "en": "Wadi Bani Awf",
+      "ar": "وادي بني عوف"
+    },
+    "lat": 23.871325,
+    "lng": 57.901617,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 12.9,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wadi Bani Awf is a dramatic canyon in the Al Hajar Mountains, famous for its rugged terrain, terraced villages, and the challenging Snake Gorge. It offers a thrilling adventure for hikers and 4WD enthusiasts seeking stunning natural scenery.",
+      "ar": "وادي بني عوف هو وادٍ خلاب في جبال الحجر، يشتهر بتضاريسه الوعرة وقرى المدرجات و\"وادي الثعبان\" الصعب. يوفر مغامرة مثيرة لعشاق المشي لمسافات طويلة وقيادة الدفع الرباعي الباحثين عن مناظر طبيعية خلابة."
+    },
+    "tags": [
+      "wadi",
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "iconic"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "groups",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "A 4WD vehicle is essential for navigating the rough wadi roads; visit early morning to avoid the midday heat and crowds.",
+      "ar": "سيارة دفع رباعي ضرورية لاجتياز طرق الوادي الوعرة؛ يُفضل الزيارة في الصباح الباكر لتجنب حرارة منتصف النهار والازدحام."
+    }
+  },
+  {
+    "id": "dest_0018",
+    "name": {
+      "en": "Wadi Sahtan",
+      "ar": "وادي السحتن"
+    },
+    "lat": 23.839672,
+    "lng": 57.905879,
+    "region": {
+      "en": "Batinah",
+      "ar": "الباطنة"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Batinah Coast Authority",
+      "ar": "هيئة ساحل الباطنة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 13.73,
+    "recommended_months": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Wadi Sahtan is a stunning canyon in the Batinah region of Oman, known for its dramatic rock formations, turquoise pools, and lush date palm plantations. It offers a perfect blend of hiking, swimming, and scenic exploration for nature and adventure enthusiasts.",
+      "ar": "وادي السحتن هو وادٍ خلاب في منطقة الباطنة بسلطنة عُمان، يشتهر بتكويناته الصخرية المذهلة والبرك الفيروزية ومزارع النخيل الخضراء. يوفر مزيجًا مثاليًا من المشي لمسافات طويلة والسباحة واستكشاف المناظر الطبيعية الخلابة لعشاق الطبيعة والمغامرات."
+    },
+    "tags": [
+      "wadi",
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes and bring plenty of water, as the rocky terrain and wading through pools can be slippery and physically demanding.",
+      "ar": "ارتدِ أحذية مائية متينة واحمل كمية كافية من الماء، حيث أن التضاريس الصخرية والخوض في البرك قد تكون زلقة ومجهدة بدنيًا."
+    }
+  },
+  {
+    "id": "dest_0019",
+    "name": {
+      "en": "Al Ayn Village",
+      "ar": "قرية العين"
+    },
+    "lat": 22.856126,
+    "lng": 57.39977,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "nature",
+      "culture"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 14.31,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Al Ayn Village is a historic mountain settlement in the Dakhiliya region, famous for its ancient beehive tombs and terraced date palm plantations. It offers a unique glimpse into Oman's pre-Islamic past and traditional agricultural life.",
+      "ar": "قرية العين هي مستوطنة جبلية تاريخية في منطقة الداخلية، تشتهر بمقابرها القديمة التي تشبه خلايا النحل ومزارع نخيل التمر المدرجة. تقدم لمحة فريدة عن ماضي عمان قبل الإسلام والحياة الزراعية التقليدية."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "cultural",
+      "photography",
+      "mountain",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "adventure-seekers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy shoes for climbing to the tombs and bring water; the best light for photography is early morning or late afternoon.",
+      "ar": "ارتدِ أحذية متينة لتسلق المقابر واحضر معك الماء؛ أفضل وقت للتصوير هو الصباح الباكر أو آخر النهار."
+    }
+  },
+  {
+    "id": "dest_0020",
+    "name": {
+      "en": "Al Hamra Old Village",
+      "ar": "قرية الحمراء القديمة"
+    },
+    "lat": 23.252666,
+    "lng": 57.998815,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 5.74,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 2,
+    "description": {
+      "en": "Al Hamra Old Village is a historic mountain settlement in the Dakhiliya region, known for its well-preserved mud-brick houses and traditional Omani architecture. It offers visitors a glimpse into rural life and stunning views of the surrounding Hajar Mountains.",
+      "ar": "قرية الحمراء القديمة هي مستوطنة جبلية تاريخية في منطقة الداخلية، تشتهر ببيوتها الطينية المحفوظة جيداً والعمارة العمانية التقليدية. تقدم للزوار لمحة عن الحياة الريفية وإطلالات خلابة على جبال الحجر المحيطة."
+    },
+    "tags": [
+      "historic",
+      "cultural",
+      "photography",
+      "mountain",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–6PM, Fri 8AM–11AM & 2PM–6PM",
+      "ar": "السبت–الخميس 8 صباحاً–6 مساءً، الجمعة 8 صباحاً–11 صباحاً و 2 مساءً–6 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and modest clothing covering shoulders and knees; visit early morning or late afternoon for the best light and cooler temperatures.",
+      "ar": "ارتدِ أحذية مريحة للمشي وملابس محتشمة تغطي الكتفين والركبتين؛ قم بالزيارة في الصباح الباكر أو في وقت متأخر بعد الظهر للحصول على أفضل إضاءة ودرجات حرارة أكثر برودة."
+    }
+  },
+  {
+    "id": "dest_0021",
+    "name": {
+      "en": "Al Hoota Cave",
+      "ar": "كهف الهوتة"
+    },
+    "lat": 23.149247,
+    "lng": 57.293352,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 11.32,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Al Hoota Cave is a stunning natural limestone cave system in the Dakhiliya region, featuring a 4.5-kilometer-long underground lake and impressive stalactite formations. It is one of Oman's most remarkable geological wonders, offering a unique and accessible underground adventure.",
+      "ar": "كهف الهوتة هو نظام كهوف جيري طبيعي خلاب في منطقة الداخلية، يضم بحيرة تحت الأرض بطول 4.5 كيلومتر وتكوينات صواعد وهوابط مذهلة. إنها واحدة من أبرز العجائب الجيولوجية في عُمان، وتقدم مغامرة فريدة تحت الأرض يسهل الوصول إليها."
+    },
+    "tags": [
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "iconic",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "adventure-seekers",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–5PM, Fri 9AM–12PM & 2PM–5PM",
+      "ar": "السبت–الخميس 9ص–5م، الجمعة 9ص–12م و2م–5م"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and bring a light jacket, as the cave interior is cool and damp year-round.",
+      "ar": "ارتدِ أحذية مريحة للمشي وأحضر سترة خفيفة، لأن داخل الكهف بارد ورطب طوال العام."
+    }
+  },
+  {
+    "id": "dest_0022",
+    "name": {
+      "en": "Bahla Fort",
+      "ar": "حصن بهلاء"
+    },
+    "lat": 23.013915,
+    "lng": 57.641074,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 7.7,
+    "recommended_months": [
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Bahla Fort is a UNESCO World Heritage Site and one of Oman's oldest and largest mud-brick fortresses, dating back to the 13th–14th centuries. It is renowned for its impressive defensive walls, intricate towers, and its association with the legendary Banu Nebhan tribe, making it a must-visit for history and architecture enthusiasts.",
+      "ar": "حصن بهلاء هو موقع تراث عالمي لليونسكو وأحد أقدم وأكبر القلاع المبنية من الطوب اللبن في عُمان، ويعود تاريخه إلى القرنين الثالث عشر والرابع عشر. يشتهر بأسواره الدفاعية المهيبة وأبراجه المعقدة وارتباطه بقبيلة بني نبهان الأسطورية، مما يجعله وجهة لا بد منها لعشاق التاريخ والعمارة."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "iconic",
+      "cultural",
+      "photography",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 8AM–11AM & 1PM–4PM",
+      "ar": "السبت–الخميس 9 صباحاً–4 مساءً، الجمعة 8 صباحاً–11 صباحاً و1 ظهراً–4 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes and bring water, as the fort involves a lot of walking and climbing stairs; visit early in the morning to avoid the heat and crowds.",
+      "ar": "ارتدِ أحذية مريحة واحضر معك الماء، حيث يتطلب الحصن الكثير من المشي وصعود السلالم؛ قم بالزيارة في الصباح الباكر لتجنب الحرارة والازدحام."
+    }
+  },
+  {
+    "id": "dest_0023",
+    "name": {
+      "en": "Birkat Al Mouz",
+      "ar": "بركة الموز"
+    },
+    "lat": 22.894177,
+    "lng": 57.750883,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "nature",
+      "culture"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 10.07,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Birkat Al Mouz is a historic Omani village in the Dakhiliya region, known for its lush date plantations, ancient falaj irrigation system, and abandoned mud-brick houses. It offers a unique blend of nature and culture, with scenic views of the surrounding mountains and a glimpse into traditional Omani life.",
+      "ar": "بركة الموز هي قرية عمانية تاريخية في منطقة الداخلية، تشتهر بمزارع النخيل الخضراء ونظام الأفلاج القديم والبيوت الطينية المهجورة. تقدم مزيجاً فريداً من الطبيعة والثقافة، مع إطلالات خلابة على الجبال المحيطة ولمحة عن الحياة العمانية التقليدية."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "cultural",
+      "photography",
+      "wadi",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "adventure-seekers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and bring water, as exploring the village and falaj system involves uneven terrain and sun exposure.",
+      "ar": "ارتدِ أحذية مريحة للمشي واحضر معك الماء، حيث أن استكشاف القرية ونظام الأفلاج يتطلب السير على أرض غير مستوية والتعرض للشمس."
+    }
+  },
+  {
+    "id": "dest_0024",
+    "name": {
+      "en": "Falaj Daris",
+      "ar": "فلج دارس"
+    },
+    "lat": 23.003616,
+    "lng": 57.440245,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture",
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 8.73,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Falaj Daris is the largest and most iconic falaj (ancient irrigation channel) in Oman, located in the heart of Nizwa. This UNESCO-listed site showcases traditional water management and offers a peaceful, shaded walkway along the flowing water, making it a must-visit for culture and nature enthusiasts.",
+      "ar": "فلج دارس هو أكبر وأشهر فلج في عمان، يقع في قلب نزوى. هذا الموقع المدرج في قائمة اليونسكو يعرض نظام إدارة المياه التقليدي ويوفر ممشى مظللًا هادئًا على طول المياه الجارية، مما يجعله وجهة لا تُفوت لعشاق الثقافة والطبيعة."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "cultural",
+      "family-friendly",
+      "photography",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "culture-lovers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the heat and crowds; wear comfortable walking shoes and bring water.",
+      "ar": "قم بالزيارة في الصباح الباكر أو بعد الظهر لتجنب الحرارة والازدحام؛ ارتدِ أحذية مريحة للمشي واحضر معك الماء."
+    }
+  },
+  {
+    "id": "dest_0025",
+    "name": {
+      "en": "Jabreen Castle",
+      "ar": "قلعة جبرين"
+    },
+    "lat": 23.292383,
+    "lng": 57.941677,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 5.63,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Jabreen Castle is a magnificent 17th-century fortress in the Dakhiliya region, renowned for its intricate painted ceilings, wind towers, and historical significance as a seat of learning. It offers visitors a captivating glimpse into Oman's rich architectural and cultural heritage.",
+      "ar": "قلعة جبرين هي قلعة رائعة من القرن السابع عشر في منطقة الداخلية، تشتهر بأسقفها المزخرفة الملونة وأبراج الرياح وأهميتها التاريخية كمركز للعلم. تقدم للزوار لمحة آسرة عن التراث المعماري والثقافي الغني لعُمان."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 9AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 9 صباحاً–4 مساءً، الجمعة 9 صباحاً–11 صباحاً و 2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes as there are many stairs and uneven surfaces; visit early in the morning to avoid the heat and crowds.",
+      "ar": "ارتدِ أحذية مريحة حيث يوجد العديد من السلالم والأسطح غير المستوية؛ قم بالزيارة في الصباح الباكر لتجنب الحرارة والازدحام."
+    }
+  },
+  {
+    "id": "dest_0026",
+    "name": {
+      "en": "Jebel Akhdar",
+      "ar": "الجبل الأخضر"
+    },
+    "lat": 22.72134,
+    "lng": 57.378165,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 7.03,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Jebel Akhdar, or the Green Mountain, is a dramatic limestone massif in the Al Hajar range known for its terraced rose and pomegranate farms. It offers breathtaking canyon views and cool mountain air, making it a top destination for nature lovers and adventure seekers.",
+      "ar": "الجبل الأخضر هو كتلة كلسية دراماتيكية في سلسلة جبال الحجر تشتهر بمزارع الورد والرمان المدرجة. يوفر إطلالات خلابة على الأخاديد وهواءً جبلياً منعشاً، مما يجعله وجهة رئيسية لعشاق الطبيعة والباحثين عن المغامرة."
+    },
+    "tags": [
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours (access may be restricted during extreme weather; check local advisories)",
+      "ar": "مفتوح 24 ساعة (قد يكون الوصول مقيداً أثناء الظروف الجوية القاسية؛ يُرجى مراجعة الإرشادات المحلية)"
+    },
+    "tips": {
+      "en": "Bring warm clothing even in summer as temperatures drop significantly at higher elevations, and a 4WD vehicle is mandatory for the steep winding road.",
+      "ar": "أحضر ملابس دافئة حتى في الصيف لأن درجات الحرارة تنخفض بشكل كبير في المرتفعات، كما أن مركبة دفع رباعي إلزامية للطريق المتعرج الحاد."
+    }
+  },
+  {
+    "id": "dest_0027",
+    "name": {
+      "en": "Jebel Misht",
+      "ar": "جبل مشط"
+    },
+    "lat": 22.804404,
+    "lng": 57.464462,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "adventure"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 10.35,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Jebel Misht is a dramatic limestone mountain in the Dakhiliya region, famous for its jagged, comb-like ridge that attracts adventure travelers. It offers challenging via ferrata routes and stunning panoramic views of the surrounding desert and wadis.",
+      "ar": "جبل مشط هو جبل كلسي دراماتيكي في منطقة الداخلية، يشتهر بحافته المسننة التي تشبه المشط وتجذب المسافرين المغامرين. يوفر مسارات فيا فيراتا صعبة وإطلالات بانورامية خلابة على الصحراء والأودية المحيطة."
+    },
+    "tags": [
+      "mountain",
+      "adventure",
+      "nature",
+      "photography",
+      "iconic",
+      "historic"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "solo",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours (access via guided tour recommended)",
+      "ar": "مفتوح 24 ساعة (يوصى بالدخول عبر جولة إرشادية)"
+    },
+    "tips": {
+      "en": "Wear sturdy hiking boots and bring plenty of water; the best time to start is early morning to avoid the midday heat.",
+      "ar": "ارتدِ أحذية مشي متينة واحضر كمية كافية من الماء؛ أفضل وقت للبدء هو الصباح الباكر لتجنب حرارة منتصف النهار."
+    }
+  },
+  {
+    "id": "dest_0028",
+    "name": {
+      "en": "Jebel Shams",
+      "ar": "جبل شمس"
+    },
+    "lat": 23.153099,
+    "lng": 57.804508,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 5.29,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Jebel Shams, the highest mountain in Oman, offers dramatic canyon views and is a premier destination for hiking and adventure. Its rugged landscape and deep wadis attract nature lovers and photographers seeking breathtaking scenery.",
+      "ar": "جبل شمس، أعلى جبل في عُمان، يوفر مناظر خلابة للأخاديد وهو وجهة رئيسية للمشي لمسافات طويلة والمغامرة. تجذب تضاريسه الوعرة وأوديته العميقة عشاق الطبيعة والمصورين الباحثين عن مناظر طبيعية خلابة."
+    },
+    "tags": [
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon for the best light and cooler temperatures; wear sturdy shoes and bring water.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر بعد الظهر للحصول على أفضل إضاءة ودرجات حرارة أكثر برودة؛ ارتدِ أحذية متينة واحضر الماء."
+    }
+  },
+  {
+    "id": "dest_0029",
+    "name": {
+      "en": "Majlis Al Jinn Cave",
+      "ar": "مجلس الجن"
+    },
+    "lat": 22.907318,
+    "lng": 57.729197,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 11.6,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Majlis Al Jinn Cave is one of the largest cave chambers in the world, located in the remote limestone plateau of the Dakhiliya region. Its immense size and dramatic natural acoustics make it a premier destination for experienced adventure seekers and speleologists.",
+      "ar": "كهف مجلس الجن هو أحد أكبر قاعات الكهوف في العالم، ويقع على هضبة الحجر الجيري النائية في منطقة الداخلية. حجمه الهائل وصوتياته الطبيعية المذهلة تجعله وجهة رئيسية لعشاق المغامرة وعلماء الكهوف ذوي الخبرة."
+    },
+    "tags": [
+      "nature",
+      "adventure",
+      "mountain",
+      "photography",
+      "iconic",
+      "local"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours (access requires prior coordination with local guides and permits)",
+      "ar": "مفتوح 24 ساعة (يتطلب الوصول تنسيقًا مسبقًا مع المرشدين المحليين والتصاريح)"
+    },
+    "tips": {
+      "en": "Descending into the cave requires professional abseiling equipment and a certified guide; do not attempt without proper preparation.",
+      "ar": "يتطلب النزول إلى الكهف معدات هبوط احترافية ومرشدًا معتمدًا؛ لا تحاول ذلك دون تحضير مناسب."
+    }
+  },
+  {
+    "id": "dest_0030",
+    "name": {
+      "en": "Misfat Al Abriyeen",
+      "ar": "مسفاة العبريين"
+    },
+    "lat": 22.979805,
+    "lng": 57.574073,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture",
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 0.29,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 2,
+    "description": {
+      "en": "Misfat Al Abriyeen is a historic mountain village in the Dakhiliya region, known for its terraced farms, ancient falaj irrigation system, and traditional stone houses. It offers visitors a serene escape into Omani rural life and stunning views of the surrounding palm groves and wadis.",
+      "ar": "مسفاة العبريين هي قرية جبلية تاريخية في منطقة الداخلية، تشتهر بمدرجاتها الزراعية ونظام الأفلاج القديم والبيوت الحجرية التقليدية. توفر للزوار هروباً هادئاً إلى الحياة الريفية العمانية وإطلالات خلابة على بساتين النخيل والأودية المحيطة."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "cultural",
+      "photography",
+      "family-friendly",
+      "wadi"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and modest clothing; the village paths are uneven and respect local customs by covering shoulders and knees.",
+      "ar": "ارتدِ أحذية مريحة للمشي وملابس محتشمة؛ مسارات القرية غير مستوية، واحترم العادات المحلية بتغطية الكتفين والركبتين."
+    }
+  },
+  {
+    "id": "dest_0031",
+    "name": {
+      "en": "Nizwa Fort",
+      "ar": "حصن نزوى"
+    },
+    "lat": 23.152361,
+    "lng": 57.274618,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 120,
+    "ticket_cost_omr": 0,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Nizwa Fort is a 17th-century fortress renowned for its massive circular tower and intricate Omani architecture. It offers panoramic views of the surrounding city and date plantations, making it a must-visit cultural landmark.",
+      "ar": "حصن نزوى هو قلعة تعود للقرن السابع عشر تشتهر ببرجها الدائري الضخم وهندستها العمانية المعقدة. يوفر إطلالات بانورامية على المدينة المحيطة ومزارع النخيل، مما يجعله معلماً ثقافياً لا بد من زيارته."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 8AM–11AM & 1PM–4PM",
+      "ar": "السبت–الخميس 9 صباحاً–4 مساءً، الجمعة 8 صباحاً–11 صباحاً و1 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and heat, and wear comfortable shoes for climbing the fort's stairs.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام والحرارة، وارتدِ أحذية مريحة لصعود سلالم الحصن."
+    }
+  },
+  {
+    "id": "dest_0032",
+    "name": {
+      "en": "Nizwa Souq",
+      "ar": "سوق نزوى"
+    },
+    "lat": 22.955165,
+    "lng": 57.334326,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 10.48,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Nizwa Souq is one of Oman's oldest and most vibrant traditional markets, located in the historic city of Nizwa in the Dakhiliya region. It is worth visiting for its authentic Omani atmosphere, where you can find handcrafted silver jewelry, pottery, spices, and the famous Nizwa halwa.",
+      "ar": "سوق نزوى هو أحد أقدم وأكثر الأسواق التقليدية حيوية في عُمان، ويقع في مدينة نزوى التاريخية في منطقة الداخلية. يستحق الزيارة لأجوائه العُمانية الأصيلة، حيث يمكنك العثور على المجوهرات الفضية المصنوعة يدويًا والفخار والتوابل والحلوى النزوية الشهيرة."
+    },
+    "tags": [
+      "souq",
+      "cultural",
+      "historic",
+      "local",
+      "photography",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "food-lovers",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–1PM & 4PM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–1 ظهرًا و4 مساءً–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning (around 8–9 AM) to experience the souq at its liveliest and avoid the midday heat; bargaining is expected, so negotiate politely.",
+      "ar": "قم بالزيارة في الصباح الباكر (حوالي 8–9 صباحًا) لتجربة السوق في أكثر أوقاته حيوية وتجنب حرارة منتصف النهار؛ المساومة متوقعة، لذا تفاوض بلطف."
+    }
+  },
+  {
+    "id": "dest_0033",
+    "name": {
+      "en": "Tanuf Ruins",
+      "ar": "آثار تنوف"
+    },
+    "lat": 23.117112,
+    "lng": 57.777968,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "culture",
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 90,
+    "ticket_cost_omr": 1.4,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Tanuf Ruins are the remains of an ancient mud-brick village destroyed by a flash flood in the 1950s, offering a hauntingly beautiful glimpse into traditional Omani life. The site is worth visiting for its dramatic setting against the Hajar Mountains and its cultural significance as a preserved historical settlement.",
+      "ar": "آثار تنوف هي بقايا قرية قديمة مبنية من الطوب اللبن دمرها سيل عارٍ في الخمسينيات، مما يوفر لمحة جميلة ومؤثرة عن الحياة العمانية التقليدية. يستحق الموقع الزيارة لموقعه الدرامي مقابل جبال الحجر وأهميته الثقافية كمستوطنة تاريخية محفوظة."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "photography",
+      "cultural",
+      "family-friendly",
+      "wadi"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "solo"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear sturdy shoes and bring water, as the terrain is uneven and there is little shade; visit early morning or late afternoon for the best light and cooler temperatures.",
+      "ar": "ارتدِ أحذية متينة واحضر معك الماء، لأن التضاريس غير مستوية ولا يوجد ظل كبير؛ قم بالزيارة في الصباح الباكر أو في وقت متأخر بعد الظهر للحصول على أفضل إضاءة ودرجات حرارة أكثر برودة."
+    }
+  },
+  {
+    "id": "dest_0034",
+    "name": {
+      "en": "Wadi Bani Habib",
+      "ar": "وادي بني حبيب"
+    },
+    "lat": 22.799734,
+    "lng": 57.854209,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 4.98,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Wadi Bani Habib is a lush mountain valley in the Al Hajar range, known for its terraced date plantations and abandoned stone village. It offers a scenic hiking trail through ancient irrigation channels and dramatic rock formations.",
+      "ar": "وادي بني حبيب هو وادي جبلي خصب في سلسلة جبال الحجر، يشتهر بمدرجات نخيل التمر وقرية حجرية مهجورة. يوفر مساراً للمشي وسط قنوات الري القديمة والتكوينات الصخرية الخلابة."
+    },
+    "tags": [
+      "wadi",
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "historic"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy shoes for the rocky trail and bring plenty of water; early morning visits offer cooler temperatures and better light for photos.",
+      "ar": "ارتدِ أحذية متينة للمسار الصخري واحضر كمية كافية من الماء؛ الزيارات الصباحية المبكرة توفر درجات حرارة أبرد وإضاءة أفضل للتصوير."
+    }
+  },
+  {
+    "id": "dest_0035",
+    "name": {
+      "en": "Wadi Ghul",
+      "ar": "وادي غول"
+    },
+    "lat": 22.835845,
+    "lng": 57.333795,
+    "region": {
+      "en": "Dakhiliya",
+      "ar": "الداخلية"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Nizwa Heritage Tourism",
+      "ar": "سياحة نزوى التراثية"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 17.88,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wadi Ghul, also known as the Grand Canyon of Oman, is a dramatic canyon in the Hajar Mountains offering breathtaking views and challenging hiking trails. It is a must-visit for adventure seekers and nature lovers due to its rugged beauty and the nearby abandoned village of Ghul.",
+      "ar": "وادي غول، المعروف أيضًا باسم جراند كانيون عمان، هو وادٍ خلاب في جبال الحجر يوفر مناظر طبيعية خلابة ومسارات مشي صعبة. إنه وجهة لا بد من زيارتها لعشاق المغامرة والطبيعة بفضل جماله الوعر وقرية غول المهجورة القريبة."
+    },
+    "tags": [
+      "wadi",
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "iconic"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "couples",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy hiking shoes and carry plenty of water, as the terrain is rocky and there are no facilities inside the wadi.",
+      "ar": "ارتدِ أحذية مشي متينة واحمل كمية كافية من الماء، لأن التضاريس صخرية ولا توجد مرافق داخل الوادي."
+    }
+  },
+  {
+    "id": "dest_0036",
+    "name": {
+      "en": "Adam Fort",
+      "ar": "حصن آدم"
+    },
+    "lat": 23.370273,
+    "lng": 55.988639,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 7.47,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Adam Fort is a historic Omani fort in the Dhahira region, known for its distinctive round tower and traditional architecture. It offers visitors a glimpse into the country's rich cultural heritage and strategic history.",
+      "ar": "حصن آدم هو حصن عماني تاريخي في منطقة الظاهرة، يشتهر ببرجه المستدير المميز وهندسته المعمارية التقليدية. يقدم للزوار لمحة عن التراث الثقافي الغني للبلاد وتاريخها الاستراتيجي."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning or late afternoon to avoid the midday heat and crowds, and wear comfortable shoes for exploring the fort's uneven surfaces.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والازدحام، وارتد أحذية مريحة لاستكشاف الأسطح غير المستوية للحصن."
+    }
+  },
+  {
+    "id": "dest_0037",
+    "name": {
+      "en": "Al Ayn Tombs",
+      "ar": "مقابر العين"
+    },
+    "lat": 23.712123,
+    "lng": 55.552668,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "culture",
+      "nature"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 11.67,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "The Al Ayn Tombs are a collection of over 20 ancient beehive-shaped tombs dating back to the 3rd millennium BCE, set dramatically on a rocky ridge in the Dhahira region. This UNESCO World Heritage site offers a stunning blend of archaeological significance and natural desert scenery, making it a must-visit for history and nature enthusiasts.",
+      "ar": "مقابر العين هي مجموعة تضم أكثر من 20 مقبرة قديمة على شكل خلية نحل تعود إلى الألفية الثالثة قبل الميلاد، وتقع بشكل درامي على حافة صخرية في منطقة الظاهرة. هذا الموقع المدرج ضمن قائمة التراث العالمي لليونسكو يقدم مزيجاً رائعاً من الأهمية الأثرية والمناظر الطبيعية الصحراوية، مما يجعله وجهة لا بد من زيارتها لعشاق التاريخ والطبيعة."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "photography",
+      "cultural",
+      "adventure",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "adventure-seekers",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM",
+      "ar": "يومياً من 8 صباحاً حتى 6 مساءً"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon for the best light and to avoid the midday heat; wear sturdy shoes for climbing the rocky terrain.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر بعد الظهر للحصول على أفضل إضاءة وتجنب حرارة منتصف النهار؛ ارتدِ أحذية متينة لتسلق التضاريس الصخرية."
+    }
+  },
+  {
+    "id": "dest_0038",
+    "name": {
+      "en": "Al Dhahirah Oasis",
+      "ar": "واحة الظاهرة"
+    },
+    "lat": 23.068224,
+    "lng": 55.564357,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 13.51,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Al Dhahirah Oasis is a lush palm-filled oasis in the Dhahira region, offering a serene escape into traditional Omani agricultural life. Visitors can explore its shaded pathways, ancient falaj irrigation channels, and enjoy the tranquil desert-edge landscape.",
+      "ar": "واحة الظاهرة هي واحة نخيل خصبة في منطقة الظاهرة، توفر ملاذًا هادئًا في الحياة الزراعية العمانية التقليدية. يمكن للزوار استكشاف ممراتها المظللة وقنوات الأفلاج القديمة والاستمتاع بالمناظر الطبيعية الهادئة على حافة الصحراء."
+    },
+    "tags": [
+      "nature",
+      "park",
+      "wadi",
+      "photography",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "culture-lovers"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–6PM, Fri 8AM–11AM & 2PM–6PM",
+      "ar": "السبت – الخميس 8 صباحًا – 6 مساءً، الجمعة 8 صباحًا – 11 صباحًا و 2 مساءً – 6 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and bring water, as the oasis paths can be uneven and the area is warm even in cooler months.",
+      "ar": "ارتدِ أحذية مريحة للمشي واحضر معك الماء، حيث أن مسارات الواحة قد تكون غير مستوية والمنطقة دافئة حتى في الأشهر الباردة."
+    }
+  },
+  {
+    "id": "dest_0039",
+    "name": {
+      "en": "Bat Tombs",
+      "ar": "مقابر بات"
+    },
+    "lat": 23.337623,
+    "lng": 56.052296,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 9.16,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "The Bat Tombs are a UNESCO World Heritage site featuring well-preserved beehive-shaped tombs from the third millennium BCE. They offer a rare glimpse into Oman's ancient funerary practices and are a must-visit for history enthusiasts.",
+      "ar": "مقابر بات هي موقع تراث عالمي لليونسكو يضم مقابر محفوظة جيداً على شكل خلايا نحل تعود للألفية الثالثة قبل الميلاد. تقدم لمحة نادرة عن ممارسات الدفن القديمة في عُمان وهي وجهة لا تُفوت لعشاق التاريخ."
+    },
+    "tags": [
+      "historic",
+      "cultural",
+      "photography",
+      "iconic",
+      "archaeological",
+      "UNESCO"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "solo"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–4PM, Fri 8AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 8 صباحاً–4 مساءً، الجمعة 8 صباحاً–11 صباحاً و2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Wear sturdy shoes and bring water, as the site is exposed and involves walking on uneven terrain.",
+      "ar": "ارتدِ أحذية متينة واحضر معك الماء، فالموقع مكشوف ويتطلب المشي على أرض غير مستوية."
+    }
+  },
+  {
+    "id": "dest_0040",
+    "name": {
+      "en": "Dank",
+      "ar": "ضنك"
+    },
+    "lat": 23.018836,
+    "lng": 56.157426,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "culture",
+      "nature"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 13.06,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Dank is a historic oasis town in the Dhahira region, known for its ancient falaj irrigation system and traditional mud-brick architecture. Visitors come to explore the restored Dank Fort and experience the serene date-palm plantations that reflect Oman's cultural heritage.",
+      "ar": "ضنك هي واحة تاريخية في منطقة الظاهرة، تشتهر بنظام الأفلاج القديم والعمارة التقليدية من الطوب اللبن. يأتي الزوار لاستكشاف حصن ضنك المُرمَّم والاستمتاع بمزارع النخيل الهادئة التي تعكس التراث العُماني."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "nature",
+      "cultural",
+      "family-friendly",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and bring a hat and water, as much of the site is outdoors and can be hot during midday.",
+      "ar": "ارتدِ أحذية مريحة للمشي وأحضر قبعة وماء، حيث أن معظم الموقع في الهواء الطلق وقد يكون حاراً في منتصف النهار."
+    }
+  },
+  {
+    "id": "dest_0041",
+    "name": {
+      "en": "Dhahira Desert",
+      "ar": "صحراء الظاهرة"
+    },
+    "lat": 23.721717,
+    "lng": 55.531773,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "adventure"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 17.98,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "The Dhahira Desert is a vast, iconic desert landscape in northern Oman known for its rolling sand dunes and dramatic sunsets. It offers a quintessential Arabian desert experience with opportunities for dune bashing, camel rides, and stargazing.",
+      "ar": "صحراء الظاهرة هي منظر صحراوي شاسع وأيقوني في شمال عُمان تشتهر بكثبانها الرملية المتدحرجة وغروبها الدرامي. تقدم تجربة صحراوية عربية أصيلة مع فرص لركوب الكثبان وركوب الجمال ومشاهدة النجوم."
+    },
+    "tags": [
+      "desert",
+      "adventure",
+      "photography",
+      "nature",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and capture the best light for photography; bring plenty of water and wear sun protection.",
+      "ar": "قم بزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والحصول على أفضل إضاءة للتصوير؛ أحضر كمية كافية من الماء وارتدِ واقيًا من الشمس."
+    }
+  },
+  {
+    "id": "dest_0042",
+    "name": {
+      "en": "Ibri Fort",
+      "ar": "حصن عبري"
+    },
+    "lat": 23.582836,
+    "lng": 56.64503,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 5.72,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Ibri Fort is a historic Omani fortification in the Dhahira region, known for its distinctive round tower and traditional architecture. It offers visitors a glimpse into Oman's rich cultural heritage and panoramic views of the surrounding area.",
+      "ar": "حصن عبري هو حصن عماني تاريخي في منطقة الظاهرة، يشتهر ببرجه الدائري المميز وهندسته المعمارية التقليدية. يقدم للزوار لمحة عن التراث الثقافي العماني الغني وإطلالات بانورامية على المنطقة المحيطة."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and bring water, as exploring the fort involves climbing stairs and walking in exposed areas.",
+      "ar": "ارتدِ أحذية مريحة للمشي واحضر معك الماء، حيث أن استكشاف الحصن يتطلب صعود السلالم والمشي في مناطق مكشوفة."
+    }
+  },
+  {
+    "id": "dest_0043",
+    "name": {
+      "en": "Ibri Souq",
+      "ar": "سوق عبري"
+    },
+    "lat": 23.305084,
+    "lng": 56.067981,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "food",
+      "culture",
+      "shopping"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 15.55,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Ibri Souq is a traditional market in the Dhahira region of Oman, offering a vibrant mix of local food, handicrafts, and cultural goods. It is worth visiting for its authentic Omani atmosphere and the opportunity to experience daily life and trade in the interior.",
+      "ar": "سوق عبري هو سوق تقليدي في منطقة الظاهرة بسلطنة عمان، يقدم مزيجاً نابضاً بالحياة من الأطعمة المحلية والحرف اليدوية والسلع الثقافية. يستحق الزيارة لأجوائه العمانية الأصيلة وفرصة تجربة الحياة اليومية والتجارة في الداخل."
+    },
+    "tags": [
+      "souq",
+      "local",
+      "cultural",
+      "food",
+      "family-friendly",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "food-lovers",
+      "families",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–1PM & 4PM–9PM, Fri 8AM–11AM & 4PM–9PM",
+      "ar": "السبت–الخميس 8 صباحاً–1 ظهراً و 4 مساءً–9 مساءً، الجمعة 8 صباحاً–11 صباحاً و 4 مساءً–9 مساءً"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or early evening when the souq is most lively and the weather is cooler; bargaining is expected, so negotiate politely.",
+      "ar": "قم بالزيارة في فترة ما بعد الظهر أو المساء الباكر عندما يكون السوق في أوج نشاطه والطقس ألطف؛ يُتوقع المساومة، لذا تفاوض بأدب."
+    }
+  },
+  {
+    "id": "dest_0044",
+    "name": {
+      "en": "Jebel Akhdar Dhahira",
+      "ar": "الجبل الأخضر الظاهرة"
+    },
+    "lat": 23.200547,
+    "lng": 56.389953,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 17.55,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Jebel Akhdar Dhahira is a dramatic mountain region in the Al Hajar range, famous for its terraced rose gardens, fruit orchards, and deep wadis. It offers breathtaking hiking trails and cool high-altitude escapes from the desert heat.",
+      "ar": "الجبل الأخضر الظاهرة هو منطقة جبلية دراماتيكية في سلسلة جبال الحجر، تشتهر بمدرجات ورودها وبساتين الفاكهة والأودية العميقة. يوفر مسارات مشي خلابة وهروباً بارداً على ارتفاعات عالية من حرارة الصحراء."
+    },
+    "tags": [
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "wadi"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Bring warm clothing even in summer, as temperatures drop significantly at night; a 4WD vehicle is required to reach the summit.",
+      "ar": "احضر ملابس دافئة حتى في الصيف، حيث تنخفض درجات الحرارة بشكل كبير ليلاً؛ وتحتاج إلى مركبة دفع رباعي للوصول إلى القمة."
+    }
+  },
+  {
+    "id": "dest_0045",
+    "name": {
+      "en": "Jebel Kawr",
+      "ar": "جبل كور"
+    },
+    "lat": 23.377643,
+    "lng": 55.620988,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "adventure"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 0.75,
+    "recommended_months": [
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "crowd_level": 2,
+    "description": {
+      "en": "Jebel Kawr is a dramatic limestone mountain in the Dhahira region, renowned for its deep canyons and challenging via ferrata routes. It offers adventurous visitors breathtaking panoramic views and a unique rock-climbing experience in Oman's rugged interior.",
+      "ar": "جبل كور هو جبل كلسي دراماتيكي في منطقة الظاهرة، يشتهر بأوديته العميقة ومسارات الفيراطا الصعبة. يقدم للزوار المغامرين إطلالات بانورامية خلّابة وتجربة فريدة لتسلق الصخور في داخلية عمان الوعرة."
+    },
+    "tags": [
+      "mountain",
+      "adventure",
+      "nature",
+      "photography",
+      "iconic"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "solo",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy hiking boots and bring plenty of water; the best time to start is early morning to avoid the midday heat.",
+      "ar": "ارتدِ أحذية مشي متينة واحضر كمية كافية من الماء؛ أفضل وقت للبدء هو الصباح الباكر لتجنب حرارة منتصف النهار."
+    }
+  },
+  {
+    "id": "dest_0046",
+    "name": {
+      "en": "Wadi Al Ain",
+      "ar": "وادي العين"
+    },
+    "lat": 23.524876,
+    "lng": 55.930329,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 13.66,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Wadi Al Ain is a lush, palm-fringed valley in the Dhahira region, famous for its ancient beehive tombs and natural pools. It offers a serene escape into Oman's rugged interior, ideal for hiking and photography.",
+      "ar": "وادي العين هو وادٍ خصب تحيط به أشجار النخيل في منطقة الظاهرة، ويشتهر بقبوره القديمة التي تشبه خلايا النحل وبركه الطبيعية. يوفر ملاذًا هادئًا في داخلية عمان الوعرة، مثالي للمشي والتصوير."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "photography",
+      "historic",
+      "adventure",
+      "family-friendly"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy shoes for walking on uneven terrain and bring plenty of water, especially during warmer months.",
+      "ar": "ارتدِ أحذية متينة للمشي على الأراضي غير المستوية واحمل كمية كافية من الماء، خاصة خلال الأشهر الأكثر دفئًا."
+    }
+  },
+  {
+    "id": "dest_0047",
+    "name": {
+      "en": "Wadi Hawasina",
+      "ar": "وادي الحواسنة"
+    },
+    "lat": 23.12477,
+    "lng": 56.578663,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 12.49,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Wadi Hawasina is a dramatic canyon in the Dhahira region, known for its towering cliffs and seasonal waterfalls. It offers a rugged adventure through rocky gorges and natural pools, making it a top destination for nature lovers and hikers.",
+      "ar": "وادي الحواسنة هو وادٍ خلاب في منطقة الظاهرة، يتميز بجروفه الشاهقة وشلالاته الموسمية. يوفر مغامرة وعرة عبر الأخاديد الصخرية والبرك الطبيعية، مما يجعله وجهة مثالية لعشاق الطبيعة والمتنزهين."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "adventure",
+      "photography",
+      "mountain",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy hiking shoes and bring plenty of water, as the terrain is rocky and there are no facilities inside the wadi.",
+      "ar": "ارتدِ أحذية مشي متينة واحمل كمية كافية من الماء، لأن التضاريس صخرية ولا توجد مرافق داخل الوادي."
+    }
+  },
+  {
+    "id": "dest_0048",
+    "name": {
+      "en": "Yanqul Fort",
+      "ar": "حصن ينقل"
+    },
+    "lat": 23.041453,
+    "lng": 56.625044,
+    "region": {
+      "en": "Dhahira",
+      "ar": "الظاهرة"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Dhahira Regional Tourism",
+      "ar": "سياحة منطقة الظاهرة"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 2.74,
+    "recommended_months": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Yanqul Fort is a historic Omani fortress in the Dhahira region, known for its impressive circular tower and strategic hilltop location. It offers visitors a glimpse into the country's rich past and panoramic views of the surrounding date palm oasis.",
+      "ar": "حصن ينقل هو قلعة عمانية تاريخية في منطقة الظاهرة، تشتهر ببرجها الدائري المهيب وموقعها الاستراتيجي على قمة تل. يمنح الزوار لمحة عن ماضي البلاد الغني وإطلالات بانورامية على واحة النخيل المحيطة."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "photography",
+      "cultural",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 9AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 9 صباحاً–4 مساءً، الجمعة 9 صباحاً–11 صباحاً و2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes for climbing the fort's stairs and bring water, as the site has limited shade.",
+      "ar": "ارتدِ أحذية مريحة لصعود سلالم الحصن واحضر معك الماء، حيث أن الموقع يحتوي على ظل محدود."
+    }
+  },
+  {
+    "id": "dest_0049",
+    "name": {
+      "en": "Al Baleed Archaeological Park",
+      "ar": "منتزه البليد الأثري"
+    },
+    "lat": 17.775632,
+    "lng": 54.942103,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 90,
+    "ticket_cost_omr": 0.82,
+    "recommended_months": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Al Baleed Archaeological Park is a UNESCO World Heritage site in Salalah, showcasing the ruins of the ancient port city of Zafar. It features a museum with artifacts from the frankincense trade and offers a glimpse into Oman's rich maritime history.",
+      "ar": "منتزه البليد الأثري هو موقع تراث عالمي لليونسكو في صلالة، يعرض أطلال مدينة ظفار الساحلية القديمة. يضم متحفًا يضم قطعًا أثرية من تجارة اللبان ويقدم لمحة عن التاريخ البحري الغني لعُمان."
+    },
+    "tags": [
+      "historic",
+      "museum",
+      "cultural",
+      "family-friendly",
+      "photography",
+      "park"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and crowds, and wear comfortable walking shoes as the site is extensive.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والحشود، وارتدِ أحذية مريحة للمشي لأن الموقع واسع."
+    }
+  },
+  {
+    "id": "dest_0050",
+    "name": {
+      "en": "Al Haffa Souq",
+      "ar": "سوق الحفة"
+    },
+    "lat": 17.085532,
+    "lng": 54.71584,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 90,
+    "ticket_cost_omr": 14.09,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Al Haffa Souq is a traditional market in Salalah, Dhofar, known for its vibrant atmosphere and local crafts. It is worth visiting for its authentic Omani textiles, frankincense, and silverware, as well as the opportunity to experience local culture and cuisine.",
+      "ar": "سوق الحفة هو سوق تقليدي في صلالة، ظفار، يشتهر بأجوائه النابضة بالحياة والحرف المحلية. يستحق الزيارة لشراء المنسوجات العمانية الأصيلة والبخور والفضيات، بالإضافة إلى فرصة تجربة الثقافة والمأكولات المحلية."
+    },
+    "tags": [
+      "souq",
+      "local",
+      "cultural",
+      "food",
+      "family-friendly",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "food-lovers",
+      "families",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–1PM & 4PM–10PM, Fri 4PM–10PM",
+      "ar": "السبت–الخميس 9ص–1م و 4م–10م، الجمعة 4م–10م"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or evening to avoid the heat and enjoy the lively atmosphere; bargaining is expected, so negotiate politely.",
+      "ar": "قم بزيارة السوق في وقت متأخر من بعد الظهر أو المساء لتجنب الحرارة والاستمتاع بالأجواء الحيوية؛ يُتوقع المساومة، لذا تفاوض بلطف."
+    }
+  },
+  {
+    "id": "dest_0051",
+    "name": {
+      "en": "Al Mughsail Beach",
+      "ar": "شاطئ المغسيل"
+    },
+    "lat": 16.959054,
+    "lng": 55.024038,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 0,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Al Mughsail Beach is a stunning stretch of white sand along the Dhofar coast, famous for its dramatic blowholes that spout seawater high into the air. It offers a perfect blend of natural beauty and family-friendly amenities, making it a must-visit destination in Salalah.",
+      "ar": "شاطئ المغسيل هو امتداد رائع من الرمال البيضاء على طول ساحل ظفار، ويشتهر بفتحات النفث الدراماتيكية التي تقذف مياه البحر عالياً في الهواء. يوفر مزيجاً مثالياً من الجمال الطبيعي ووسائل الراحة المناسبة للعائلات، مما يجعله وجهة لا بد من زيارتها في صلالة."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "free",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon to avoid the midday heat and enjoy the blowholes at their most active during high tide.",
+      "ar": "قم بزيارة في ��قت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والاستمتاع بفتحات النفث في أكثر حالاتها نشاطاً أثناء المد العالي."
+    }
+  },
+  {
+    "id": "dest_0052",
+    "name": {
+      "en": "Ayn Athum",
+      "ar": "عين أثم"
+    },
+    "lat": 17.401931,
+    "lng": 54.041161,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 6.04,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Ayn Athum is a natural spring and wadi in the Dhofar region, famous for its crystal-clear turquoise pools surrounded by lush greenery. It is a popular spot for swimming and picnicking, especially during the khareef season when the landscape is at its most vibrant.",
+      "ar": "عين أثم هي عين مائية طبيعية ووادي في منطقة ظفار، تشتهر ببركها الفيروزية الصافية المحاطة بالخضرة الوارفة. وهي وجهة شهيرة للسباحة والتنزه، خاصة خلال موسم الخريف عندما تكون المناظر الطبيعية في أبهى حالاتها."
+    },
+    "tags": [
+      "nature",
+      "wadi",
+      "family-friendly",
+      "photography",
+      "adventure",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–8PM",
+      "ar": "يومياً 8 صباحاً – 8 مساءً"
+    },
+    "tips": {
+      "en": "Arrive early in the morning to avoid the large crowds and secure a good spot for parking and swimming.",
+      "ar": "يُفضل الوصول مبكراً في الصباح لتجنب الزحام الشديد وضمان الحصول على موقف سيارات مناسب ومكان جيد للسباحة."
+    }
+  },
+  {
+    "id": "dest_0053",
+    "name": {
+      "en": "Ayn Razat",
+      "ar": "عين رزات"
+    },
+    "lat": 17.592709,
+    "lng": 55.08734,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 11.15,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Ayn Razat is a natural freshwater spring in Dhofar, surrounded by lush greenery and rocky cliffs, offering a serene escape for nature lovers. It is especially worth visiting during the khareef season when the area transforms into a vibrant, misty paradise.",
+      "ar": "عين رزات هي ينبوع مياه عذبة طبيعي في ظفار، محاط بالخضرة الوارفة والمنحدرات الصخرية، مما يوفر ملاذًا هادئًا لعشاق الطبيعة. تستحق الزيارة بشكل خاص خلال موسم الخريف عندما تتحول المنطقة إلى جنة ضبابية نابضة بالحياة."
+    },
+    "tags": [
+      "nature",
+      "park",
+      "wadi",
+      "photography",
+      "family-friendly",
+      "adventure"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "adventure-seekers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and enjoy the cool mist; wear comfortable walking shoes as the paths can be slippery after rain.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام والاستمتاع بالضباب البارد؛ ارتدِ أحذية مريحة للمشي لأن الممرات قد تكون زلقة بعد المطر."
+    }
+  },
+  {
+    "id": "dest_0054",
+    "name": {
+      "en": "Ayn Sahlanot",
+      "ar": "عين صحلنوت"
+    },
+    "lat": 17.437311,
+    "lng": 54.663343,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 9.15,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Ayn Sahlanot is a natural freshwater spring in the Dhofar region, surrounded by lush greenery and rocky cliffs. It is a popular spot for families and photographers seeking a cool, scenic retreat during the Khareef season.",
+      "ar": "عين صحلنوت هي ينبوع مياه عذبة طبيعية في منطقة ظفار، محاطة بالخضرة الوفيرة والمنحدرات الصخرية. وهي وجهة شهيرة للعائلات والمصورين الباحثين عن ملاذ بارد وخلاب خلال موسم الخريف."
+    },
+    "tags": [
+      "nature",
+      "wadi",
+      "photography",
+      "family-friendly",
+      "adventure",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "photographers",
+      "adventure-seekers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes with good grip as the rocks around the spring can be slippery, especially after rain.",
+      "ar": "ارتدِ أحذية مريحة ذات ثبات جيد لأن الصخور حول العين قد تكون زلقة، خاصة بعد هطول الأمطار."
+    }
+  },
+  {
+    "id": "dest_0055",
+    "name": {
+      "en": "Blowholes",
+      "ar": "المراوح"
+    },
+    "lat": 17.462408,
+    "lng": 54.112293,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 5.18,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "The Blowholes (Al Marawih) are natural sea caves along the Dhofar coastline where waves force water and air through fissures, creating dramatic geysers up to 30 meters high. This unique geological phenomenon offers a spectacular display of nature's power, especially during the khareef season when the sea is rough.",
+      "ar": "المراوح عبارة عن كهوف بحرية طبيعية على طول ساحل ظفار حيث تدفع الأمواج الماء والهواء عبر الشقوق، مما يخلق نوافير مائية مثيرة يصل ارتفاعها إلى 30 مترًا. تقدم هذه الظاهرة الجيولوجية الفريدة عرضًا مذهلاً لقوة الطبيعة، خاصة خلال موسم الخريف عندما يكون البحر هائجًا."
+    },
+    "tags": [
+      "nature",
+      "adventure",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit during high tide or stormy weather for the most powerful blowhole eruptions, but keep a safe distance and never stand directly over the openings.",
+      "ar": "قم بالزيارة أثناء المد العالي أو الطقس العاصف للحصول على أقوى ثورات المراوح، ولكن حافظ على مسافة آمنة ولا تقف أبدًا فوق الفتحات مباشرة."
+    }
+  },
+  {
+    "id": "dest_0056",
+    "name": {
+      "en": "Fazayah Beach",
+      "ar": "شاطئ فزايا"
+    },
+    "lat": 17.486853,
+    "lng": 53.696877,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 11.47,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Fazayah Beach is a stunning white-sand beach nestled between dramatic limestone cliffs in the Dhofar region. It is renowned for its crystal-clear turquoise waters and is a popular spot for swimming, picnicking, and enjoying the natural beauty of Oman's coastline.",
+      "ar": "شاطئ فزايا هو شاطئ رملي أبيض خلاب يقع بين منحدرات كلسية دراماتيكية في منطقة ظفار. يشتهر بمياهه الفيروزية الصافية ويعتبر مكانًا شهيرًا للسباحة والتنزه والاستمتاع بالجمال الطبيعي للساحل العماني."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "adventure",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early in the morning or late afternoon to avoid the peak crowd and heat, and bring your own water and snacks as facilities are limited.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب الازدحام والحرارة الشديدة، واحضر معك الماء والوجبات الخفيفة لأن المرافق محدودة."
+    }
+  },
+  {
+    "id": "dest_0057",
+    "name": {
+      "en": "Frankincense Souq",
+      "ar": "سوق اللبان"
+    },
+    "lat": 17.45114,
+    "lng": 54.09629,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "food",
+      "culture",
+      "shopping"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 19.35,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "The Frankincense Souq in Salalah is a vibrant market dedicated to Oman’s most famous aromatic resin, offering high-quality frankincense, traditional perfumes, and local handicrafts. It is a must-visit for experiencing Dhofar’s ancient trade heritage and purchasing authentic Omani souvenirs.",
+      "ar": "سوق اللبان في صلالة هو سوق نابض بالحياة مخصص لأشهر راتنج عطري في عمان، ويقدم اللبان عالي الجودة والعطور التقليدية والحرف اليدوية المحلية. إنها زيارة لا بد منها لتجربة تراث ظفار التجاري القديم وشراء الهدايا التذكارية العمانية الأصيلة."
+    },
+    "tags": [
+      "souq",
+      "cultural",
+      "historic",
+      "local",
+      "photography",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "food-lovers",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–1PM & 4PM–9PM, Fri 8AM–11AM & 4PM–9PM",
+      "ar": "السبت–الخميس 8 صباحاً–1 ظهراً و 4 مساءً–9 مساءً، الجمعة 8 صباحاً–11 صباحاً و 4 مساءً–9 مساءً"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or evening to avoid the midday heat and enjoy the lively atmosphere; bargaining is expected, so negotiate politely.",
+      "ar": "قم بالزيارة في وقت متأخر من بعد الظهر أو المساء لتجنب حرارة منتصف النهار والاستمتاع بالأجواء الحيوية؛ المساومة متوقعة، لذا تفاوض بأدب."
+    }
+  },
+  {
+    "id": "dest_0058",
+    "name": {
+      "en": "Jebel Samhan",
+      "ar": "جبل سمحان"
+    },
+    "lat": 17.441003,
+    "lng": 54.506243,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 8.08,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Jebel Samhan is a dramatic limestone mountain in Dhofar, renowned as a prime habitat for the critically endangered Arabian leopard. Its rugged peaks and deep wadis offer breathtaking panoramic views and exceptional hiking opportunities.",
+      "ar": "جبل سمحان هو جبل كلسي دراماتيكي في ظفار، يشتهر كموطن رئيسي للنمر العربي المهدد بالانقراض. توفر قممه الوعرة وأوديته العميقة إطلالات بانورامية خلابة وفرصاً استثنائية للمشي لمسافات طويلة."
+    },
+    "tags": [
+      "mountain",
+      "nature",
+      "adventure",
+      "photography",
+      "iconic",
+      "wildlife"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "solo",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Bring a 4WD vehicle, plenty of water, and warm clothing as temperatures drop significantly at the summit, especially in the evening.",
+      "ar": "احضر مركبة دفع رباعي، كمية كافية من الماء، وملابس دافئة لأن درجات الحرارة تنخفض بشكل كبير على القمة، خاصة في المساء."
+    }
+  },
+  {
+    "id": "dest_0059",
+    "name": {
+      "en": "Khor Rori",
+      "ar": "خور روري"
+    },
+    "lat": 17.316586,
+    "lng": 53.690042,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature",
+      "culture"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 120,
+    "ticket_cost_omr": 13.17,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Khor Rori is a historic frankincense port and archaeological site on the Dhofar coast, featuring the ruins of the ancient city of Sumhuram. It offers stunning views of the lagoon and ocean, blending natural beauty with rich cultural heritage.",
+      "ar": "خور روري هو ميناء تاريخي للبخور وموقع أثري على ساحل ظفار، يضم أطلال مدينة سمهرم القديمة. يوفر إطلالات خلابة على البحيرة والمحيط، ممزوجة بالجمال الطبيعي والتراث الثقافي الغني."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "cultural",
+      "photography",
+      "family-friendly",
+      "beach"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM",
+      "ar": "يومياً 8 صباحاً – 6 مساءً"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid crowds and heat, and wear comfortable walking shoes for the uneven terrain.",
+      "ar": "قم بالزيارة في الصباح الباكر أو بعد الظهر لتجنب الزحام والحرارة، وارتدِ أحذية مريحة للمشي على التضاريس غير المستوية."
+    }
+  },
+  {
+    "id": "dest_0060",
+    "name": {
+      "en": "Land of Frankincense",
+      "ar": "أرض اللبان"
+    },
+    "lat": 17.950403,
+    "lng": 54.399825,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "culture",
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 1.05,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "The Land of Frankincense in Dhofar is a UNESCO World Heritage site that showcases the ancient trade of frankincense through archaeological ruins and a museum. It is worth visiting for its deep cultural significance and the chance to see the frankincense trees that once made Oman a global trading hub.",
+      "ar": "أرض اللبان في ظفار هي موقع تراث عالمي لليونسكو يعرض تجارة اللبان القديمة من خلال الآثار الأثرية والمتحف. تستحق الزيارة لأهميتها الثقافية العميقة وفرصة رؤية أشجار اللبان التي جعلت عُمان مركزًا تجاريًا عالميًا."
+    },
+    "tags": [
+      "historic",
+      "nature",
+      "cultural",
+      "museum",
+      "family-friendly",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning or late afternoon to avoid the midday heat and crowds, and wear comfortable shoes for walking the archaeological trail.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والازدحام، وارتدِ أحذية مريحة للمشي في المسار الأثري."
+    }
+  },
+  {
+    "id": "dest_0061",
+    "name": {
+      "en": "Mirbat Beach",
+      "ar": "شاطئ مرباط"
+    },
+    "lat": 17.410817,
+    "lng": 54.376161,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 9.3,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Mirbat Beach is a scenic stretch of golden sand along the Arabian Sea in the Dhofar region, known for its calm turquoise waters and dramatic mountain backdrop. It is worth visiting for its serene atmosphere, excellent swimming conditions, and proximity to the historic town of Mirbat.",
+      "ar": "شاطئ مرباط هو شريط رملي ذهبي خلاب على طول بحر العرب في منطقة ظفار، ويشتهر بمياهه الفيروزية الهادئة وخلفيته الجبلية الدرامية. يستحق الزيارة لأجوائه الهادئة وظروف السباحة الممتازة وقربه من بلدة مرباط التاريخية."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "historic",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and crowds; bring sun protection and water as there is limited shade.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والحشود؛ أحضر واقيًا من الشمس وماءً حيث أن الظل محدود."
+    }
+  },
+  {
+    "id": "dest_0062",
+    "name": {
+      "en": "Museum of Frankincense Land",
+      "ar": "متحف أرض اللبان"
+    },
+    "lat": 17.897065,
+    "lng": 55.12081,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 16,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "The Museum of Frankincense Land in Dhofar showcases the history and trade of frankincense, a key part of Oman's cultural heritage. It is worth visiting for its immersive exhibits on the ancient incense route and the region's archaeological treasures.",
+      "ar": "يعرض متحف أرض اللبان في ظفار تاريخ وتجارة اللبان، وهو جزء أساسي من التراث الثقافي العماني. يستحق الزيارة لمعروضاته الغامرة حول طريق البخور القديم والكنوز الأثرية في المنطقة."
+    },
+    "tags": [
+      "museum",
+      "historic",
+      "cultural",
+      "family-friendly",
+      "photography",
+      "local"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and the midday heat; photography is allowed but avoid using flash near delicate exhibits.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام وحرارة منتصف النهار؛ يُسمح بالتصوير الفوتوغرافي ولكن تجنب استخدام الفلاش بالقرب من المعروضات الحساسة."
+    }
+  },
+  {
+    "id": "dest_0063",
+    "name": {
+      "en": "Salalah Gardens",
+      "ar": "حدائق صلالة"
+    },
+    "lat": 17.91761,
+    "lng": 55.461314,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 1.29,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Salalah Gardens is a lush public park in the heart of Salalah, featuring extensive lawns, flowerbeds, and shaded walkways. It is a popular spot for families and nature lovers seeking a peaceful retreat amid Dhofar's greenery.",
+      "ar": "حدائق صلالة هي حديقة عامة خضراء في قلب صلالة، تتميز بمساحات عشبية واسعة وأحواض زهور وممرات مظللة. وهي وجهة مفضلة للعائلات وعشاق الطبيعة الباحثين عن ملاذ هادئ وسط خضرة ظفار."
+    },
+    "tags": [
+      "park",
+      "nature",
+      "family-friendly",
+      "photography",
+      "local",
+      "free"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–11PM",
+      "ar": "يومياً 8 صباحاً – 11 مساءً"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and enjoy the best light for photography.",
+      "ar": "قم بالزيارة في الصباح الباكر أو بعد الظهر لتجنب حرارة منتصف النهار والاستمتاع بأفضل إضاءة للتصوير."
+    }
+  },
+  {
+    "id": "dest_0064",
+    "name": {
+      "en": "Sumhuram Archaeological Site",
+      "ar": "موقع سمهرم الأثري"
+    },
+    "lat": 17.703973,
+    "lng": 54.205624,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 90,
+    "ticket_cost_omr": 13.99,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Sumhuram Archaeological Site is an ancient fortified port city from the 3rd century BCE, once a key hub for the frankincense trade. It offers visitors a fascinating glimpse into Oman's pre-Islamic history and stunning coastal views near Khor Rori.",
+      "ar": "موقع سمهرم الأثري هو مدينة ساحلية محصنة قديمة تعود للقرن الثالث قبل الميلاد، وكانت مركزاً رئيسياً لتجارة اللبان. يقدم للزوار لمحة رائعة عن تاريخ عمان قبل الإسلام وإطلالات ساحلية خلابة بالقرب من خور روري."
+    },
+    "tags": [
+      "historic",
+      "cultural",
+      "photography",
+      "family-friendly",
+      "iconic",
+      "fort"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable walking shoes and bring sun protection, as the site is mostly exposed with little shade.",
+      "ar": "ارتدِ أحذية مريحة للمشي واحضر واقياً من الشمس، فالموقع مكشوف في الغالب مع ظل قليل."
+    }
+  },
+  {
+    "id": "dest_0065",
+    "name": {
+      "en": "Taqah Fort",
+      "ar": "حصن طاقة"
+    },
+    "lat": 17.727764,
+    "lng": 55.289014,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 8.21,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Taqah Fort is a historic Omani fortress in the Dhofar region, offering panoramic views of the surrounding mountains and sea. It is worth visiting for its well-preserved architecture, museum exhibits, and insight into the region's cultural heritage.",
+      "ar": "حصن طاقة هو قلعة عمانية تاريخية في منطقة ظفار، توفر إطلالات بانورامية على الجبال والبحر المحيطة. يستحق الزيارة لهندسته المعمارية المحفوظة جيدًا ومعروضات المتحف ولمحة عن التراث الثقافي للمنطقة."
+    },
+    "tags": [
+      "fort",
+      "museum",
+      "historic",
+      "cultural",
+      "photography",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–4PM, Fri 9AM–11AM & 2PM–4PM",
+      "ar": "السبت–الخميس 9 صباحًا–4 مساءً، الجمعة 9 صباحًا–11 صباحًا و2 مساءً–4 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and heat; parking is available near the fort entrance.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام والحرارة؛ تتوفر مواقف للسيارات بالقرب من مدخل الحصن."
+    }
+  },
+  {
+    "id": "dest_0066",
+    "name": {
+      "en": "Tawi Attair Sinkhole",
+      "ar": "طوي أعطير"
+    },
+    "lat": 17.619375,
+    "lng": 55.262539,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 10.88,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Tawi Attair Sinkhole is a massive limestone sinkhole in the Dhofar region, one of the largest in the world by volume, plunging over 200 meters deep. It offers a dramatic natural spectacle with lush vegetation at its base, making it a must-visit for nature enthusiasts and photographers.",
+      "ar": "طوي أعطير هي حفرة جيرية عملاقة في منطقة ظفار، وهي واحدة من أكبر الحفر في العالم من حيث الحجم، حيث يبلغ عمقها أكثر من 200 متر. توفر منظراً طبيعياً خلاباً مع نباتات كثيفة في قاعها، مما يجعلها وجهة لا بد من زيارتها لعشاق الطبيعة والمصورين."
+    },
+    "tags": [
+      "nature",
+      "adventure",
+      "photography",
+      "iconic",
+      "family-friendly",
+      "wadi"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM",
+      "ar": "يومياً من 8 صباحاً حتى 6 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and heat, and wear sturdy shoes for the uneven paths around the rim.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام والحرارة، وارتدِ أحذية متينة للسير على المسارات غير المستوية حول الحافة."
+    }
+  },
+  {
+    "id": "dest_0067",
+    "name": {
+      "en": "Wadi Darbat",
+      "ar": "وادي دربات"
+    },
+    "lat": 17.322075,
+    "lng": 54.253971,
+    "region": {
+      "en": "Dhofar",
+      "ar": "ظفار"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Salalah Tourism Authority",
+      "ar": "هيئة سياحة صلالة"
+    },
+    "avg_visit_duration_minutes": 90,
+    "ticket_cost_omr": 10.01,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wadi Darbat is a lush seasonal river valley in Dhofar, famous for its dramatic waterfalls, caves, and abundant wildlife during the khareef (monsoon) season. It offers stunning natural scenery, boat rides, and picnic spots, making it a must-visit for nature lovers.",
+      "ar": "وادي دربات هو وادي موسمي خصب في ظفار، يشتهر بشلالاته المذهلة وكهوفه وحياته البرية الوفيرة خلال موسم الخريف. يوفر مناظر طبيعية خلابة ورحلات بالقوارب ومناطق للتنزه، مما يجعله وجهة لا بد من زيارتها لعشاق الطبيعة."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "photography",
+      "family-friendly",
+      "adventure",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "adventure-seekers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early in the morning to avoid crowds and bring sturdy footwear for exploring the rocky terrain and caves.",
+      "ar": "قم بالزيارة في الصباح الباكر لتجنب الزحام، واحضر أحذية متينة لاستكشاف التضاريس الصخرية والكهوف."
+    }
+  },
+  {
+    "id": "dest_0068",
+    "name": {
+      "en": "Al Alam Palace",
+      "ar": "قصر العلم"
+    },
+    "lat": 23.456335,
+    "lng": 58.590171,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 2.49,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Al Alam Palace is the ceremonial royal residence of Sultan Haitham bin Tariq, located in the heart of Muscat. Its striking blue-and-gold facade and location between the 16th-century Portuguese forts of Mirani and Jalali make it a must-see for photography and history enthusiasts.",
+      "ar": "قصر العلم هو المقر الرسمي لسلطان عمان هيثم بن طارق، ويقع في قلب مسقط. واجهته الزرقاء والذهبية المذهلة وموقعه بين قلعتي ميراني وجلالي البرتغاليتين من القرن السادس عشر تجعله وجهة لا تُفوَّت لعشاق التصوير والتاريخ."
+    },
+    "tags": [
+      "historic",
+      "iconic",
+      "photography",
+      "cultural",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت – الخميس 8 صباحاً – 8 مساءً، الجمعة 8 صباحاً – 11 صباحاً و 4 مساءً – 8 مساءً"
+    },
+    "tips": {
+      "en": "Entry is from outside the gates only; no interior access is permitted. Visit early morning or late afternoon for the best light and fewer crowds.",
+      "ar": "الدخول من خارج البوابات فقط، ولا يُسمح بالدخول إلى الداخل. يُفضَّل الزيارة في الصباح الباكر أو آخر النهار للحصول على أفضل إضاءة وأقل ازدحام."
+    }
+  },
+  {
+    "id": "dest_0069",
+    "name": {
+      "en": "Al Bustan Beach",
+      "ar": "شاطئ البستان"
+    },
+    "lat": 23.486267,
+    "lng": 58.435519,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 15.47,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Al Bustan Beach is a serene stretch of golden sand located in the Al Bustan area of Muscat, offering calm turquoise waters ideal for swimming and relaxation. It is worth visiting for its peaceful atmosphere, scenic views of the surrounding mountains, and proximity to the luxurious Al Bustan Palace.",
+      "ar": "شاطئ البستان هو شريط هادئ من الرمال الذهبية يقع في منطقة البستان في مسقط، ويوفر مياهًا فيروزية هادئة مثالية للسباحة والاسترخاء. يستحق الزيارة لأجوائه الهادئة وإطلالاته الخلابة على الجبال المحيطة وقربه من قصر البستان الفاخر."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Bring your own water and snacks as there are limited facilities nearby; the best time to visit is early morning or late afternoon to avoid the midday heat.",
+      "ar": "احضر معك الماء والوجبات الخفيفة حيث أن المرافق محدودة في المنطقة؛ أفضل وقت للزيارة هو الصباح الباكر أو بعد الظهر لتجنب حرارة منتصف النهار."
+    }
+  },
+  {
+    "id": "dest_0070",
+    "name": {
+      "en": "Al Jalali Fort",
+      "ar": "حصن الجلالي"
+    },
+    "lat": 23.507389,
+    "lng": 58.319485,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 16.42,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Al Jalali Fort is a 16th-century Portuguese fortress perched on a rocky outcrop overlooking the Gulf of Oman in Old Muscat. It now houses a museum of Omani heritage and offers panoramic views of the harbor and the city.",
+      "ar": "حصن الجلالي هو قلعة برتغالية من القرن السادس عشر تقع على نتوء صخري يطل على خليج عمان في مسقط القديمة. يضم الآن متحفًا للتراث العماني ويوفر إطلالات بانورامية على الميناء والمدينة."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "museum",
+      "photography",
+      "cultural",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes for the steep climb up to the fort; the best time to visit is late afternoon for cooler temperatures and golden light for photos.",
+      "ar": "ارتدِ أحذية مريحة للصعود الحاد إلى الحصن؛ أفضل وقت للزيارة هو أواخر بعد الظهر لدرجات حرارة أكثر برودة وضوء ذهبي للصور."
+    }
+  },
+  {
+    "id": "dest_0071",
+    "name": {
+      "en": "Al Mirani Fort",
+      "ar": "حصن الميراني"
+    },
+    "lat": 23.473587,
+    "lng": 58.419674,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 7.26,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Al Mirani Fort is a historic Portuguese-built fort guarding the entrance to Muscat's old harbor, offering panoramic views of the city and sea. It is worth visiting for its well-preserved architecture, cannons, and the chance to explore Oman's maritime defense history.",
+      "ar": "حصن الميراني هو حصن تاريخي بناه البرتغاليون لحراسة مدخل الميناء القديم لمسقط، ويوفر إطلالات بانورامية على المدينة والبحر. يستحق الزيارة لهندسته المعمارية المحفوظة جيدًا ومدافعه، وفرصة استكشاف تاريخ الدفاع البحري العماني."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "photography",
+      "cultural",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–2PM & 4PM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–2 ظهرًا و4 مساءً–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes for climbing steep stairs and bring water; the best time to visit is late afternoon for cooler temperatures and golden hour photography.",
+      "ar": "ارتدِ أحذية مريحة لصعود السلالم شديدة الانحدار واحضر معك الماء؛ أفضل وقت للزيارة هو فترة ما بعد الظهر للاستمتاع بدرجات حرارة أكثر برودة والتصوير في الساعة الذهبية."
+    }
+  },
+  {
+    "id": "dest_0072",
+    "name": {
+      "en": "Al Riyam Park",
+      "ar": "حديقة الريام"
+    },
+    "lat": 23.619809,
+    "lng": 58.402233,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 13.11,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Al Riyam Park is a large, family-friendly green space in Muscat featuring the iconic giant incense burner monument and a replica of a traditional Omani fort. It offers panoramic city views, playgrounds, and shaded picnic areas, making it a popular spot for relaxation and photography.",
+      "ar": "حديقة الريام هي مساحة خضراء كبيرة ومناسبة للعائلات في مسقط، وتتميز بنصب البخور العملاق الشهير ونسخة طبق الأصل من حصن عماني تقليدي. توفر إطلالات بانورامية على المدينة وملاعب ومناطق نزهة مظللة، مما يجعلها مكانًا شهيرًا للاسترخاء والتصوير."
+    },
+    "tags": [
+      "park",
+      "family-friendly",
+      "photography",
+      "nature",
+      "iconic",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "groups",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–11PM",
+      "ar": "يوميًا 8 صباحًا – 11 مساءً"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and the very high crowd levels; parking is available on site.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر بعد الظهر لتجنب حرارة منتصف النهار ومستويات الازدحام المرتفعة جدًا؛ تتوفر مواقف للسيارات في الموقع."
+    }
+  },
+  {
+    "id": "dest_0073",
+    "name": {
+      "en": "Bait Al Zubair Museum",
+      "ar": "متحف بيت الزبير"
+    },
+    "lat": 23.519287,
+    "lng": 58.395217,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 2.81,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Bait Al Zubair Museum is a private museum in Old Muscat that showcases Omani heritage through a vast collection of artifacts, weapons, jewelry, and traditional costumes. It offers a deep insight into the sultanate's history and culture, making it a must-visit for anyone interested in Oman's rich traditions.",
+      "ar": "متحف بيت الزبير هو متحف خاص في مسقط القديمة يعرض التراث العماني من خلال مجموعة واسعة من القطع الأثرية والأسلحة والمجوهرات والأزياء التقليدية. يقدم نظرة عميقة على تاريخ السلطنة وثقافتها، مما يجعله وجهة لا بد من زيارتها للمهتمين بتقاليد عمان الغنية."
+    },
+    "tags": [
+      "museum",
+      "cultural",
+      "historic",
+      "family-friendly",
+      "photography",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–6PM, Fri 9AM–11AM & 4PM–6PM",
+      "ar": "السبت – الخميس 9 صباحاً – 6 مساءً، الجمعة 9 صباحاً – 11 صباحاً و 4 مساءً – 6 مساءً"
+    },
+    "tips": {
+      "en": "Photography is allowed inside, but avoid using flash near delicate artifacts; arrive early in the morning to avoid crowds and enjoy a quieter experience.",
+      "ar": "يُسمح بالتصوير الفوتوغرافي في الداخل، لكن تجنب استخدام الفلاش بالقرب من القطع الأثرية الحساسة؛ يُفضل الوصول مبكراً في الصباح لتجنب الزحام والاستمتاع بتجربة أكثر هدوءاً."
+    }
+  },
+  {
+    "id": "dest_0074",
+    "name": {
+      "en": "Bandar Al Khayran",
+      "ar": "بندر الخيران"
+    },
+    "lat": 23.499963,
+    "lng": 58.431,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 11.43,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Bandar Al Khayran is a stunning natural fjord-like inlet located along the coast of Muscat, surrounded by rugged limestone cliffs and turquoise waters. It is a popular destination for kayaking, snorkeling, and dolphin watching, offering a serene escape into Oman's pristine marine environment.",
+      "ar": "بندر الخيران هو مدخل طبيعي خلاب يشبه المضيق البحري يقع على ساحل مسقط، وتحيط به المنحدرات الجيرية الوعرة والمياه الفيروزية. إنه وجهة شهيرة للتجديف بالكاياك والغطس ومشاهدة الدلافين، مما يوفر هروبًا هادئًا إلى البيئة البحرية البكر في عمان."
+    },
+    "tags": [
+      "nature",
+      "beach",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "adventure-seekers",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early in the morning (around 7–8 AM) to avoid the midday heat and secure a kayak rental, as availability can be limited during peak months.",
+      "ar": "يُفضل الزيارة في الصباح الباكر (حوالي 7–8 صباحًا) لتجنب حرارة منتصف النهار وضمان استئجار قوارب الكاياك، حيث قد تكون محدودة خلال الأشهر المزدحمة."
+    }
+  },
+  {
+    "id": "dest_0075",
+    "name": {
+      "en": "Bimmah Sinkhole",
+      "ar": "هوية نجم"
+    },
+    "lat": 23.632348,
+    "lng": 58.402131,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 1.74,
+    "recommended_months": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Bimmah Sinkhole is a stunning natural limestone crater filled with turquoise water, located in a public park along Oman's coast. Its unique geological formation and inviting swimming waters make it a popular stop for travelers exploring the Muscat region.",
+      "ar": "هوة نجم هي حفرة جيرية طبيعية خلابة مليئة بالمياه الفيروزية، وتقع في حديقة عامة على طول ساحل عُمان. تشكيلها الجيولوجي الفريد ومياهها الجذابة للسباحة يجعلها وجهة شهيرة للمسافرين الذين يستكشفون منطقة مسقط."
+    },
+    "tags": [
+      "nature",
+      "adventure",
+      "family-friendly",
+      "photography",
+      "wadi",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–9PM",
+      "ar": "يوميًا 8 صباحًا – 9 مساءً"
+    },
+    "tips": {
+      "en": "Visit early in the morning or late afternoon to avoid the largest crowds and the midday heat; bring a swimsuit and water shoes for the rocky edges.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب الازدحام الشديد وحرارة منتصف النهار؛ أحضر ملابس السباحة وحذاء مائي للحواف الصخرية."
+    }
+  },
+  {
+    "id": "dest_0076",
+    "name": {
+      "en": "Diwan Al Balat",
+      "ar": "ديوان البلاط"
+    },
+    "lat": 23.619998,
+    "lng": 58.43402,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 120,
+    "ticket_cost_omr": 12.36,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Diwan Al Balat is the official administrative and ceremonial headquarters of the Sultan of Oman, located in the heart of Muscat. Its stunning Omani-Islamic architecture and beautifully landscaped gardens make it a must-see for visitors interested in the country's governance and cultural heritage.",
+      "ar": "ديوان البلاط هو المقر الرسمي الإداري والاحتفالي لسلطان عمان، ويقع في قلب مسقط. تجعله هندسته المعمارية العمانية الإسلامية المذهلة وحدائقه ذات المناظر الطبيعية الخلابة مكانًا لا بد من زيارته للمهتمين بحكم البلاد وتراثها الثقافي."
+    },
+    "tags": [
+      "historic",
+      "cultural",
+      "iconic",
+      "photography",
+      "family-friendly",
+      "museum"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–2PM, Fri closed",
+      "ar": "السبت – الخميس 8 صباحًا – 2 ظهرًا، الجمعة مغلق"
+    },
+    "tips": {
+      "en": "Dress modestly (shoulders and knees covered) as this is a government and royal site; photography is allowed in the outer areas but not inside the main building.",
+      "ar": "يُفضل ارتداء ملابس محتشمة (تغطية الكتفين والركبتين) حيث إنه موقع حكومي وملكي؛ يُسمح بالتصوير في المناطق الخارجية ولكن ليس داخل المبنى الرئيسي."
+    }
+  },
+  {
+    "id": "dest_0077",
+    "name": {
+      "en": "Mutrah Corniche",
+      "ar": "كورنيش مطرح"
+    },
+    "lat": 23.564242,
+    "lng": 58.498799,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 12.82,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Mutrah Corniche is a scenic 3-kilometer waterfront promenade in Muscat, offering stunning views of the Gulf of Oman and the surrounding mountains. It is a popular spot for walking, jogging, and enjoying the vibrant atmosphere of the nearby Mutrah Souq and harbor.",
+      "ar": "كورنيش مطرح هو ممشى ساحلي خلاب بطول 3 كيلومترات في مسقط، يوفر إطلالات رائعة على خليج عمان والجبال المحيطة. إنه مكان شهير للمشي والركض والاستمتاع بالأجواء النابضة بالحياة في سوق مطرح القريب والميناء."
+    },
+    "tags": [
+      "beach",
+      "souq",
+      "family-friendly",
+      "photography",
+      "nature",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or early evening to enjoy the cooler temperatures and beautiful sunset views over the corniche.",
+      "ar": "قم بزيارة في وقت متأخر من بعد الظهر أو في المساء الباكر للاستمتاع بدرجات الحرارة الأكثر برودة وإطلالات غروب الشمس الجميلة على الكورنيش."
+    }
+  },
+  {
+    "id": "dest_0078",
+    "name": {
+      "en": "Muttrah Fish Market",
+      "ar": "سوق السمك مطرح"
+    },
+    "lat": 23.511024,
+    "lng": 58.467934,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "food",
+      "culture",
+      "shopping"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 120,
+    "ticket_cost_omr": 11.29,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Muttrah Fish Market is a bustling waterfront market in Muscat where local fishermen auction their daily catch. It offers an authentic glimpse into Omani coastal life and is a must-visit for food lovers and culture enthusiasts.",
+      "ar": "سوق السمك مطرح هو سوق مائي نابض بالحياة في مسقط حيث يبيع الصيادون المحليون صيدهم اليومي بالمزاد. يقدم لمحة أصيلة عن الحياة الساحلية العمانية وهو وجهة لا بد منها لعشاق الطعام والثقافة."
+    },
+    "tags": [
+      "local",
+      "cultural",
+      "food-lovers",
+      "photography",
+      "souq",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "food-lovers",
+      "photographers",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 6AM–8PM, Fri 6AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 6 صباحاً–8 مساءً، الجمعة 6 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Arrive early in the morning (around 6–7 AM) to see the most active fish auctions and the freshest catch.",
+      "ar": "يُفضل الوصول في الصباح الباكر (حوالي 6–7 صباحاً) لمشاهدة مزادات الأسماك الأكثر نشاطاً وأحدث الصيد."
+    }
+  },
+  {
+    "id": "dest_0079",
+    "name": {
+      "en": "Muttrah Souq",
+      "ar": "سوق مطرح"
+    },
+    "lat": 23.516779,
+    "lng": 58.552843,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 4.95,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Muttrah Souq is one of the oldest and most vibrant traditional markets in Oman, located along the Muscat waterfront. It is worth visiting for its labyrinthine alleys filled with frankincense, Omani silver, textiles, and spices, offering an authentic cultural shopping experience.",
+      "ar": "سوق مطرح هو أحد أقدم وأكثر الأسواق التقليدية حيوية في عُمان، ويقع على الواجهة البحرية لمسقط. يستحق الزيارة لأزقته المتعرجة المليئة بالبخور والفضة العمانية والمنسوجات والتوابل، مما يوفر تجربة تسوق ثقافية أصيلة."
+    },
+    "tags": [
+      "souq",
+      "cultural",
+      "historic",
+      "shopping",
+      "local",
+      "photography"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "food-lovers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–1PM & 4PM–10PM, Fri 8AM–11AM & 4PM–10PM",
+      "ar": "السبت–الخميس 8 صباحاً–1 ظهراً و 4 مساءً–10 مساءً، الجمعة 8 صباحاً–11 صباحاً و 4 مساءً–10 مساءً"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or evening when the souq is most lively and cooler; bargaining is expected, so negotiate politely.",
+      "ar": "قم بالزيارة في وقت متأخر من بعد الظهر أو المساء عندما يكون السوق أكثر حيوية وأقل حرارة؛ يُتوقع المساومة، لذا تفاوض بلطف."
+    }
+  },
+  {
+    "id": "dest_0080",
+    "name": {
+      "en": "National Museum",
+      "ar": "المتحف الوطني"
+    },
+    "lat": 23.500295,
+    "lng": 58.562612,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 5.87,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "The National Museum of Oman in Muscat showcases the nation's rich heritage from prehistoric times to the present. It is a must-visit for its stunning architecture and comprehensive exhibits on Omani history, culture, and maritime legacy.",
+      "ar": "يُبرز المتحف الوطني العُماني في مسقط التراث الغني للسلطنة من عصور ما قبل التاريخ حتى الوقت الحاضر. إنه وجهة لا تُفوَّت لجمال هندسته المعمارية ومقتنياته الشاملة عن التاريخ والثقافة والإرث البحري العُماني."
+    },
+    "tags": [
+      "museum",
+      "historic",
+      "cultural",
+      "family-friendly",
+      "photography",
+      "iconic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 10AM–5PM, Fri 2PM–6PM",
+      "ar": "السبت–الخميس 10 صباحاً–5 مساءً، الجمعة 2 ظهراً–6 مساءً"
+    },
+    "tips": {
+      "en": "Photography is allowed without flash; plan at least 2.5 hours to explore all galleries.",
+      "ar": "يُسمح بالتصوير الفوتوغرافي بدون فلاش؛ خصص ساعتين ونصف على الأقل لاستكشاف جميع القاعات."
+    }
+  },
+  {
+    "id": "dest_0081",
+    "name": {
+      "en": "Oman Aquarium",
+      "ar": "أكواريوم عمان"
+    },
+    "lat": 23.528923,
+    "lng": 58.550238,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature",
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 17.51,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Oman Aquarium is a modern marine attraction in Muscat featuring a 180-degree underwater tunnel and diverse aquatic life from the Arabian Sea. It offers an immersive experience for visitors to explore Oman's rich marine biodiversity without getting wet.",
+      "ar": "أكواريوم عمان هو معلم بحري حديث في مسقط يضم نفقًا تحت الماء بزاوية 180 درجة وحياة مائية متنوعة من بحر العرب. يوفر تجربة غامرة للزوار لاستكشاف التنوع البحري الغني في عمان دون الحاجة للتبلل."
+    },
+    "tags": [
+      "nature",
+      "family-friendly",
+      "photography",
+      "iconic",
+      "museum",
+      "cultural"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–8PM, Fri 1PM–8PM",
+      "ar": "السبت – الخميس 9 صباحًا – 8 مساءً، الجمعة 1 ظهرًا – 8 مساءً"
+    },
+    "tips": {
+      "en": "Visit on a weekday morning to avoid crowds and enjoy a quieter experience; photography is allowed but flash is prohibited near the tunnel.",
+      "ar": "قم بالزيارة في صباح أيام الأسبوع لتجنب الزحام والاستمتاع بتجربة هادئة؛ يُسمح بالتصوير الفوتوغرافي ولكن يُمنع استخدام الفلاش بالقرب من النفق."
+    }
+  },
+  {
+    "id": "dest_0082",
+    "name": {
+      "en": "Qurum Beach",
+      "ar": "شاطئ القرم"
+    },
+    "lat": 23.517386,
+    "lng": 58.405418,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 9.4,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Qurum Beach is a long, sandy public beach in the heart of Muscat, lined with palm trees and offering calm waters ideal for swimming and walking. It is a popular spot for both locals and tourists due to its scenic views of the Gulf of Oman and nearby parks.",
+      "ar": "شاطئ القرم هو شاطئ رملي طويل في قلب مسقط، تصطف على جانبيه أشجار النخيل ويوفر مياهًا هادئة مثالية للسباحة والمشي. إنه مكان شهير لكل من السكان المحليين والسياح بسبب إطلالاته الخلابة على خليج عمان والحدائق القريبة."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "free",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or early evening to avoid the midday heat and enjoy a beautiful sunset; parking is available along the beach road.",
+      "ar": "قم بالزيارة في وقت متأخر من بعد الظهر أو في المساء المبكر لتجنب حرارة منتصف النهار والاستمتاع بغروب الشمس الجميل؛ تتوفر مواقف للسيارات على طول طريق الشاطئ."
+    }
+  },
+  {
+    "id": "dest_0083",
+    "name": {
+      "en": "Qurum Natural Park",
+      "ar": "حديقة القرم الطبيعية"
+    },
+    "lat": 23.487901,
+    "lng": 58.317663,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 180,
+    "ticket_cost_omr": 4.51,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Qurum Natural Park is a large, lush public park in the heart of Muscat, featuring landscaped gardens, walking paths, and a lake. It is a popular destination for families and nature lovers seeking a peaceful escape within the city.",
+      "ar": "حديقة القرم الطبيعية هي حديقة عامة كبيرة وخضراء في قلب مسقط، وتتميز بحدائقها المنسقة وممرات المشي وبحيرة. وهي وجهة شهيرة للعائلات وعشاق الطبيعة الباحثين عن ملاذ هادئ داخل المدينة."
+    },
+    "tags": [
+      "park",
+      "nature",
+      "family-friendly",
+      "photography",
+      "local",
+      "free"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–11PM",
+      "ar": "يوميًا من 8 صباحًا حتى 11 مساءً"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon or early evening to enjoy cooler temperatures and the park's illuminated pathways.",
+      "ar": "قم بزيارة الحديقة في وقت متأخر من بعد الظهر أو في المساء الباكر للاستمتاع بدرجات الحرارة الأكثر برودة والممرات المضاءة."
+    }
+  },
+  {
+    "id": "dest_0084",
+    "name": {
+      "en": "Royal Opera House",
+      "ar": "دار الأوبرا السلطانية"
+    },
+    "lat": 23.528458,
+    "lng": 58.336988,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 5.06,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "The Royal Opera House in Muscat is a stunning architectural masterpiece that blends traditional Omani design with modern performance technology. It is a premier cultural venue hosting world-class opera, ballet, and classical music performances.",
+      "ar": "دار الأوبرا السلطانية في مسقط هي تحفة معمارية رائعة تمزج بين التصميم العماني التقليدي وتقنيات الأداء الحديثة. وهي مكان ثقافي رائد يستضيف عروض الأوبرا والباليه والموسيقى الكلاسيكية العالمية."
+    },
+    "tags": [
+      "cultural",
+      "iconic",
+      "photography",
+      "historic",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "couples",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 9AM–5PM, Fri 9AM–11AM & 4PM–5PM",
+      "ar": "السبت–الخميس 9 صباحاً–5 مساءً، الجمعة 9 صباحاً–11 صباحاً و4 مساءً–5 مساءً"
+    },
+    "tips": {
+      "en": "Dress modestly and avoid shorts or sleeveless tops; guided tours are available and recommended to fully appreciate the architecture and history.",
+      "ar": "ارتدِ ملابس محتشمة وتجنب السراويل القصيرة أو القمصان بدون أكمام؛ تتوفر جولات إرشادية ويوصى بها للاستمتاع الكامل بالعمارة والتاريخ."
+    }
+  },
+  {
+    "id": "dest_0085",
+    "name": {
+      "en": "Sultan Qaboos Grand Mosque",
+      "ar": "جامع السلطان قابوس الأكبر"
+    },
+    "lat": 23.576233,
+    "lng": 58.417098,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 240,
+    "ticket_cost_omr": 13.6,
+    "recommended_months": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "The Sultan Qaboos Grand Mosque is a magnificent architectural masterpiece in Muscat, featuring a stunning blend of Islamic, Omani, and modern design elements. It is one of the few mosques in Oman open to non-Muslim visitors, offering a serene and culturally enriching experience.",
+      "ar": "جامع السلطان قابوس الأكبر هو تحفة معمارية رائعة في مسقط، تجمع بين عناصر التصميم الإسلامي والعماني والحديث. وهو أحد المساجد القليلة في عمان المفتوحة لغير المسلمين، مما يوفر تجربة هادئة وغنية ثقافياً."
+    },
+    "tags": [
+      "mosque",
+      "cultural",
+      "photography",
+      "historic",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–11AM (closed to tourists outside these hours), Fri closed to tourists",
+      "ar": "السبت–الخميس 8 صباحاً–11 صباحاً (مغلق للسياح خارج هذه الساعات)، الجمعة مغلق للسياح"
+    },
+    "tips": {
+      "en": "Dress modestly: women must cover their hair, arms, and legs; men should wear long trousers and cover shoulders. Shoes must be removed before entering the prayer hall.",
+      "ar": "اللباس المحتشم مطلوب: يجب على النساء تغطية شعرهن وأذرعهن وأرجلهن؛ يجب على الرجال ارتداء سراويل طويلة وتغطية الأكتاف. يجب خلع الأحذية قبل دخول قاعة الصلاة."
+    }
+  },
+  {
+    "id": "dest_0086",
+    "name": {
+      "en": "Wadi Shab",
+      "ar": "وادي شاب"
+    },
+    "lat": 23.594499,
+    "lng": 58.330325,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 8.41,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wadi Shab is a stunning canyon and freshwater oasis in Oman, famous for its turquoise pools, lush greenery, and a hidden waterfall cave. It offers a rewarding hike and swim through dramatic rock formations, making it a must-visit for nature and adventure lovers.",
+      "ar": "وادي شاب هو وادٍ خلاب في عُمان يشتهر ببركه الفيروزية والخضرة الوارفة وكهف الشلال المخفي. يوفر مسارًا للمشي والسباحة وسط تشكيلات صخرية دراماتيكية، مما يجعله وجهة لا تُفوت لعشاق الطبيعة والمغامرة."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–5PM (last entry at 4PM)",
+      "ar": "يوميًا من 8 صباحًا إلى 5 مساءً (آخر دخول الساعة 4 مساءً)"
+    },
+    "tips": {
+      "en": "Wear water shoes and bring a waterproof bag for your phone and valuables, as the hike involves wading and swimming through pools.",
+      "ar": "ارتدِ حذاءً مائيًا واحضر حقيبة مقاومة للماء لهاتفك والأغراض الثمينة، لأن المسار يتضمن الخوض في المياه والسباحة عبر البرك."
+    }
+  },
+  {
+    "id": "dest_0087",
+    "name": {
+      "en": "Yiti Beach",
+      "ar": "شاطئ يتي"
+    },
+    "lat": 23.584669,
+    "lng": 58.446164,
+    "region": {
+      "en": "Muscat",
+      "ar": "مسقط"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Oman Ministry of Tourism",
+      "ar": "وزارة السياحة العُمانية"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 0,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Yiti Beach is a long, scenic stretch of white sand and turquoise water located about 40 km southeast of Muscat. It is a popular weekend getaway for locals and tourists alike, offering calm swimming conditions and stunning coastal views.",
+      "ar": "شاطئ يتي هو امتداد طويل من الرمال البيضاء والمياه الفيروزية يقع على بعد حوالي 40 كم جنوب شرق مسقط. وهو وجهة شهيرة لقضاء عطلة نهاية الأسبوع للسكان المحليين والسياح على حد سواء، ويوفر ظروف سباحة هادئة وإطلالات ساحلية خلابة."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "free",
+      "family-friendly",
+      "photography",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Arrive early in the morning or on weekdays to avoid the very high crowd levels, and bring your own water and snacks as facilities are limited.",
+      "ar": "يُفضل الوصول مبكرًا في الصباح أو في أيام الأسبوع لتجنب الازدحام الشديد، وإحضار الماء والوجبات الخفيفة الخاصة بك نظرًا لمحدودية المرافق."
+    }
+  },
+  {
+    "id": "dest_0088",
+    "name": {
+      "en": "Al Ashkharah Beach",
+      "ar": "شاطئ الأشخرة"
+    },
+    "lat": 22.466526,
+    "lng": 58.94459,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 360,
+    "ticket_cost_omr": 9.46,
+    "recommended_months": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Al Ashkharah Beach is a pristine stretch of white sand along Oman's eastern coast, offering calm turquoise waters ideal for swimming and relaxation. It is worth visiting for its unspoiled natural beauty and peaceful atmosphere, away from crowded tourist spots.",
+      "ar": "شاطئ الأشخرة هو شريط نقي من الرمال البيضاء على طول الساحل الشرقي لعُمان، ويوفر مياهًا هادئة بلون الفيروز مثالية للسباحة والاسترخاء. يستحق الزيارة لجماله الطبيعي البكر وأجوائه الهادئة البعيدة عن الأماكن السياحية المزدحمة."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "adventure"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "adventure-seekers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Bring sun protection and plenty of water, as there are limited shade and facilities; early morning or late afternoon visits are best to avoid the midday heat.",
+      "ar": "احضر واقي الشمس والماء بكمية كافية، حيث أن الظل والمرافق محدودة؛ أفضل وقت للزيارة هو الصباح الباكر أو بعد الظهر لتجنب حرارة منتصف النهار."
+    }
+  },
+  {
+    "id": "dest_0089",
+    "name": {
+      "en": "Bidiyah Dunes",
+      "ar": "كثبان بدية"
+    },
+    "lat": 22.665097,
+    "lng": 59.438877,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "adventure"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 12.7,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Bidiyah Dunes, also known as the Sharqiya Sands, is a vast desert landscape in northeastern Oman famous for its towering golden sand dunes. It is a top destination for adventure seekers who enjoy dune bashing, camel riding, and experiencing Bedouin culture.",
+      "ar": "كثبان بدية، المعروفة أيضًا برمال الشرقية، هي منظر صحراوي شاسع في شمال شرق عمان تشتهر بكثبانها الرملية الذهبية الشاهقة. إنها وجهة رئيسية لعشاق المغامرة الذين يستمتعون بركوب الكثبان الرملية وركوب الجمال وتجربة الثقافة البدوية."
+    },
+    "tags": [
+      "desert",
+      "adventure",
+      "nature",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and capture the best light for photography; wear comfortable clothing and closed-toe shoes for sand activities.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والحصول على أفضل إضاءة للتصوير؛ ارتدِ ملابس مريحة وأحذية مغلقة لأنشطة الرمال."
+    }
+  },
+  {
+    "id": "dest_0090",
+    "name": {
+      "en": "Desert Camp Sharqiya",
+      "ar": "مخيم صحراء الشرقية"
+    },
+    "lat": 22.439871,
+    "lng": 59.293636,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "adventure",
+      "culture"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 7.76,
+    "recommended_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Desert Camp Sharqiya is a traditional Bedouin-style camp in the Sharqiya Sands, offering immersive desert experiences like dune bashing, camel rides, and stargazing. It is worth visiting for its authentic Omani hospitality and stunning sunset views over the golden dunes.",
+      "ar": "مخيم صحراء الشرقية هو مخيم بدوي تقليدي في رمال الشرقية، يقدم تجارب صحراوية غامرة مثل ركوب الكثبان الرملية وركوب الجمال ومشاهدة النجوم. يستحق الزيارة لكرم الضيافة العماني الأصيل وإطلالات sunset الخلابة على الكثبان الذهبية."
+    },
+    "tags": [
+      "desert",
+      "adventure",
+      "cultural",
+      "family-friendly",
+      "photography",
+      "nature"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "culture-lovers",
+      "families",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–10PM",
+      "ar": "يومياً من 8 صباحاً حتى 10 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable clothing and closed-toe shoes for sand activities; bring a scarf or light jacket for cooler evenings.",
+      "ar": "ارتدِ ملابس مريحة وأحذية مغلقة لأنشطة الرمال؛ أحضر وشاحاً أو سترة خفيفة للأمسيات الباردة."
+    }
+  },
+  {
+    "id": "dest_0091",
+    "name": {
+      "en": "Fins Beach",
+      "ar": "شاطئ فنس"
+    },
+    "lat": 22.940758,
+    "lng": 58.899915,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 11.11,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Fins Beach is a pristine white-sand beach on Oman's eastern coast, known for its turquoise waters and dramatic rocky cliffs. It is a popular spot for swimming, picnicking, and enjoying unspoiled natural beauty.",
+      "ar": "شاطئ فنس هو شاطئ رملي أبيض نقي على الساحل الشرقي لعُمان، يشتهر بمياهه الفيروزية ومنحدراته الصخرية الدراماتيكية. إنه مكان شهير للسباحة والنزهات والاستمتاع بالجمال الطبيعي البكر."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "adventure",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "adventure-seekers",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and crowds, and bring your own water and snacks as facilities are limited.",
+      "ar": "قم بالزيارة في الصباح الباكر أو بعد الظهر لتجنب حرارة منتصف النهار والحشود، واحضر معك الماء والوجبات الخفيفة حيث أن المرافق محدودة."
+    }
+  },
+  {
+    "id": "dest_0092",
+    "name": {
+      "en": "Khaluf Beach",
+      "ar": "شاطئ خلوف"
+    },
+    "lat": 22.717777,
+    "lng": 58.693717,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 8.69,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 2,
+    "description": {
+      "en": "Khaluf Beach is a pristine, remote stretch of white sand along the Arabian Sea in the Sharqiya region, known for its turquoise waters and dramatic rock formations. It offers a tranquil escape for nature lovers and is a prime spot for beach camping, birdwatching, and witnessing sea turtles nesting.",
+      "ar": "شاطئ خلوف هو امتداد طبيعي نقي من الرمال البيضاء على طول بحر العرب في منطقة الشرقية، ويشتهر بمياهه الفيروزية وتكويناته الصخرية الخلابة. يوفر ملاذًا هادئًا لعشاق الطبيعة، وهو مكان مثالي للتخييم على الشاطئ ومراقبة الطيور ومشاهدة تعشيش السلاحف البحرية."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "adventure-seekers",
+      "photographers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Bring plenty of water, sun protection, and a 4WD vehicle as the last stretch of road is unpaved sand; avoid visiting during the hottest midday hours.",
+      "ar": "احضر كمية كافية من الماء وواقي الشمس وسيارة دفع رباعي لأن الجزء الأخير من الطريق غير معبد ورمل؛ تجنب الزيارة في ساعات الظهيرة الأكثر حرارة."
+    }
+  },
+  {
+    "id": "dest_0093",
+    "name": {
+      "en": "Ras Al Hadd",
+      "ar": "رأس الحد"
+    },
+    "lat": 22.90199,
+    "lng": 59.048203,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 480,
+    "ticket_cost_omr": 6.66,
+    "recommended_months": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Ras Al Hadd is a coastal village at the easternmost tip of the Arabian Peninsula, famous for its pristine beaches and as a major nesting site for endangered green turtles. It offers visitors a unique opportunity to witness turtles laying eggs at night, combined with stunning views of the Arabian Sea.",
+      "ar": "رأس الحد هي قرية ساحلية تقع في أقصى الطرف الشرقي لشبه الجزيرة العربية، وتشتهر بشواطئها البكر وكونها موقع تعشيش رئيسي للسلاحف الخضراء المهددة بالانقراض. توفر للزوار فرصة فريدة لمشاهدة السلاحف وهي تضع بيضها ليلاً، إلى جانب إطلالات خلابة على بحر العرب."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "photography",
+      "family-friendly",
+      "iconic",
+      "adventure"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "nature-lovers"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours (turtle viewing tours typically start after sunset)",
+      "ar": "مفتوح 24 ساعة (جولات مشاهدة السلاحف تبدأ عادة بعد غروب الشمس)"
+    },
+    "tips": {
+      "en": "Visit after sunset for turtle nesting; no flash photography allowed near turtles, and wear dark, quiet clothing to avoid disturbing them.",
+      "ar": "قم بالزيارة بعد غروب الشمس لمشاهدة تعشيش السلاحف؛ يُمنع التصوير بالفلاش بالقرب من السلاحف، وارتدِ ملابس داكنة وهادئة لتجنب إزعاجها."
+    }
+  },
+  {
+    "id": "dest_0094",
+    "name": {
+      "en": "Ras Al Jinz Turtle Reserve",
+      "ar": "محمية السلاحف برأس الجنز"
+    },
+    "lat": 22.882115,
+    "lng": 58.619662,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 12.05,
+    "recommended_months": [
+      1,
+      2,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Ras Al Jinz Turtle Reserve is a protected beach area on Oman's eastern coast, renowned as a major nesting site for green turtles. Visitors can observe these endangered creatures laying eggs or hatchlings emerging, guided by trained rangers.",
+      "ar": "محمية السلاحف برأس الجنز هي منطقة شاطئية محمية على الساحل الشرقي لعُمان، تشتهر كموقع رئيسي لتعشيش السلاحف الخضراء. يمكن للزوار مشاهدة هذه المخلوقات المهددة بالانقراض وهي تضع بيضها أو تفقس تحت إشراف مرشدين مدربين."
+    },
+    "tags": [
+      "beach",
+      "nature",
+      "family-friendly",
+      "photography",
+      "iconic",
+      "wildlife"
+    ],
+    "best_for": [
+      "families",
+      "couples",
+      "photographers",
+      "nature-lovers"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM (turtle viewing tours at night, typically 9PM–midnight and 4AM–6AM)",
+      "ar": "يومياً من 8 صباحاً حتى 6 مساءً (جولات مشاهدة السلاحف ليلاً عادة من 9 مساءً حتى منتصف الليل ومن 4 صباحاً حتى 6 صباحاً)"
+    },
+    "tips": {
+      "en": "Wear dark, loose clothing and avoid flash photography during turtle viewing to avoid disturbing the turtles.",
+      "ar": "ارتدِ ملابس داكنة فضفاضة وتجنب التصوير بالفلاش أثناء مشاهدة السلاحف لتجنب إزعاجها."
+    }
+  },
+  {
+    "id": "dest_0095",
+    "name": {
+      "en": "Sharqiyah Sands",
+      "ar": "رمال الشرقية"
+    },
+    "lat": 22.251079,
+    "lng": 59.447946,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "adventure"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 15.56,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Sharqiyah Sands, also known as the Wahiba Sands, is a vast desert of rolling red dunes in eastern Oman, offering a quintessential Arabian adventure experience. Visitors come for dune bashing, camel rides, and stunning sunset views over the endless sand sea.",
+      "ar": "رمال الشرقية، المعروفة أيضًا برمال وهيبة، هي صحراء شاسعة من الكثبان الرملية الحمراء المتدحرجة في شرق عُمان، وتقدم تجربة مغامرة عربية أصيلة. يزورها السياح لخوض تجربة قيادة المركبات على الكثبان وركوب الجمال والاستمتاع بمناظر غروب الشمس الخلابة على بحر الرمال الذي لا نهاية له."
+    },
+    "tags": [
+      "desert",
+      "adventure",
+      "photography",
+      "nature",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and capture the best light for photography; a 4x4 vehicle is essential for driving on the dunes.",
+      "ar": "قم بالزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والحصول على أفضل إضاءة للتصوير؛ السيارة ذات الدفع الرباعي ضرورية للقيادة على الكثبان الرملية."
+    }
+  },
+  {
+    "id": "dest_0096",
+    "name": {
+      "en": "Sinaw Souq",
+      "ar": "سوق سناو"
+    },
+    "lat": 22.303608,
+    "lng": 58.82594,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 7.82,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Sinaw Souq is a vibrant traditional market in the Sharqiya region of Oman, renowned for its authentic Bedouin atmosphere and lively livestock auctions. It offers visitors a unique glimpse into Omani rural life, with stalls selling fresh produce, spices, handicrafts, and local wares.",
+      "ar": "سوق سناو هو سوق تقليدي نابض بالحياة في منطقة الشرقية بعُمان، يشتهر بأجوائه البدوية الأصيلة ومزادات المواشي الحية. يقدم للزوار لمحة فريدة عن الحياة الريفية العمانية، مع أكشاك تبيع المنتجات الطازجة والتوابل والحرف اليدوية والسلع المحلية."
+    },
+    "tags": [
+      "souq",
+      "cultural",
+      "local",
+      "photography",
+      "family-friendly",
+      "historic"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "food-lovers",
+      "families"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 6AM–12PM & 4PM–8PM, Fri 6AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 6ص–12م و 4م–8م، الجمعة 6ص–11ص و 4م–8م"
+    },
+    "tips": {
+      "en": "Arrive early in the morning (around 7–8 AM) to experience the lively livestock auction, and dress modestly as it is a local community market.",
+      "ar": "يُفضل الوصول مبكرًا في الصباح (حوالي 7–8 صباحًا) لتجربة مزاد المواشي الحي، والالتزام باللباس المحتشم لأنه سوق محلي."
+    }
+  },
+  {
+    "id": "dest_0097",
+    "name": {
+      "en": "Sunaysilah Fort",
+      "ar": "حصن السنيسلة"
+    },
+    "lat": 22.991746,
+    "lng": 59.00908,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 45,
+    "ticket_cost_omr": 8.29,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Sunaysilah Fort is a historic Omani fortification in the Sharqiya region, offering a glimpse into the country's defensive architecture and cultural heritage. Its well-preserved structure and panoramic views make it a worthwhile stop for history enthusiasts.",
+      "ar": "حصن السنيسلة هو حصن تاريخي عماني في منطقة الشرقية، يقدم لمحة عن العمارة الدفاعية والتراث الثقافي للبلاد. هيكله المحفوظ جيدًا وإطلالاته البانورامية تجعله وجهة جديرة بالزيارة لعشاق التاريخ."
+    },
+    "tags": [
+      "fort",
+      "historic",
+      "cultural",
+      "photography",
+      "iconic",
+      "family-friendly"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "solo"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحًا–8 مساءً، الجمعة 8 صباحًا–11 صباحًا و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Wear comfortable shoes for climbing the fort's stairs and bring a hat and water, as the site can get hot during midday.",
+      "ar": "ارتدِ أحذية مريحة لصعود سلالم الحصن وأحضر قبعة وماء، حيث قد يكون الموقع حارًا في منتصف النهار."
+    }
+  },
+  {
+    "id": "dest_0098",
+    "name": {
+      "en": "Sur Lighthouse",
+      "ar": "منارة صور"
+    },
+    "lat": 22.869837,
+    "lng": 58.844138,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 30,
+    "ticket_cost_omr": 5.7,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "Sur Lighthouse is a historic maritime beacon located on the coast of Sur, guiding ships along the Arabian Sea since the early 20th century. It offers panoramic views of the city and coastline, making it a popular spot for photography and cultural exploration.",
+      "ar": "منارة صور هي منارة بحرية تاريخية تقع على ساحل صور، وقد كانت ترشد السفن على طول بحر العرب منذ أوائل القرن العشرين. توفر إطلالات بانورامية على المدينة والساحل، مما يجعلها وجهة شهيرة للتصوير الفوتوغرافي والاستكشاف الثقافي."
+    },
+    "tags": [
+      "historic",
+      "photography",
+      "iconic",
+      "cultural",
+      "family-friendly",
+      "local"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit in the late afternoon for the best light and cooler temperatures; parking is available nearby.",
+      "ar": "قم بالزيارة في وقت متأخر من بعد الظهر للحصول على أفضل إضاءة ودرجات حرارة أكثر برودة؛ تتوفر مواقف للسيارات بالقرب من الموقع."
+    }
+  },
+  {
+    "id": "dest_0099",
+    "name": {
+      "en": "Sur Maritime Museum",
+      "ar": "متحف صور البحري"
+    },
+    "lat": 22.151819,
+    "lng": 59.109338,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "culture"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 120,
+    "ticket_cost_omr": 12.67,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 3,
+    "description": {
+      "en": "The Sur Maritime Museum showcases the rich seafaring heritage of Sur, a historic port city in Oman. It features exhibits on traditional dhow building, pearl diving, and Omani maritime trade, making it a must-visit for culture enthusiasts.",
+      "ar": "يعرض متحف صور البحري التراث البحري الغني لمدينة صور، وهي مدينة ميناء تاريخية في عُمان. يضم معروضات عن بناء السفن الشراعية التقليدية وصيد اللؤلؤ والتجارة البحرية العمانية، مما يجعله وجهة لا تُفوت لعشاق الثقافة."
+    },
+    "tags": [
+      "museum",
+      "historic",
+      "cultural",
+      "family-friendly",
+      "photography",
+      "local"
+    ],
+    "best_for": [
+      "culture-lovers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Sat–Thu 8AM–2PM & 4PM–8PM, Fri 8AM–11AM & 4PM–8PM",
+      "ar": "السبت–الخميس 8 صباحاً–2 ظهراً و 4 مساءً–8 مساءً، الجمعة 8 صباحاً–11 صباحاً و 4 مساءً–8 مساءً"
+    },
+    "tips": {
+      "en": "Visit in the morning to avoid the midday heat and allow time to explore the nearby dhow-building yard.",
+      "ar": "قم بالزيارة في الصباح لتجنب حرارة منتصف النهار وخصص وقتاً لاستكشاف حوض بناء السفن الشراعية القريب."
+    }
+  },
+  {
+    "id": "dest_0100",
+    "name": {
+      "en": "Wadi Arbeieen",
+      "ar": "وادي العربيين"
+    },
+    "lat": 22.988543,
+    "lng": 59.250854,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 60,
+    "ticket_cost_omr": 5.45,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wadi Arbeieen is a popular wadi in the Sharqiya region, known for its deep turquoise pools and dramatic canyon walls. It offers excellent opportunities for swimming and cliff jumping, making it a top nature and adventure destination.",
+      "ar": "وادي العربيين هو وادٍ شهير في منطقة الشرقية، يشتهر ببركه الفيروزية العميقة وجدرانه الكانيونية الدراماتيكية. يوفر فرصاً ممتازة للسباحة والقفز من المنحدرات، مما يجعله وجهة طبيعية ومغامرة رائدة."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Daily 8AM–6PM",
+      "ar": "يومياً 8 صباحاً – 6 مساءً"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes as the rocks can be slippery, and arrive early to avoid the largest crowds.",
+      "ar": "ارتدِ أحذية مائية قوية لأن الصخور قد تكون زلقة، وتوصل مبكراً لتجنب الزحام الشديد."
+    }
+  },
+  {
+    "id": "dest_0101",
+    "name": {
+      "en": "Wadi Bani Khalid",
+      "ar": "وادي بني خالد"
+    },
+    "lat": 22.188823,
+    "lng": 58.521025,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 11.98,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wadi Bani Khalid is a lush, year-round oasis in the Sharqiya region of Oman, famous for its turquoise pools and dramatic canyon scenery. It is one of the country's most accessible and popular wadis, offering swimming, picnicking, and stunning natural beauty.",
+      "ar": "وادي بني خالد هو واحة خضراء على مدار العام في منطقة الشرقية بعُمان، تشتهر ببركها الفيروزية ومناظرها الخلابة. وهو من أشهر الأودية وأكثرها سهولة في الوصول، ويوفر فرص السباحة والتنزه والاستمتاع بجمال الطبيعة."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "adventure",
+      "photography",
+      "family-friendly",
+      "iconic"
+    ],
+    "best_for": [
+      "families",
+      "adventure-seekers",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes as the rocks can be slippery, and arrive early in the morning to avoid the largest crowds.",
+      "ar": "ارتدِ أحذية مائية قوية لأن الصخور قد تكون زلقة، وتوجه إلى الموقع في الصباح الباكر لتجنب الزحام."
+    }
+  },
+  {
+    "id": "dest_0102",
+    "name": {
+      "en": "Wadi Tiwi",
+      "ar": "وادي طيوي"
+    },
+    "lat": 22.232377,
+    "lng": 59.056171,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "nature",
+      "adventure"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 150,
+    "ticket_cost_omr": 7.1,
+    "recommended_months": [
+      4,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 4,
+    "description": {
+      "en": "Wadi Tiwi is a lush, palm-filled canyon in the Sharqiya region, famous for its turquoise pools and dramatic cliffs. It offers a refreshing escape into nature with opportunities for swimming and hiking.",
+      "ar": "وادي طيوي هو وادٍ أخضر مليء بأشجار النخيل في منطقة الشرقية، ويشتهر ببركه الفيروزية ومنحدراته الدراماتيكية. يوفر ملاذاً منعشاً في الطبيعة مع فرص للسباحة والمشي."
+    },
+    "tags": [
+      "wadi",
+      "nature",
+      "adventure",
+      "photography",
+      "mountain",
+      "family-friendly"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "families",
+      "photographers",
+      "groups"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Wear sturdy water shoes as the rocks can be slippery, and arrive early to avoid the midday heat and crowds.",
+      "ar": "ارتدِ أحذية مائية متينة لأن الصخور قد تكون زلقة، ووصل مبكراً لتجنب حرارة منتصف النهار والازدحام."
+    }
+  },
+  {
+    "id": "dest_0103",
+    "name": {
+      "en": "Wahiba Sands",
+      "ar": "رمال وهيبة"
+    },
+    "lat": 22.228242,
+    "lng": 59.351512,
+    "region": {
+      "en": "Sharqiya",
+      "ar": "الشرقية"
+    },
+    "categories": [
+      "adventure",
+      "nature"
+    ],
+    "company": {
+      "en": "Sharqiya Tourism Board",
+      "ar": "مجلس سياحة الشرقية"
+    },
+    "avg_visit_duration_minutes": 300,
+    "ticket_cost_omr": 16.19,
+    "recommended_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "crowd_level": 5,
+    "description": {
+      "en": "Wahiba Sands is a vast desert of rolling red and golden dunes in the Sharqiya region, renowned for its dramatic landscapes and Bedouin heritage. It offers visitors a quintessential Arabian desert experience with opportunities for dune bashing, camel trekking, and overnight camping under the stars.",
+      "ar": "رمال وهيبة هي صحراء شاسعة من الكثبان الرملية الحمراء والذهبية في منطقة الشرقية، تشتهر بمناظرها الطبيعية الخلابة وتراثها البدوي. تقدم للزوار تجربة صحراوية عربية أصيلة مع فرص لركوب الكثبان وركوب الجمال والتخييم ليلاً تحت النجوم."
+    },
+    "tags": [
+      "desert",
+      "adventure",
+      "nature",
+      "photography",
+      "iconic",
+      "cultural"
+    ],
+    "best_for": [
+      "adventure-seekers",
+      "photographers",
+      "families",
+      "couples"
+    ],
+    "opening_hours": {
+      "en": "Open 24 hours",
+      "ar": "مفتوح 24 ساعة"
+    },
+    "tips": {
+      "en": "Visit early morning or late afternoon to avoid the midday heat and capture the best light for photography; a 4x4 vehicle is essential for navigating the dunes.",
+      "ar": "قم بزيارة في الصباح الباكر أو في وقت متأخر من بعد الظهر لتجنب حرارة منتصف النهار والحصول على أفضل إضاءة للتصوير؛ سيارة دفع رباعي ضرورية لاجتياز الكثبان الرملية."
+    }
+  }
+]

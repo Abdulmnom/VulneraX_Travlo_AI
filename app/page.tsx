@@ -1,16 +1,16 @@
 "use client";
 
 /**
- * Travlo – Main Page (v3)
+ * Travlo – Main Page (v4 Voice Assistant)
  *
  * Features:
- *  ① Wake Word  – "Hello Travlo" → WakeWordModal → auto-opens mic
- *  ② Voice Enhancement  – raw transcript cleaned by Ollama
- *  ③ Auto-submit after voice  – no need to press Send
- *  ④ Conversation history  – full context on every LLM call
- *  ⑤ TTS  – AI replies read aloud (auto after voice, manual via Listen button)
- *  ⑥ Mic Permission Alert  – friendly guide when browser blocks mic
- *  ⑦ Toast notifications  – status feedback throughout
+ *  ① Wake Word  – "Hello Travlo" → auto-starts voice recording
+ *  ② Voice Assistant – MediaRecorder → /api/voice-assistant → LLM → TTS
+ *  ③ Fallback STT/TTS – Google Cloud when local whisper/browser TTS fails
+ *  ④ Conversation history – full context on every LLM call
+ *  ⑤ TTS – Web Speech API primary, Google Cloud TTS fallback
+ *  ⑥ Mic Permission Alert – friendly guide when browser blocks mic
+ *  ⑦ Toast notifications – status feedback throughout
  */
 
 import { useState, useCallback, useId, useRef } from "react";
@@ -25,6 +25,7 @@ import MicPermissionAlert from "@/components/MicPermissionAlert";
 import Toast, { useToast } from "@/components/Toast";
 import { useWakeWord } from "@/hooks/useWakeWord";
 import { useTts } from "@/hooks/useTts";
+import { useVoiceAssistant } from "@/hooks/useVoiceAssistant";
 import type { ConversationTurn, Recommendation } from "@/lib/ollama";
 
 function generateSessionId() {
@@ -46,8 +47,6 @@ export default function Home() {
 
   // ── Wake word state ──────────────────────────────────────────────────────
   const [wakeWordEnabled, setWakeWordEnabled] = useState(true);
-  const [isVoiceListening, setIsVoiceListening] = useState(false);
-  const [voiceTriggerKey, setVoiceTriggerKey] = useState(0);
   const [wakeModalOpen, setWakeModalOpen] = useState(false);
   const [detectedPhrase, setDetectedPhrase] = useState("");
 
@@ -63,7 +62,94 @@ export default function Home() {
 
   // ── Conversation history ─────────────────────────────────────────────────
   const conversationHistoryRef = useRef<ConversationTurn[]>([]);
-  const lastInputWasVoiceRef = useRef(false);
+
+  // ── Voice Assistant result handler ───────────────────────────────────────
+  const handleVoiceResult = useCallback(
+    (result: {
+      transcript: string;
+      response: string;
+      recommendations: Recommendation[];
+      provider: string;
+      language: "ar" | "en";
+      source: "local" | "fallback";
+      latency_ms: number;
+    }) => {
+      const userMsgId = `${msgIdBase}-u-${Date.now()}`;
+      const aiMsgId = `${msgIdBase}-a-${Date.now()}`;
+
+      // Add user message
+      setMessages((prev) => [
+        ...prev,
+        { id: userMsgId, role: "user", text: result.transcript },
+      ]);
+
+      // Update history
+      conversationHistoryRef.current = [
+        ...conversationHistoryRef.current,
+        { role: "user", content: result.transcript },
+      ];
+
+      // Add assistant message
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: aiMsgId,
+          role: "assistant",
+          recommendations: result.recommendations,
+          provider: result.provider as "ollama" | "deepseek" | "claude",
+        },
+      ]);
+
+      // Update history with assistant summary
+      const assistantSummary = result.recommendations
+        .map((r) => `${r.name}: ${r.description}`)
+        .join(" | ");
+      conversationHistoryRef.current = [
+        ...conversationHistoryRef.current,
+        { role: "assistant", content: assistantSummary },
+      ];
+
+      // Auto-speak response
+      if (result.response) {
+        setSpeakingMessageId(aiMsgId);
+        speak(result.response);
+      }
+
+      // Show latency toast for debugging
+      showToast(
+        language === "ar"
+          ? `⏱️ ${result.latency_ms}ms · ${result.source === "local" ? "محلي" : "احتياطي"}`
+          : `⏱️ ${result.latency_ms}ms · ${result.source}`,
+        "info"
+      );
+    },
+    [language, msgIdBase, speak, showToast]
+  );
+
+  const handleVoiceError = useCallback(
+    (message: string) => {
+      showToast(
+        language === "ar" ? `⚠️ ${message}` : `⚠️ ${message}`,
+        "warning"
+      );
+    },
+    [language, showToast]
+  );
+
+  // ── Voice Assistant hook ─────────────────────────────────────────────────
+  const {
+    isProcessing: voiceIsProcessing,
+    isRecording: voiceIsRecording,
+    audioLevel,
+    start: startVoiceAssistant,
+    stop: stopVoiceAssistant,
+  } = useVoiceAssistant({
+    language,
+    history: conversationHistoryRef.current,
+    onResult: handleVoiceResult,
+    onError: handleVoiceError,
+    autoStopMs: 10_000,
+  });
 
   // ── TTS controls ─────────────────────────────────────────────────────────
   const handleSpeakMessage = useCallback(
@@ -80,25 +166,33 @@ export default function Home() {
   }, [stopSpeaking]);
 
   // ── Wake/Stop word handler ───────────────────────────────────────────────
-  const handleCommand = useCallback((type: "wake" | "stop", phrase: string) => {
-    if (type === "stop") {
-      handleStopSpeaking();
-      showToast(language === "ar" ? "تم إيقاف المساعد" : "Assistant stopped", "info");
-      return;
-    }
+  const handleCommand = useCallback(
+    (type: "wake" | "stop", phrase: string) => {
+      if (type === "stop") {
+        handleStopSpeaking();
+        stopVoiceAssistant();
+        showToast(
+          language === "ar" ? "تم إيقاف المساعد" : "Assistant stopped",
+          "info"
+        );
+        return;
+      }
 
-    setDetectedPhrase(phrase);
-    setWakeModalOpen(true);
-    // 800ms delay gives the OS enough time to release the mic handle so the main recorder can attach
-    setTimeout(() => {
-      setVoiceTriggerKey((k) => k + 1);
-    }, 800);
-  }, [handleStopSpeaking, showToast, language]);
+      setDetectedPhrase(phrase);
+      setWakeModalOpen(true);
+      // Delay to let OS release mic handle from wake-word detector
+      setTimeout(() => {
+        startVoiceAssistant();
+        setWakeModalOpen(false);
+      }, 800);
+    },
+    [handleStopSpeaking, stopVoiceAssistant, startVoiceAssistant, showToast, language]
+  );
 
   const { isActive: wakeWordActive, permissionDenied } = useWakeWord({
     language,
     enabled: wakeWordEnabled,
-    suspended: isVoiceListening || isLoading || wakeModalOpen,
+    suspended: voiceIsRecording || isLoading || wakeModalOpen,
     onCommand: handleCommand,
   });
 
@@ -112,14 +206,11 @@ export default function Home() {
     prevPermissionDenied.current = false;
   }
 
-  // ── Core send ─────────────────────────────────────────────────────────────
+  // ── Core send (text chat) ────────────────────────────────────────────────
   const sendMessage = useCallback(
-    async (overrideText?: string, fromVoice = false) => {
+    async (overrideText?: string) => {
       const text = (overrideText ?? inputValue).trim();
       if (!text || isLoading) return;
-
-      // Close wake modal when user speaks
-      setWakeModalOpen(false);
 
       const userMsgId = `${msgIdBase}-u-${Date.now()}`;
       const aiMsgId = `${msgIdBase}-a-${Date.now()}`;
@@ -128,7 +219,6 @@ export default function Home() {
       setMessages((prev) => [...prev, { id: userMsgId, role: "user", text }]);
       setInputValue("");
       setIsLoading(true);
-      lastInputWasVoiceRef.current = fromVoice;
       stopSpeaking();
       setSpeakingMessageId(null);
 
@@ -151,14 +241,18 @@ export default function Home() {
             ...prev,
             { id: aiMsgId, role: "assistant", error: data.error || "An error occurred." },
           ]);
-          showToast(language === "ar" ? "⚠️ حدث خطأ" : "⚠️ Something went wrong", "warning");
+          showToast(
+            language === "ar" ? "⚠️ حدث خطأ" : "⚠️ Something went wrong",
+            "warning"
+          );
           return;
         }
 
         const recommendations: Recommendation[] = data.recommendations ?? [];
+        const provider = data.provider as "ollama" | "deepseek" | "claude" | undefined;
         setMessages((prev) => [
           ...prev,
-          { id: aiMsgId, role: "assistant", recommendations },
+          { id: aiMsgId, role: "assistant", recommendations, provider },
         ]);
 
         const assistantSummary = recommendations
@@ -168,13 +262,6 @@ export default function Home() {
           ...conversationHistoryRef.current,
           { role: "assistant", content: assistantSummary },
         ];
-
-        // Auto-read after voice input
-        if (fromVoice && recommendations.length > 0) {
-          const speakText = recommendations.map((r) => `${r.name}. ${r.description}`).join(". ");
-          setSpeakingMessageId(aiMsgId);
-          speak(speakText);
-        }
       } catch {
         setMessages((prev) => [
           ...prev,
@@ -194,14 +281,14 @@ export default function Home() {
     [inputValue, isLoading, language, msgIdBase, speak, stopSpeaking, showToast]
   );
 
-  // ── Voice result (after Ollama enhancement) ───────────────────────────────
-  const handleVoiceResult = useCallback(
-    (transcript: string) => {
-      if (!transcript.trim()) return;
-      sendMessage(transcript, true);
-    },
-    [sendMessage]
-  );
+  // ── Voice button toggle ──────────────────────────────────────────────────
+  const toggleVoice = useCallback(() => {
+    if (voiceIsRecording) {
+      stopVoiceAssistant();
+    } else {
+      startVoiceAssistant();
+    }
+  }, [voiceIsRecording, startVoiceAssistant, stopVoiceAssistant]);
 
   return (
     <div className="flex flex-col h-screen max-h-screen overflow-hidden bg-[#0b0f1a]">
@@ -235,8 +322,12 @@ export default function Home() {
                   const next = !v;
                   showToast(
                     next
-                      ? language === "ar" ? '✅ قل "مرحبا ترافلو" للتنشيط' : '✅ Say "Hello Travlo" to activate'
-                      : language === "ar" ? "🔕 تم تعطيل التنشيط الصوتي" : "🔕 Wake word disabled",
+                      ? language === "ar"
+                        ? '✅ قل "مرحبا ترافلو" للتنشيط'
+                        : '✅ Say "Hello Travlo" to activate'
+                      : language === "ar"
+                      ? "🔕 تم تعطيل التنشيط الصوتي"
+                      : "🔕 Wake word disabled",
                     next ? "success" : "info"
                   );
                   return next;
@@ -272,8 +363,18 @@ export default function Home() {
             dir={language === "ar" ? "rtl" : "ltr"}
           >
             {(language === "en"
-              ? ["🍽️ Best restaurants in Muscat", "🏔️ Things to do in Nizwa", "🏖️ Beaches near Muscat", "🕌 Historic forts in Oman"]
-              : ["🍽️ أفضل مطاعم مسقط", "🏔️ أماكن سياحية في نزوى", "🏖️ شواطئ قرب مسقط", "🕌 الحصون التاريخية في عُمان"]
+              ? [
+                  "🍽️ Best restaurants in Muscat",
+                  "🏔️ Things to do in Nizwa",
+                  "🏖️ Beaches near Muscat",
+                  "🕌 Historic forts in Oman",
+                ]
+              : [
+                  "🍽️ أفضل مطاعم مسقط",
+                  "🏔️ أماكن سياحية في نزوى",
+                  "🏖️ شواطئ قرب مسقط",
+                  "🕌 الحصون التاريخية في عُمان",
+                ]
             ).map((chip) => (
               <button
                 key={chip}
@@ -286,7 +387,7 @@ export default function Home() {
           </motion.div>
         )}
 
-        <div className="flex-1 overflow-hidden flex flex-col">
+        <div className="flex-1 overflow-hidden flex flex-col min-h-0">
           <ChatInterface
             messages={messages}
             inputValue={inputValue}
@@ -294,16 +395,22 @@ export default function Home() {
             language={language}
             onInputChange={setInputValue}
             onSubmit={() => sendMessage()}
-            onVoiceResult={handleVoiceResult}
+            onVoiceResult={() => {
+              /* No-op — voice is handled by useVoiceAssistant now */
+            }}
             onListeningChange={(listening) => {
-              setIsVoiceListening(listening);
-              // Close wake modal once mic actually starts
+              /* Sync with wake word suspension */
               if (listening) setWakeModalOpen(false);
             }}
             speakingMessageId={speakingMessageId}
             onSpeakMessage={handleSpeakMessage}
             onStopSpeaking={handleStopSpeaking}
-            voiceTriggerKey={voiceTriggerKey}
+            voiceTriggerKey={0} /* Wake word triggers startVoiceAssistant directly now */
+            // New voice props
+            isVoiceRecording={voiceIsRecording}
+            isVoiceProcessing={voiceIsProcessing}
+            audioLevel={audioLevel}
+            onToggleVoice={toggleVoice}
           />
         </div>
       </main>
@@ -323,7 +430,6 @@ export default function Home() {
         onDismiss={() => setMicAlertOpen(false)}
         onRetry={() => {
           setMicAlertOpen(false);
-          // Re-enable wake word to re-attempt permission
           setWakeWordEnabled(false);
           setTimeout(() => setWakeWordEnabled(true), 200);
         }}

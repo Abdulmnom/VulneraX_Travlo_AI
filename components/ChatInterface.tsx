@@ -20,6 +20,7 @@ export interface Message {
   text?: string;
   recommendations?: Recommendation[];
   error?: string;
+  provider?: "ollama" | "deepseek" | "claude";
 }
 
 interface ChatInterfaceProps {
@@ -35,8 +36,13 @@ interface ChatInterfaceProps {
   speakingMessageId: string | null;
   onSpeakMessage: (msgId: string, text: string) => void;
   onStopSpeaking: () => void;
-  // Wake word programmatic trigger
+  // Wake word programmatic trigger (legacy, kept for compatibility)
   voiceTriggerKey?: number;
+  // New voice assistant props
+  isVoiceRecording?: boolean;
+  isVoiceProcessing?: boolean;
+  audioLevel?: number;
+  onToggleVoice?: () => void;
 }
 
 const PLACEHOLDERS = {
@@ -64,6 +70,10 @@ export default function ChatInterface({
   onSpeakMessage,
   onStopSpeaking,
   voiceTriggerKey,
+  isVoiceRecording = false,
+  isVoiceProcessing = false,
+  audioLevel = 0,
+  onToggleVoice,
 }: ChatInterfaceProps) {
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -145,6 +155,14 @@ export default function ChatInterface({
                     msg.recommendations &&
                     msg.recommendations.length > 0 && (
                       <div>
+                        {/* Provider badge */}
+                        {msg.provider && (
+                          <span className="inline-flex items-center gap-1 text-xs text-white/35 mb-2">
+                            {msg.provider === "ollama"   && "🖥️ Ollama"}
+                            {msg.provider === "deepseek" && "🌐 DeepSeek"}
+                            {msg.provider === "claude"   && "✦ Claude"}
+                          </span>
+                        )}
                         {/* TTS control row */}
                         <div className={`flex items-center gap-2 mb-2 ${isAr ? "flex-row-reverse" : ""}`}>
                           <motion.button
@@ -235,11 +253,11 @@ export default function ChatInterface({
           <div className="flex-shrink-0 pb-1">
             <VoiceButton
               language={language}
-              onResult={onVoiceResult}
-              onListeningChange={onListeningChange}
+              isRecording={isVoiceRecording}
+              isProcessing={isVoiceProcessing}
+              audioLevel={audioLevel}
+              onClick={onToggleVoice}
               disabled={isLoading}
-              triggerKey={voiceTriggerKey}
-              autoStopMs={10_000}
             />
           </div>
 
@@ -267,6 +285,7 @@ export default function ChatInterface({
           {/* Send button */}
           <div className="flex-shrink-0 pb-1">
             <button
+              type="button"
               id="chat-send-btn"
               onClick={onSubmit}
               disabled={isLoading || !inputValue.trim()}

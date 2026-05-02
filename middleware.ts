@@ -122,36 +122,6 @@ export async function middleware(req: NextRequest) {
         // Ignore body parsing errors
       }
     }
-
-    // Block if attacks detected
-    const blockedAttacks = attacks.filter((a) => a.blocked);
-    if (blockedAttacks.length > 0) {
-      // Log all detected attacks
-      for (const attack of attacks) {
-        logAttack(attack, requestContext, urlToScan);
-      }
-
-      console.warn(
-        `[Middleware] Blocked attack: ${blockedAttacks
-          .map((a) => a.type)
-          .join(", ")} from ${ip} (tenant: ${tenantId})`
-      );
-
-      return NextResponse.json(
-        {
-          error: "Request blocked due to security policy violation",
-          code: "SECURITY_VIOLATION",
-        },
-        { status: 403 }
-      );
-    }
-
-    // Log non-blocked detections (bots, etc.)
-    for (const attack of attacks) {
-      if (!attack.blocked) {
-        logAttack(attack, requestContext, urlToScan);
-      }
-    }
   }
 
   // ── 5. Create Response with Security Headers ────────────────────────────────
