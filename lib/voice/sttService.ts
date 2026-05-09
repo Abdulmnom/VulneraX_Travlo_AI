@@ -73,13 +73,27 @@ async function isWhisperAvailable(): Promise<boolean> {
   });
 }
 
+function mimeToExt(mimeType: string): string {
+  const map: Record<string, string> = {
+    "audio/mpeg": "mp3",
+    "audio/mp3": "mp3",
+    "audio/webm": "webm",
+    "audio/wav": "wav",
+    "audio/wave": "wav",
+    "audio/flac": "flac",
+    "audio/ogg": "ogg",
+  };
+  return map[mimeType.toLowerCase().split(";")[0].trim()] ?? "webm";
+}
+
 /**
  * Write a Blob buffer to a temp file and return the path.
  */
-async function writeTempAudioFile(buffer: Buffer): Promise<string> {
+async function writeTempAudioFile(buffer: Buffer, mimeType?: string): Promise<string> {
   const { tmpdir } = await import("os");
   const { writeFile } = await import("fs/promises");
-  const tempPath = `${tmpdir()}/travlo-stt-${randomUUID()}.webm`;
+  const ext = mimeType ? mimeToExt(mimeType) : "webm";
+  const tempPath = `${tmpdir()}/travlo-stt-${randomUUID()}.${ext}`;
   await writeFile(tempPath, buffer);
   return tempPath;
 }
@@ -156,8 +170,8 @@ async function runWhisper(audioPath: string): Promise<SttResult | null> {
  * Transcribe audio buffer.
  * Tries local Whisper first (if available), then falls back to Google Cloud STT.
  */
-export async function transcribeAudio(buffer: Buffer): Promise<SttResult> {
-  const tempPath = await writeTempAudioFile(buffer);
+export async function transcribeAudio(buffer: Buffer, mimeType?: string): Promise<SttResult> {
+  const tempPath = await writeTempAudioFile(buffer, mimeType);
 
   // Check if local Whisper is available before trying
   const whisperAvailable = await isWhisperAvailable();

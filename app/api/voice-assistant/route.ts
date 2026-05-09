@@ -47,6 +47,7 @@ export async function POST(req: NextRequest) {
 
   // â”€â”€ 3. Parse multipart form data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   let audioBuffer: Buffer | null = null;
+  let audioFile: File | null = null;
   let browserTranscript: string | null = null;
   let history: ConversationTurn[] = [];
 
@@ -61,14 +62,16 @@ export async function POST(req: NextRequest) {
 
     // Only require audio blob if no transcript was provided
     if (!browserTranscript) {
-      const audioFile = formData.get("audio");
+      const rawAudioFile = formData.get("audio");
 
-      if (!audioFile || !(audioFile instanceof File)) {
+      if (!rawAudioFile || !(rawAudioFile instanceof File)) {
         return NextResponse.json(
           { error: "Either a transcript or an audio file is required." },
           { status: 400 }
         );
       }
+
+      audioFile = rawAudioFile;
 
       if (audioFile.size > MAX_AUDIO_SIZE_MB * 1024 * 1024) {
         return NextResponse.json(
@@ -124,7 +127,7 @@ export async function POST(req: NextRequest) {
   } else {
     // âš™ï¸ Server-side STT: Whisper â†’ Google Cloud fallback
     try {
-      sttResult = await transcribeAudio(audioBuffer!);
+      sttResult = await transcribeAudio(audioBuffer!, audioFile?.type);
     } catch (err) {
       console.error("[/api/voice-assistant] STT failed:", err);
       return NextResponse.json(

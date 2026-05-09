@@ -10,6 +10,19 @@ import { statSync } from "fs";
 
 const client = new SpeechClient();
 
+type GoogleEncoding = "WEBM_OPUS" | "MP3" | "LINEAR16" | "FLAC" | "OGG_OPUS";
+
+function getEncodingConfig(audioPath: string): { encoding: GoogleEncoding; sampleRateHertz?: number } {
+  const ext = audioPath.split(".").pop()?.toLowerCase() ?? "webm";
+  switch (ext) {
+    case "mp3":  return { encoding: "MP3" };
+    case "wav":  return { encoding: "LINEAR16" };
+    case "flac": return { encoding: "FLAC" };
+    case "ogg":  return { encoding: "OGG_OPUS", sampleRateHertz: 48000 };
+    default:     return { encoding: "WEBM_OPUS", sampleRateHertz: 48000 };
+  }
+}
+
 export interface GoogleSttResult {
   transcript: string;
   language: "ar" | "en" | string;
@@ -41,9 +54,10 @@ export async function transcribeWithGoogle(audioPath: string): Promise<GoogleStt
     content: audioBytes,
   };
 
+  const { encoding, sampleRateHertz } = getEncodingConfig(audioPath);
   const config = {
-    encoding: "WEBM_OPUS" as const,
-    sampleRateHertz: 48000,
+    encoding,
+    ...(sampleRateHertz !== undefined && { sampleRateHertz }),
     languageCode: "ar-SA",
     alternativeLanguageCodes: ["en-US"],
     model: "latest_long",

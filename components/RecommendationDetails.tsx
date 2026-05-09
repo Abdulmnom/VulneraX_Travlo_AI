@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, ExternalLink, Images, MapPin, Ticket } from "lucide-react";
+import { Clock, ExternalLink, Images, MapPin, Ticket, ShieldCheck, ShieldAlert, Shield, Info } from "lucide-react";
 import type { Recommendation } from "@/lib/ollama";
 import RecommendationImageCarousel from "./RecommendationImageCarousel";
 
@@ -27,6 +27,14 @@ export default function RecommendationDetails({ rec, language }: RecommendationD
     ticket: isAr ? "\u0627\u0644\u062a\u0630\u0643\u0631\u0629" : "Ticket",
     map: isAr ? "\u0627\u0641\u062a\u062d \u0627\u0644\u062e\u0631\u064a\u0637\u0629" : "Open map",
     review: isAr ? "\u0647\u0630\u0627 \u0627\u0644\u0645\u0648\u0642\u0639 \u064a\u062d\u062a\u0627\u062c \u0645\u0631\u0627\u062c\u0639\u0629 \u0635\u0648\u0631 \u0625\u0636\u0627\u0641\u064a\u0629" : "This place still needs more verified image review",
+    costDetails: isAr ? "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u062a\u0643\u0644\u0641\u0629" : "Cost details",
+    entryOmani: isAr ? "\u062f\u062e\u0648\u0644 \u0639\u0645\u0627\u0646\u064a" : "Omani entry",
+    entryTourist: isAr ? "\u062f\u062e\u0648\u0644 \u0633\u0627\u0626\u062d" : "Tourist entry",
+    experienceCost: isAr ? "\u062a\u0643\u0644\u0641\u0629 \u0627\u0644\u062a\u062c\u0631\u0628\u0629" : "Experience cost",
+    includes: isAr ? "\u064a\u0634\u0645\u0644" : "Includes",
+    dataStatus: isAr ? "\u062d\u0627\u0644\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a" : "Data status",
+    lastUpdated: isAr ? "\u0622\u062e\u0631 \u062a\u062d\u062f\u064a\u062b" : "Last updated",
+    confidence: isAr ? "\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u062b\u0642\u0629" : "Confidence",
   };
 
   return (
@@ -86,6 +94,83 @@ export default function RecommendationDetails({ rec, language }: RecommendationD
               <li key={tip}>{tip}</li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {rec.visitorCost && (
+        <section>
+          <h4 className="mb-2 text-sm font-semibold text-white">{labels.costDetails}</h4>
+          <div className="rounded-lg bg-white/5 p-3 text-xs text-white/65 space-y-2">
+            {rec.visitorCost.entryFee !== undefined && (
+              <div className="flex items-center gap-2">
+                <Ticket size={14} className="text-amber-300" />
+                <span>
+                  {rec.visitorCost.entryFee === null
+                    ? isAr ? "رسوم الدخول: غير مؤكدة" : "Entry fee: unconfirmed"
+                    : `${labels.entryOmani}: ${rec.visitorCost.entryFee.omani ?? (isAr ? "غير معروف" : "unknown")} OMR | ${labels.entryTourist}: ${rec.visitorCost.entryFee.tourist ?? (isAr ? "غير معروف" : "unknown")} OMR${rec.visitorCost.entryFee.notes ? ` — ${rec.visitorCost.entryFee.notes}` : ""}`}
+                </span>
+              </div>
+            )}
+            {rec.visitorCost.estimatedExperienceCost && (
+              <div className="flex items-center gap-2">
+                <Info size={14} className="text-amber-300" />
+                <span>
+                  {labels.experienceCost}: {rec.visitorCost.estimatedExperienceCost.min}-{rec.visitorCost.estimatedExperienceCost.max} {rec.visitorCost.estimatedExperienceCost.currency}
+                  {rec.visitorCost.estimatedExperienceCost.includes.length > 0 && (
+                    <> — {labels.includes}: {rec.visitorCost.estimatedExperienceCost.includes.join(", ")}</>
+                  )}
+                </span>
+              </div>
+            )}
+            {rec.visitorCost.notes && (
+              <div className="text-white/50">
+                {rec.visitorCost.notes[language]}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {rec.dataVerification && (
+        <section>
+          <h4 className="mb-2 text-sm font-semibold text-white">{labels.dataStatus}</h4>
+          <div className="rounded-lg bg-white/5 p-3 text-xs text-white/65 space-y-2">
+            <div className="flex items-center gap-2">
+              {rec.dataVerification.status === "verified" ? (
+                <ShieldCheck size={14} className="text-green-400" />
+              ) : rec.dataVerification.status === "pending_review" ? (
+                <ShieldAlert size={14} className="text-yellow-400" />
+              ) : (
+                <Shield size={14} className="text-red-400" />
+              )}
+              <span className="capitalize">{rec.dataVerification.status.replace("_", " ")}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Info size={14} className="text-amber-300" />
+              <span>{labels.confidence}: {rec.dataVerification.confidence}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock size={14} className="text-amber-300" />
+              <span>{labels.lastUpdated}: {rec.dataVerification.lastUpdated}</span>
+            </div>
+            <div className="flex flex-wrap gap-2 pt-1">
+              {rec.dataVerification.dataQuality.hasImages && (
+                <span className="rounded-full bg-green-500/10 px-2 py-0.5 text-[10px] text-green-300">
+                  {isAr ? "صور موثقة" : "Verified images"}
+                </span>
+              )}
+              {rec.dataVerification.dataQuality.hasVerifiedCosts && (
+                <span className="rounded-full bg-green-500/10 px-2 py-0.5 text-[10px] text-green-300">
+                  {isAr ? "تكاليف مؤكدة" : "Verified costs"}
+                </span>
+              )}
+              {rec.dataVerification.dataQuality.hasOpeningHours && (
+                <span className="rounded-full bg-green-500/10 px-2 py-0.5 text-[10px] text-green-300">
+                  {isAr ? "أوقات عمل" : "Opening hours"}
+                </span>
+              )}
+            </div>
+          </div>
         </section>
       )}
 

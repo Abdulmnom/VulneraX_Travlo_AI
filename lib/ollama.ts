@@ -5,7 +5,7 @@
  * All requests are internal — no data leaves the Docker network.
  */
 
-import type { TourismImage } from "@/types/tourism";
+import type { TourismImage, VisitorCost, DataVerification } from "@/types/tourism";
 
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3:14b";
@@ -24,6 +24,7 @@ export interface Recommendation {
   activities?: string[];
   openingHours?: string;
   ticketCostOmr?: number;
+  visitorCost?: VisitorCost;
   recommendedDurationMinutes?: number;
   location?: {
     lat: number;
@@ -33,6 +34,7 @@ export interface Recommendation {
   travelTips?: string[];
   nearbyPlaces?: string[];
   needsImageReview?: boolean;
+  dataVerification?: DataVerification;
   imageSources?: Array<{
     sourceName: string;
     sourceUrl: string;

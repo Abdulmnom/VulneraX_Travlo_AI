@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Clock, Images, Ticket } from "lucide-react";
+import { Clock, Images, Ticket, ShieldCheck, ShieldAlert, Shield } from "lucide-react";
 import type { Recommendation } from "@/lib/ollama";
 import RecommendationDetails from "./RecommendationDetails";
 
@@ -63,6 +63,31 @@ export default function RecommendationCard({
     : null;
   const hasDetails = Boolean(rec.images?.length || rec.highlights?.length || rec.activities?.length);
 
+  const verificationStatus = rec.dataVerification?.status;
+  const verificationIcon =
+    verificationStatus === "verified" ? (
+      <ShieldCheck size={12} className="text-green-400" />
+    ) : verificationStatus === "pending_review" ? (
+      <ShieldAlert size={12} className="text-yellow-400" />
+    ) : (
+      <Shield size={12} className="text-red-400" />
+    );
+  const verificationLabel =
+    verificationStatus === "verified"
+      ? isAr
+        ? "\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0648\u062b\u0642\u0629"
+        : "Verified data"
+      : verificationStatus === "pending_review"
+        ? isAr
+          ? "\u0642\u064a\u062f \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629"
+          : "Pending review"
+        : isAr
+          ? "\u064a\u062d\u062a\u0627\u062c \u062a\u062d\u0642\u0642"
+          : "Needs verification";
+
+  const experienceCost = rec.visitorCost?.estimatedExperienceCost;
+  const entryFee = rec.visitorCost?.entryFee;
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -110,7 +135,7 @@ export default function RecommendationCard({
             {rec.description}
           </p>
 
-          {(durationHours || typeof rec.ticketCostOmr === "number") && (
+          {(durationHours || typeof rec.ticketCostOmr === "number" || experienceCost || verificationStatus) && (
             <div className="mt-3 flex flex-wrap gap-2 text-[11px] text-white/55">
               {durationHours && (
                 <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
@@ -122,6 +147,20 @@ export default function RecommendationCard({
                 <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
                   <Ticket size={12} />
                   {rec.ticketCostOmr.toFixed(2)} OMR
+                </span>
+              )}
+              {experienceCost && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
+                  <Ticket size={12} />
+                  {isAr
+                    ? `~${experienceCost.min}-${experienceCost.max} ${experienceCost.currency}`
+                    : `~${experienceCost.min}-${experienceCost.max} ${experienceCost.currency}`}
+                </span>
+              )}
+              {verificationStatus && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
+                  {verificationIcon}
+                  {verificationLabel}
                 </span>
               )}
             </div>

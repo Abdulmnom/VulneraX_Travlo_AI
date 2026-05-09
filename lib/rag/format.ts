@@ -67,6 +67,7 @@ export function hydrateRecommendationsWithRag(
       activities: site.activities[language],
       openingHours: site.visitorInfo.openingHours[language],
       ticketCostOmr: site.visitorInfo.ticketCostOmr,
+      visitorCost: site.visitorInfo.cost,
       recommendedDurationMinutes: site.visitorInfo.recommendedDurationMinutes,
       location: {
         lat: site.coordinates.lat,
@@ -76,6 +77,7 @@ export function hydrateRecommendationsWithRag(
       travelTips: site.travelTips[language],
       nearbyPlaces: site.nearbyPlaces,
       needsImageReview: site.needsImageReview,
+      dataVerification: site.dataVerification,
       imageSources: site.images.map((image) => ({
         sourceName: image.sourceName,
         sourceUrl: image.sourceUrl,

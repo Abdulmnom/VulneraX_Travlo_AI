@@ -1,3 +1,34 @@
+export interface VisitorCost {
+  entryFee: {
+    omani?: number | null;
+    tourist?: number | null;
+    notes?: string;
+  } | null;
+  estimatedExperienceCost: {
+    min: number;
+    max: number;
+    currency: "OMR";
+    includes: string[];
+  };
+  notes?: {
+    en: string;
+    ar: string;
+  };
+}
+
+export interface DataVerification {
+  status: "verified" | "pending_review" | "unverified";
+  confidence: "high" | "medium" | "low";
+  lastUpdated: string;
+  dataQuality: {
+    hasImages: boolean;
+    imageCount: number;
+    hasVerifiedCosts: boolean;
+    hasOpeningHours: boolean;
+    hasAccessibilityInfo: boolean;
+  };
+}
+
 export type LocalizedText = {
   en: string;
   ar: string;
@@ -44,6 +75,7 @@ export interface TourismSite {
     openingHours: LocalizedText;
     recommendedDurationMinutes: number;
     ticketCostOmr: number;
+    cost?: VisitorCost;
     bestMonths: number[];
     crowdLevel: number;
     accessibility: LocalizedText;
@@ -56,4 +88,5 @@ export interface TourismSite {
   };
   ragContent: LocalizedText;
   needsImageReview: boolean;
+  dataVerification?: DataVerification;
 }

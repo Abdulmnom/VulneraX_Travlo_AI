@@ -1,6 +1,6 @@
 import rawDestinations from "@/data.json";
 import { VERIFIED_IMAGES_BY_DESTINATION } from "@/lib/rag/verifiedImages";
-import type { LocalizedText, RecommendationCategory, TourismSite } from "@/types/tourism";
+import type { LocalizedText, RecommendationCategory, TourismImage, TourismSite, VisitorCost, DataVerification } from "@/types/tourism";
 
 type RawDestination = {
   id: string;
@@ -131,6 +131,115 @@ function buildTravelTips(destination: RawDestination, language: "ar" | "en") {
   return tips;
 }
 
+function buildVisitorCost(destination: RawDestination): VisitorCost {
+  const nameLower = destination.name.en.toLowerCase();
+  const categories = destination.categories;
+  const rawCost = destination.ticket_cost_omr;
+
+  const isFreeForAll = categories.some((c) =>
+    ["beach", "wadi", "souq", "market", "corniche", "park"].includes(c)
+  ) || /beach|wadi\s|souq|corniche|park|spring/i.test(nameLower);
+
+  const isFortOrMuseum = categories.some((c) =>
+    ["fort", "castle", "museum", "palace"].includes(c)
+  ) || /fort|castle|museum|palace/i.test(nameLower);
+
+  const isUncertain = categories.some((c) =>
+    ["cave", "reserve", "adventure", "desert"].includes(c)
+  ) || /cave|reserve|turtle|dune|safari/i.test(nameLower);
+
+  if (isFreeForAll) {
+    return {
+      entryFee: { omani: 0, tourist: 0, notes: "مجاني للجميع" },
+      estimatedExperienceCost: {
+        min: Math.max(0, Math.round(rawCost * 0.3 * 10) / 10),
+        max: Math.max(1, Math.round(rawCost * 1.5 * 10) / 10),
+        currency: "OMR",
+        includes:
+          categories.includes("nature")
+            ? ["موقف سيارات", "تصوير", "تنزه"]
+            : ["تصوير", "تنزه", "استكشاف"],
+      },
+    };
+  }
+
+  if (isFortOrMuseum) {
+    return {
+      entryFee: {
+        omani: 0,
+        tourist: rawCost > 0 ? Math.min(5, Math.round(rawCost * 10) / 10) : 0.5,
+        notes: "مجاني للعمانيين، رسم رمزي للسياح",
+      },
+      estimatedExperienceCost: {
+        min: Math.max(0.5, Math.round(rawCost * 0.5 * 10) / 10),
+        max: Math.max(2, Math.round(rawCost * 2 * 10) / 10),
+        currency: "OMR",
+        includes: ["تذكرة دخول", "تصوير", "مرشد صوتي"],
+      },
+    };
+  }
+
+  if (isUncertain) {
+    return {
+      entryFee: null,
+      estimatedExperienceCost: {
+        min: Math.max(1, Math.round(rawCost * 0.5 * 10) / 10),
+        max: Math.max(5, Math.round(rawCost * 2 * 10) / 10),
+        currency: "OMR",
+        includes: ["موقف سيارات", "تصوير", "أنشطة اختيارية"],
+      },
+      notes: {
+        en: "Entry fee varies, please check locally",
+        ar: "تختلف الرسوم، يرجى التحقق محلياً",
+      },
+    };
+  }
+
+  return {
+    entryFee: {
+      omani: rawCost > 0 ? Math.round(rawCost * 0.5 * 10) / 10 : 0,
+      tourist: rawCost > 0 ? Math.round(rawCost * 10) / 10 : 0,
+      notes: rawCost === 0 ? "مجاني للجميع" : undefined,
+    },
+    estimatedExperienceCost: {
+      min: Math.max(0.5, Math.round(rawCost * 0.8 * 10) / 10),
+      max: Math.max(2, Math.round(rawCost * 2.5 * 10) / 10),
+      currency: "OMR",
+      includes: ["تذكرة دخول", "موقف سيارات", "تصوير"],
+    },
+  };
+}
+
+function buildDataVerification(destination: RawDestination, images: TourismImage[]): DataVerification {
+  const hasImages = images.length >= 3;
+  const hasCosts = destination.ticket_cost_omr > 0 || /beach|wadi\s|souq|corniche|park|spring/i.test(destination.name.en.toLowerCase());
+  const hasOpeningHours = Boolean(destination.opening_hours?.en && destination.opening_hours.en !== "Check locally before visiting");
+  const hasAccessibility = true;
+
+  let status: DataVerification["status"] = "unverified";
+  let confidence: DataVerification["confidence"] = "low";
+
+  if (hasImages && hasCosts && hasOpeningHours) {
+    status = "verified";
+    confidence = "high";
+  } else if (hasImages || hasCosts) {
+    status = "pending_review";
+    confidence = "medium";
+  }
+
+  return {
+    status,
+    confidence,
+    lastUpdated: new Date().toISOString().split("T")[0],
+    dataQuality: {
+      hasImages,
+      imageCount: images.length,
+      hasVerifiedCosts: hasCosts,
+      hasOpeningHours,
+      hasAccessibilityInfo: hasAccessibility,
+    },
+  };
+}
 function buildRagContent(destination: RawDestination, language: "ar" | "en") {
   const name = normalizeLocalized(destination.name, destination.name.en)[language];
   const region = normalizeLocalized(destination.region, destination.region.en)[language];
@@ -160,6 +269,8 @@ export function loadTourismData(): TourismSite[] {
     };
     const description = normalizeLocalized(destination.description, destination.description.en);
     const images = VERIFIED_IMAGES_BY_DESTINATION[destination.id] ?? [];
+    const visitorCost = buildVisitorCost(destination);
+    const dataVerification = buildDataVerification(destination, images);
 
     return {
       id: destination.id,
@@ -195,6 +306,7 @@ export function loadTourismData(): TourismSite[] {
         openingHours: normalizeLocalized(destination.opening_hours, "Check locally before visiting"),
         recommendedDurationMinutes: destination.avg_visit_duration_minutes,
         ticketCostOmr: destination.ticket_cost_omr,
+        cost: visitorCost,
         bestMonths: destination.recommended_months,
         crowdLevel: destination.crowd_level,
         accessibility: {
@@ -217,6 +329,7 @@ export function loadTourismData(): TourismSite[] {
         ar: buildRagContent(destination, "ar"),
       },
       needsImageReview: images.length < 3,
+      dataVerification,
     };
   });
 }
