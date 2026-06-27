@@ -12,6 +12,7 @@ Output (stdout):
     {
         "transcript": "...",
         "language": "ar",
+        
         "probability": 0.98
     }
 """

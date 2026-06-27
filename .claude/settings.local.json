@@ -8,7 +8,11 @@
       "Bash(node -e \"const p=require\\('/c/Users/Abdulmnoum/Documents/GitHub/VulneraX_Travlo_AI/package.json'\\); console.log\\(JSON.stringify\\(p.scripts, null, 2\\)\\)\")",
       "PowerShell(pip install gtts 2>&1)",
       "PowerShell(Get-Item \"C:\\\\Users\\\\Abdulmnoum\\\\Documents\\\\GitHub\\\\VulneraX_Travlo_AI\\\\tests\\\\test_en.mp3\",\"C:\\\\Users\\\\Abdulmnoum\\\\Documents\\\\GitHub\\\\VulneraX_Travlo_AI\\\\tests\\\\test_ar.mp3\" | Select-Object Name, @{N=\"Size\";E={\"$\\([math]::Round\\($_.Length/1KB,1\\)\\) KB\"}})",
-      "Bash(npm root *)"
+      "Bash(npm root *)",
+      "Bash(node -e \"require\\('pptxgenjs'\\)\")",
+      "Bash(npm install *)",
+      "Bash(NODE_PATH=\"C:\\\\Users\\\\Abdulmnoum\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\" node create_pptx.js)",
+      "Bash(python \"C:\\\\Users\\\\Abdulmnoum\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\bc35eb1e-7b53-4a90-8864-2dec003e2d19\\\\868cc9e1-4eb5-48d0-bc69-c311d4de9bc2\\\\skills\\\\pptx\\\\scripts\\\\office\\\\soffice.py\" --headless --convert-to pdf Travlo_Business_Plan.pptx)"
     ]
   }
 }
