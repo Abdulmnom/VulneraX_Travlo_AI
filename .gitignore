@@ -74,3 +74,4 @@ security-report*.html
 
 # Claude Code worktrees (auto-generated, never commit)
 .claude/worktrees/
+.claude/settings.local.json
